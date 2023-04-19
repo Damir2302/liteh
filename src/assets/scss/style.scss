@@ -1,0 +1,30 @@
+$black: #353535;
+$gray: #686868;
+$ltgray: #999999;
+$green: #0CAA70;
+$bggreen: #29C189;
+$dgreen: #16895f;
+$orange: #FE8045;
+$ltorange: #ffa479;
+$bgorange: #FF9A6B;
+$bgyellow: #FFC656;
+$bgviolet: #7480EC;
+$bgpink: #F378A4;
+
+@import 'base/mixins';
+@import 'base/normalize';
+@import 'base/fonts';
+@import 'base/reset';
+@import 'base/ui';
+
+@import 'plugins/animate.min';
+@import 'plugins/swiper-bundle';
+@import '@fancyapps/ui/src/Fancybox/fancybox.scss';
+
+@import 'includes/header';
+@import 'includes/footer';
+
+@import 'components/breadcrumbs';
+
+@import 'pages/index';
+

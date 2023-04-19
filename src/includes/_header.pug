@@ -1,0 +1,73 @@
+include _mixins
+block header
+
+    header#header.header 
+
+        .header__top
+
+            .container
+
+                .header__top-inner
+
+                    .header__logo
+                        a(href="/")
+                            img(src="assets/images/logo.svg", alt="logo")
+
+                    .header__location
+                        .header__location-icon
+                            img(src="assets/images/location.svg", alt="icon")
+                        .header__location-value Нижний Новгород
+
+                    .header__phone
+                        .header__phone-wrap
+                            .header__phone-icon
+                                img(src="assets/images/phone.svg", alt="icon")
+                            .header__phone-value
+                                a(href="tel:+7 (495) 260-11-26") +7 (495) 260-11-26
+                        
+                        .header__phone-action Заказать звонок
+
+                    .header__search
+                        form
+                            input(type="search" placeholder="Поиск анализов")
+                            button(type="submit")
+                                img(src="assets/images/search.svg", alt="icon")
+
+                    .header__burger
+                        img(src="assets/images/burger.svg", alt="icon")
+
+        .header__bottom
+
+            .container
+
+                .header__bottom-inner
+
+                    .header__search.header__search--mobile
+                        form
+                            input(type="search" placeholder="Поиск анализов")
+                            button(type="submit")
+                                img(src="assets/images/search.svg", alt="icon")
+
+                    .header__services
+
+                        ul.header__services-nav
+                            li
+                                a(href="#") Анализы и цены
+                            li
+                                a(href="#") Анализы на дому
+                            li
+                                a(href="#") Акции
+                            li
+                                a(href="#") Программа лояльности
+                            li
+                                a(href="#") Адреса
+                        
+                    .header__action
+
+                        .header__results Узнать результаты
+
+                        .header__profile
+                            img(src="assets/images/user.svg", alt="icon")
+
+                        .header__cart(data-count="4")
+                            img(src="assets/images/cart.svg", alt="icon")

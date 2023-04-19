@@ -1,0 +1,118 @@
+include _mixins
+block footer
+
+    footer#footer.footer
+
+        .container
+
+            .footer__main
+
+                .footer__menu
+
+                    .footer__tabs
+
+                        .swiper
+
+                            .swiper-wrapper
+
+                                .footer__tab-item.swiper-slide.active(data-active=1) Пациентам
+                                .footer__tab-item.swiper-slide(data-active=2) Франшиза
+                                .footer__tab-item.swiper-slide(data-active=2) Корпоративным клиентам
+                                .footer__tab-item.swiper-slide(data-active=3) О лаборатории
+
+                    .footer__block.active(data-show=1)
+                        a.footer__block-title(href="#") Пациентам
+                        ul.footer__menu-list
+                            li
+                                a(href="#") Анализы и цены
+                            li
+                                a(href="#") Анализы на дому
+                            li
+                                a(href="#") Акции
+                            li
+                                a(href="#") Программа лояльности
+                            li
+                                a(href="#") Covid
+                            li
+                                a(href="#") Научно популярные статьи
+                            li
+                                a(href="#") Подготовка к анализам
+                            li
+                                a(href="#") Налоговый вычет
+                            li
+                                a(href="#") Адреса
+
+                    .footer__block(data-show=2)
+                        a.footer__block-title(href="#") Корпоративным клиентам
+                        ul.footer__menu-list
+                            li
+                                a(href="#") Отдел коммерческого развития
+                            li
+                                a(href="#") Информация для специалистов
+                            li
+                                a(href="#") Сотрудничество со специалистами
+                            li
+                                a(href="#") Правила взятия и хранения биоматериала
+                            li
+                                a(href="#") Правила поведения обследования на ВИЧ-инфекцию
+                            li
+                                a(href="#") Новости наших партнёров
+
+                    .footer__block(data-show=3)
+                        a.footer__block-title(href="#") О лаборатории
+                        ul.footer__menu-list
+                            li
+                                a(href="#") Наша лаборатория
+                            li
+                                a(href="#") Документы
+                            li
+                                a(href="#") Лицензии и сертификаты
+                            li
+                                a(href="#") Вакансии
+                            li
+                                a(href="#") Франшиза
+                            li
+                                a(href="#") Отзывы
+                            li
+                                a(href="#") Вопрос и ответ
+
+                .footer__services
+
+                    .footer__contacts
+
+                        .footer__tel
+
+                            .footer__phone
+                                .footer__phone-icon
+                                    img(src="assets/images/phone.svg", alt="icon")
+                                .footer__phone-value
+                                    a(href="tel:+7 (495) 260-11-26") +7 (495) 260-11-26
+                            
+                            .footer__callback.button-style.button-style--gray Заказать звонок
+
+                        .footer__socials
+
+                            .footer__social-tg
+                                a(href="#") 
+                                    img(src="assets/images/telegram.svg", alt="icon")
+
+                            .footer__social-vk
+                                a(href="#") 
+                                    img(src="assets/images/vk.svg", alt="icon")
+
+                    .footer__buttons
+                        .footer__prices.button-style.button-style--green Анализы и цены
+                        .footer__results.button-style.button-style--green Узнать результат
+
+            .footer__bottom
+
+                .footer__logo
+                    a(href="/")
+                        img(src="assets/images/logo.svg", alt="logo")
+
+                .footer__bottom-wrap
+                
+                    .footer__copyright © Литех 1992-2023 - интеллектуальная лабораторная диагностика
+
+                    .footer__policy
+                        a(href="#") Политика конфиденциальности
