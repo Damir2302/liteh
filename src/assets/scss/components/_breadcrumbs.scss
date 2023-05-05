@@ -1,0 +1,43 @@
+.breadcrumbs {
+    padding-bottom: 30px;
+
+    @include breakpoint(md) {
+        padding-bottom: 30px;
+    }
+
+    @include breakpoint(lg) {
+        padding-bottom: 40px;
+    }
+
+    @include breakpoint(xl) {
+        padding-bottom: 50px;
+    }
+}
+
+.breadcrumbs-wrapper {
+    display: flex;
+}
+
+.breadcrumbs-item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: $gray;
+}
+
+.breadcrumbs-item:first-child {
+    color: $green;
+}
+
+.breadcrumbs-item:last-child {
+    cursor: default;
+}
+
+.breadcrumbs-separator {
+    margin: 0 3px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: $gray;
+    cursor: default;
+}

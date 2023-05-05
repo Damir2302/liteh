@@ -1,0 +1,197 @@
+.section-sales {
+    padding-top: 0;
+}
+
+.sales__banner  {
+    padding: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    color: #fff;
+    border-radius: 12px;
+
+    @include breakpoint(md) {
+        padding: 0 32px;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    @include breakpoint(lg) {
+        padding: 0 50px;
+    }
+
+    @include breakpoint(xl) {
+        padding: 0 105px;
+    }
+}
+
+.sales__title {
+
+    @include breakpoint(lg) {
+        max-width: 400px;
+    }
+}
+
+.sales__subtitle {
+    margin-top: 16px;
+    max-width: 275px;
+    font-size: 18px;
+    line-height: 150%;
+
+    @include breakpoint(lg) {
+        max-width: 350px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+}
+
+.sales__banner-bg {
+    max-width: 251px;
+    transform: translate(20px, 20px);
+
+    @include breakpoint(md) {
+        max-width: 280px;
+        transform: unset;
+    }
+
+    @include breakpoint(lg) {
+        max-width: 383px;
+    }
+
+    @include breakpoint(xl) {
+        max-width: 470px;
+    }
+}
+
+.sales__desc {
+
+    @include breakpoint(md) {
+        margin-left: 48px;
+    }
+
+    @include breakpoint(lg) {
+        margin-left: 58px;
+    }
+
+    @include breakpoint(xl) {
+        margin-left: 138px;
+    }
+}
+
+.sales__wrap {
+
+    @include breakpoint(lg) {
+        margin-top: 22px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 12px;
+    }
+}
+
+.sales__block {
+
+    @include breakpoint(xs) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.sales__item {
+    margin-top: 30px;
+
+    @include breakpoint(xs) {
+        width: calc(50% - 5px)
+    }
+
+    @include breakpoint(md) {
+        width: calc(100% / 3 - (32px / 3));
+    }
+
+    @include breakpoint(lg) {
+        width: calc(100% / 3 - (40px / 3));
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 40px;
+        width: calc(100% / 3 - 20px);
+    }
+}
+
+.sales__item a {
+    display: block;
+}
+
+.sales__item-img {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.sales__item-img img {
+    width: 100%;
+}
+
+.sales__item-title {
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+
+    @include breakpoint(lg) {
+        font-size: 18px;
+    }
+
+    @include breakpoint(xl) {
+        font-size: 20px;
+    }
+}
+
+.sales__item-date {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 150%;
+    color: $dgray;
+
+    @include breakpoint(md) {
+        margin-top: 12px;
+    }
+}
+
+.sales__loadmore {
+    margin: 30px auto 0;
+    padding: 15px 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    font-size: 15px;
+    line-height: 18px;
+
+    @include breakpoint(md) {
+        display: none;
+    }
+}
+
+.sales__loadmore::after {
+    content: '';
+    background: url(../images/arrow-down.svg) no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.section-sales .pagination {
+    display: none;
+
+    @include breakpoint(md) {
+        margin-top: 36px;
+        display: flex;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 50px;
+    }
+}

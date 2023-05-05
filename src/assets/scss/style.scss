@@ -1,5 +1,6 @@
 $black: #353535;
-$gray: #686868;
+$gray: #A1A1A1;
+$dgray: #686868;
 $ltgray: #999999;
 $green: #0CAA70;
 $bggreen: #29C189;
@@ -27,4 +28,6 @@ $bgpink: #F378A4;
 @import 'components/breadcrumbs';
 
 @import 'pages/index';
+@import 'pages/catalog';
+@import 'pages/sales';
 

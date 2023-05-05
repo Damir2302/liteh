@@ -1,67 +1,307 @@
 ---
-title: Литех | Главная
-yandexMap: true
+title: Литех | Сдать анализы в Москве
 ---
 
 extends includes/_page
 
 block main
 
-    section.section-banner
+    include components/_breadcrumbs
+    +breadcrumbs('Анализы и цены')
+
+    section.section-catalog
 
         .container
 
-            .banner
+            h1.title Сдать анализы в Москве
 
-                .banner__slider
-                    .swiper
+            .catalog
 
-                        .swiper-wrapper
+                .catalog__support
+                    .catalog__support-title Трудности в поиске анализа?
+                    .catalog__support-text Свяжитесь с нами удобным для вас способом:
+                    .catalog__support-actions
+                        .catalog__support-actions-chat.button-style.button-style--fill-green Напишите нам в чат
+                        .catalog__support-actions-callback.button-style.button-style--fill-green Закажите звонок
+                        .catalog__support-actions-phone
+                            img(src="assets/images/phone.svg", alt="icon")
+                            a(href="tel:+7 (495) 260-11-26") +7 (495) 260-11-26
 
-                            .swiper-slide.banner__slider-item
-                                .banner__slider-bg
-                                    img(src="assets/images/my-love-delighted-young-man.png", alt="img")
-                                .banner__slider-title Тест на антитела к короновирусу<br>800 ₽
-                                .banner__slider-text Lorem ipsum dolor sit amet consectetur. Auctor in neque viverra gravida enim
-                                .button-style.button-style--fill-white Записаться
-                            
-                            .swiper-slide.banner__slider-item
-                                .banner__slider-bg
-                                    img(src="assets/images/my-love-delighted-young-man.png", alt="img")
-                                .banner__slider-title Тест на антитела к короновирусу<br>800 ₽
-                                .banner__slider-text Lorem ipsum dolor sit amet consectetur. Auctor in neque viverra gravida enim
-                                .button-style.button-style--fill-white Записаться
-                            
-                            .swiper-slide.banner__slider-item
-                                .banner__slider-bg
-                                    img(src="assets/images/my-love-delighted-young-man.png", alt="img")
-                                .banner__slider-title Тест на антитела к короновирусу<br>800 ₽
-                                .banner__slider-text Lorem ipsum dolor sit amet consectetur. Auctor in neque viverra gravida enim
-                                .button-style.button-style--fill-white Записаться
+                .catalog__menu
+                    .catalog__menu-item
+                        .catalog__menu-title Популярные анализы
 
-                        .banner-navigation
-                            .banner__nav.banner__nav-prev
-                                img(src="assets/images/chevron-left-green.svg", alt="icon")
-                            .banner__nav.banner__nav-next
-                                img(src="assets/images/chevron-right-green.svg", alt="icon")
+                    .catalog__menu-item
+                        .catalog__menu-title Комплексы
 
-                        .banner-pagination
+                    .catalog__menu-item
+                        .catalog__menu-title Общеклинические исследования
+                        
+                        .catalog__list
+                            .catalog__list-item
+                                .catalog__list-title Гормоны
+                                .catalog__list-link
+                                    a(href="#") Определение уровня гормонов
+                        
+                            .catalog__list-item
+                                .catalog__list-title Онкология
+                                .catalog__list-link
+                                    a(href="#") Рак простаты
+                                .catalog__list-link
+                                    a(href="#") Комплексные анализы
+                                .catalog__list-link
+                                    a(href="#") Онкомаркеры
+                                .catalog__list-link
+                                    a(href="#") Рак яичников
 
-                .banner__block
+                            .catalog__list-item
+                                .catalog__list-title По полу
+                                .catalog__list-link
+                                    a(href="#") Женский
+                                .catalog__list-link
+                                    a(href="#") Мужской
 
-                    .banner__item
-                        .banner__item-bg
-                            img(src="assets/images/well-dressed-white-girl-laughing-while-posing.png", alt="img")
-                        .banner__item-title Сдать анализы на дому
-                        .banner__item-text Выезд по Москве в пределах МКАД бесплатно при заказе от&nbsp;1500₽
-                        .button-style.button-style--fill-white Подробнее
+                            .catalog__list-item
+                                .catalog__list-title По органам и системам
+                                .catalog__list-link
+                                    a(href="#") Щитовидная железа
+                                .catalog__list-link
+                                    a(href="#") Печень
+                                .catalog__list-link
+                                    a(href="#") Почки
+                                .catalog__list-link
+                                    a(href="#") Кишечник
+                                .catalog__list-link
+                                    a(href="#") Женская репродуктивная система
+                                .catalog__list-link
+                                    a(href="#") Мужская репродуктивная система
+                                .catalog__list-link
+                                    a(href="#") Легкие
+                                .catalog__list-link
+                                    a(href="#") Желудок
+                                .catalog__list-link
+                                    a(href="#") Поджелудочная железа
+                                .catalog__list-link
+                                    a(href="#") Мочевой пузырь
 
-                    .banner__item
-                        .banner__item-bg
-                            img(src="assets/images/shocked-red-haired-young-woman-holds-breath.png", alt="img")
-                        .banner__item-title При заказе онлайн<br>Скидка 5%
-                        .banner__item-text Для постоянных и новых пациентов!
-                        .button-style.button-style--fill-white В каталог
+                    .catalog__menu-item
+                        .catalog__menu-title Общий анализ крови
+
+                    .catalog__menu-item
+                        .catalog__menu-title Анализ мочи
+
+                    .catalog__menu-item
+                        .catalog__menu-title Анализ кала
+
+                    .catalog__menu-item
+                        .catalog__menu-title Анализ спермы
+
+                    .catalog__menu-item
+                        .catalog__menu-title Биохимические анализы
+
+                    .catalog__menu-item
+                        .catalog__menu-title Группа крови и резус-фактор
+
+                    .catalog__menu-item
+                        .catalog__menu-title Свертываемость крови
+
+                    .catalog__menu-item
+                        .catalog__menu-title Гормоны
+
+                    .catalog__menu-item
+                        .catalog__menu-title Онкомаркеры
+
+                    .catalog__menu-item
+                        .catalog__menu-title Заболевания, передающиеся половым путем (ЗППП)
+
+                    .catalog__menu-item
+                        .catalog__menu-title Микробиологические исследования (посевы)
+
+                    .catalog__menu-item
+                        .catalog__menu-title Инфекционные, паразитарные и грибковые заболевания
+
+                    .catalog__menu-item
+                        .catalog__menu-title Анализы для детей
+                        
+                    .catalog__menu-item
+                        .catalog__menu-title Анализы для женщин
+
+                    .catalog__menu-item
+                        .catalog__menu-title Анализы при беременности
+
+                    .catalog__menu-item
+                        .catalog__menu-title Анализы для мужчин
+
+                    .catalog__menu-item
+                        .catalog__menu-title Аутоиммунные заболевания
+
+                    .catalog__menu-item
+                        .catalog__menu-title Иммунология
+
+                    .catalog__menu-item
+                        .catalog__menu-title Цитологические и гистологические анализы
+
+                    .catalog__menu-item
+                        .catalog__menu-title Установление родства
+
+                    .catalog__menu-item
+                        .catalog__menu-title Генетические анализы
+
+                    .catalog__menu-item
+                        .catalog__menu-title Лекарственный мониторинг
+
+                    .catalog__menu-item
+                        .catalog__menu-title Токсикологические анализы
+
+                    .catalog__menu-item
+                        .catalog__menu-title Взятие биоматериала
+
+                    .catalog__menu-item
+                        .catalog__menu-title Врачебные услуги
+
+                    .catalog__menu-item
+                        .catalog__menu-title Ультразвуковые исследования (УЗИ)
+
+                    .catalog__menu-item
+                        .catalog__menu-title Электрокардиограмма (ЭКГ)
+
+                    .catalog__menu-item
+                        .catalog__menu-title Диагностика онкологических заболеваний
+
+                .catalog__block
+
+                    h2.catalog__title Популярные анализы
+
+                    .catalog__wrap
+                        .catalog__item
+                            .catalog__item-info
+                                .catalog__item-code Код № 52
+                                .catalog__item-title Панель антинуклеарных антител при склеродермии(SCLERODERMA ANTIBODIES PANEL) (Scl-70, СENP A,CENP B, RP 11, RP 155, фибриллярин, NOR 90, Th/To, PM-Sc100, PM-Scl 75, Ku, PDGFR, Ro-52) 
+                                .catalog__item-bottom
+                                    .catalog__item-time
+                                        img(src="assets/images/clock.svg", alt="icon")
+                                        p 1 рабочий день
+                                    .catalog__item-home
+                                        img(src="assets/images/home.svg", alt="icon")
+                                        p Можно сдать дома
+                            .catalog__item-buy
+                                .catalog__item-price 100 000 ₽
+                                .catalog__item-btn.button-style.button-style--fill-orange.add_basket В корзину
+
+                        .catalog__item
+                            .catalog__item-info
+                                .catalog__item-code Код № 52
+                                .catalog__item-title Антитела к антигену SS-A (60 кДа), IgG (Anti-SS-A-60 autoantibodies, IgG)
+                                .catalog__item-bottom
+                                    .catalog__item-time
+                                        img(src="assets/images/clock.svg", alt="icon")
+                                        p 1 рабочий день
+                                    .catalog__item-home
+                                        img(src="assets/images/home.svg", alt="icon")
+                                        p Можно сдать дома
+                            .catalog__item-buy
+                                .catalog__item-price 100 000 ₽
+                                .catalog__item-btn.button-style.button-style--fill-orange.add_basket В корзину
+
+                        .catalog__item
+                            .catalog__item-info
+                                .catalog__item-code Код № 52
+                                .catalog__item-title Антитела к цитоплазматическому антигену Jo-1, IgG (Anti-Jo-1 autoantibodies, IgG)
+                                .catalog__item-bottom
+                                    .catalog__item-time
+                                        img(src="assets/images/clock.svg", alt="icon")
+                                        p 1 рабочий день
+                                    .catalog__item-home
+                                        img(src="assets/images/home.svg", alt="icon")
+                                        p Можно сдать дома
+                            .catalog__item-buy
+                                .catalog__item-price 100 000 ₽
+                                .catalog__item-btn.button-style.button-style--fill-orange.add_basket В корзину
+
+                        .catalog__item
+                            .catalog__item-info
+                                .catalog__item-code Код № 52
+                                .catalog__item-title Панель антинуклеарных антител при склеродермии(SCLERODERMA ANTIBODIES PANEL) (Scl-70, СENP A,CENP B, RP 11, RP 155, фибриллярин, NOR 90, Th/To, PM-Sc100, PM-Scl 75, Ku, PDGFR, Ro-52)
+                                .catalog__item-bottom
+                                    .catalog__item-time
+                                        img(src="assets/images/clock.svg", alt="icon")
+                                        p 1 рабочий день
+                                    .catalog__item-home
+                                        img(src="assets/images/home.svg", alt="icon")
+                                        p Можно сдать дома
+                            .catalog__item-buy
+                                .catalog__item-price 100 000 ₽
+                                .catalog__item-btn.button-style.button-style--fill-orange.add_basket В корзину
+
+                        .catalog__item
+                            .catalog__item-info
+                                .catalog__item-code Код № 52
+                                .catalog__item-title Панель антинуклеарных антител при склеродермии(SCLERODERMA ANTIBODIES PANEL) (Scl-70, СENP A,CENP B, RP 11, RP 155, фибриллярин, NOR 90, Th/To, PM-Sc100, PM-Scl 75, Ku, PDGFR, Ro-52)
+                                .catalog__item-bottom
+                                    .catalog__item-time
+                                        img(src="assets/images/clock.svg", alt="icon")
+                                        p 1 рабочий день
+                                    .catalog__item-home
+                                        img(src="assets/images/home.svg", alt="icon")
+                                        p Можно сдать дома
+                            .catalog__item-buy
+                                .catalog__item-price 100 000 ₽
+                                .catalog__item-btn.button-style.button-style--fill-orange.add_basket В корзину
+
+                        .catalog__item
+                            .catalog__item-info
+                                .catalog__item-code Код № 52
+                                .catalog__item-title Панель антинуклеарных антител при склеродермии(SCLERODERMA ANTIBODIES PANEL) (Scl-70, СENP A,CENP B, RP 11, RP 155, фибриллярин, NOR 90, Th/To, PM-Sc100, PM-Scl 75, Ku, PDGFR, Ro-52)
+                                .catalog__item-bottom
+                                    .catalog__item-time
+                                        img(src="assets/images/clock.svg", alt="icon")
+                                        p 1 рабочий день
+                                    .catalog__item-home
+                                        img(src="assets/images/home.svg", alt="icon")
+                                        p Можно сдать дома
+                            .catalog__item-buy
+                                .catalog__item-price 100 000 ₽
+                                .catalog__item-btn.button-style.button-style--fill-orange.add_basket В корзину
+
+                        .catalog__item
+                            .catalog__item-info
+                                .catalog__item-code Код № 52
+                                .catalog__item-title Панель антинуклеарных антител при склеродермии(SCLERODERMA ANTIBODIES PANEL) (Scl-70, СENP A,CENP B, RP 11, RP 155, фибриллярин, NOR 90, Th/To, PM-Sc100, PM-Scl 75, Ku, PDGFR, Ro-52)
+                                .catalog__item-bottom
+                                    .catalog__item-time
+                                        img(src="assets/images/clock.svg", alt="icon")
+                                        p 1 рабочий день
+                                    .catalog__item-home
+                                        img(src="assets/images/home.svg", alt="icon")
+                                        p Можно сдать дома
+                            .catalog__item-buy
+                                .catalog__item-price 100 000 ₽
+                                .catalog__item-btn.button-style.button-style--fill-orange.add_basket В корзину
+
+                        .catalog__item
+                            .catalog__item-info
+                                .catalog__item-code Код № 52
+                                .catalog__item-title Панель антинуклеарных антител при склеродермии(SCLERODERMA ANTIBODIES PANEL) (Scl-70, СENP A,CENP B, RP 11, RP 155, фибриллярин, NOR 90, Th/To, PM-Sc100, PM-Scl 75, Ku, PDGFR, Ro-52)
+                                .catalog__item-bottom
+                                    .catalog__item-time
+                                        img(src="assets/images/clock.svg", alt="icon")
+                                        p 1 рабочий день
+                                    .catalog__item-home
+                                        img(src="assets/images/home.svg", alt="icon")
+                                        p Можно сдать дома
+                            .catalog__item-buy
+                                .catalog__item-price 100 000 ₽
+                                .catalog__item-btn.button-style.button-style--fill-orange.add_basket В корзину
+
+                .catalog__support
+                    .catalog__support-title Трудности в поиске анализа?
+                    .catalog__support-text Свяжитесь с нами удобным для вас способом:
+                    .catalog__support-actions
+                        .catalog__support-actions-chat.button-style.button-style--fill-green Напишите нам в чат
+                        .catalog__support-actions-callback.button-style.button-style--fill-green Закажите звонок
+                        .catalog__support-actions-phone
+                            img(src="assets/images/phone.svg", alt="icon")
+                            a(href="tel:+7 (495) 260-11-26") +7 (495) 260-11-26
 
     section.section-popular.section-gray
 
@@ -261,200 +501,45 @@ block main
                             img(src="assets/images/chevron-right-white.svg", alt="icon")
                             img.disabled(src="assets/images/chevron-left-gray.svg", alt="icon")
 
-    section.section-services
+    section.section-proposal
 
         .container
 
-            .services
+            h2.proposal__title.title Акции и спецпредложения
 
-                .services__block
-
-                    .services__item.bg-violet
-                        a(href="#")
-                            .services__item-title Сдать анализы
-                            .services__item-icon
-                                img(src="assets/images/chevron-right-white.svg", alt="icon")
-                            .services__item-img
-                                img(src="assets/images/swab.svg", alt="img")
-
-                    .services__item.bg-yellow
-                        a(href="#")
-                            .services__item-title Программа лояльности
-                            .services__item-icon
-                                img(src="assets/images/chevron-right-white.svg", alt="icon")
-                            .services__item-img
-                                img(src="assets/images/discount.svg", alt="img")
-
-                    .services__item.bg-orange
-                        a(href="#")
-                            .services__item-title Выезд на дом
-                            .services__item-icon
-                                img(src="assets/images/chevron-right-white.svg", alt="icon")
-                            .services__item-img
-                                img(src="assets/images/delivery.svg", alt="img")
-
-                    .services__item.bg-green
-                        a(href="#")
-                            .services__item-title Адреса клиник
-                            .services__item-icon
-                                img(src="assets/images/chevron-right-white.svg", alt="icon")
-                            .services__item-img
-                                img(src="assets/images/loc.svg", alt="img")
-
-
-                .services__banner
-                    .services__banner-title Сдать анализы на дому
-                    .services__banner-text
-                        | Выезд по Москве в пределах МКАД
-                        p
-                            span бесплатно при заказе от&nbsp;1500₽
-                    .services__banner-btn.button-style.button-style--green Узнать подробнее
-                    .services__banner-img
-                        img(src="assets/images/family-spending-time-together-living-room.png", alt="img")
-
-    section.section-programs.section-gray
-
-        .container
-
-            h2.programs__title.title Программы здоровья
-            
-            .programs
-
-                .programs__wrapper
-
-                    .programs__item
-                        a(href="#") 
-                            .programs__item-img.bg-orange
-                                img(src="assets/images/002-woman.svg", alt="icon")
-                            .programs__item-label Для женщин
-                            .programs__item-arrow
-                                img(src="assets/images/arrow-right.svg", alt="icon")
-
-                    .programs__item
-                        a(href="#") 
-                            .programs__item-img.bg-green
-                                img(src="assets/images/003-mars.svg", alt="icon")
-                            .programs__item-label Для мужчин
-                            .programs__item-arrow
-                                img(src="assets/images/arrow-right.svg", alt="icon")
-
-                    .programs__item
-                        a(href="#") 
-                            .programs__item-img.bg-violet
-                                img(src="assets/images/001-pregnant.svg", alt="icon")
-                            .programs__item-label Для беременных
-                            .programs__item-arrow
-                                img(src="assets/images/arrow-right.svg", alt="icon")
-
-                    .programs__item
-                        a(href="#") 
-                            .programs__item-img.bg-yellow
-                                img(src="assets/images/004-old-people.svg", alt="icon")
-                            .programs__item-label Для пожилых
-                            .programs__item-arrow
-                                img(src="assets/images/arrow-right.svg", alt="icon")
-
-                    .programs__item
-                        a(href="#") 
-                            .programs__item-img.bg-pink
-                                img(src="assets/images/005-lifestyle.svg", alt="icon")
-                            .programs__item-label Лайфстайл анализы
-                            .programs__item-arrow
-                                img(src="assets/images/arrow-right.svg", alt="icon")
-
-                .programs__images
-                    img(src="assets/images/progs-img.png", alt="img")
-
-    section.section-advantages
-
-        .container
-            
-            .advantages
-
-                .advantages__item
-                    h2.advantages__title.title Почему наши цены ниже чем у конкурентов?
-                
-                .advantages__item.bg-green
-                    .advantages__icon
-                        img(src="assets/images/001-hearts.svg", alt="icon")
-                    .advantages__desc
-                        .advantages__desc-title Клиентоориентированность
-                        .advantages__desc-text Делаем медицину - доступной
-                
-                .advantages__item.bg-green
-                    .advantages__icon
-                        img(src="assets/images/002-increase.svg", alt="icon")
-                    .advantages__desc
-                        .advantages__desc-title Плавный рост компании
-                        .advantages__desc-text Открытие в 2011 году
-                
-                .advantages__item.bg-green
-                    .advantages__icon
-                        img(src="assets/images/003-good-feedback.svg", alt="icon")
-                    .advantages__desc
-                        .advantages__desc-title Отсутствие больших затрат на рекламу
-                        .advantages__desc-text Основной приток новых пациентов – рекомендации
-                
-                .advantages__item.bg-green
-                    .advantages__icon
-                        img(src="assets/images/004-microscope.svg", alt="icon")
-                    .advantages__desc
-                        .advantages__desc-title Покупка премиального оборудования
-                        .advantages__desc-text Не требует постоянного ремонта и частой замены
-                
-                .advantages__item.bg-green
-                    .advantages__icon
-                        img(src="assets/images/005-values.svg", alt="icon")
-                    .advantages__desc
-                        .advantages__desc-title Ценности заложенные при открытии
-                        .advantages__desc-text Качество важнее количества
-                    
-    section.section-useful
-
-        .container
-
-            h2.useful__title.title Полезные статьи
-
-            .useful
+            .proposal
 
                 .swiper
 
                     .swiper-wrapper
 
-                        .useful__item.swiper-slide
-                            a(href="#") 
-                                .useful__item-img
-                                    img(src="assets/images/3d-medical-background-with-measles-virus.jpg", alt="img")
-                                .useful__item-title Способы лечения аутоиммунных заболеваний
-                                .useful__item-date 16.03.2023
+                        .proposal__item.swiper-slide
+                            .proposal__item-bg
+                                img(src="assets/images/proposal-1.jpg", alt="img")
+                            .proposal__item-title Сдать анализы на дому
+                            .proposal__item-text Выезд по Москве в пределах МКАД бесплатно при заказе от&nbsp;1500₽
+                            .button-style.button-style--fill-white Подробнее
 
-                        .useful__item.swiper-slide
-                            a(href="#") 
-                                .useful__item-img
-                                    img(src="assets/images/3d-medical-background-with-measles-2.jpg", alt="img")
-                                .useful__item-title Способы лечения аутоиммунных заболеваний
-                                .useful__item-date 16.03.2023
+                        .proposal__item.swiper-slide
+                            .proposal__item-bg
+                                img(src="assets/images/proposal-2.jpg", alt="img")
+                            .proposal__item-title При заказе онлайн<br>Скидка 5%
+                            .proposal__item-text Для постоянных и новых пациентов!
+                            .button-style.button-style--fill-white В каталог
 
-                        .useful__item.swiper-slide
-                            a(href="#") 
-                                .useful__item-img
-                                    img(src="assets/images/3d-medical-background-with-measles-3.jpg", alt="img")
-                                .useful__item-title Способы лечения аутоиммунных заболеваний
-                                .useful__item-date 16.03.2023
-
-                        .useful__item.swiper-slide
-                            a(href="#") 
-                                .useful__item-img
-                                    img(src="assets/images/3d-medical-background-with-measles-virus.jpg", alt="img")
-                                .useful__item-title Способы лечения аутоиммунных заболеваний
-                                .useful__item-date 16.03.2023
-
-                        .useful__item.swiper-slide
-                            a(href="#") 
-                                .useful__item-img
-                                    img(src="assets/images/3d-medical-background-with-measles-virus.jpg", alt="img")
-                                .useful__item-title Способы лечения аутоиммунных заболеваний
-                                .useful__item-date 16.03.2023
+                        .proposal__item.swiper-slide
+                            .proposal__item-bg
+                                img(src="assets/images/proposal-3.jpg", alt="img")
+                            .proposal__item-title Тест на антитела к короновирусу<br>800 ₽
+                            .proposal__item-text Lorem ipsum dolor sit amet consectetur. Auctor in neque viverra gravida enim
+                            .button-style.button-style--fill-white Записаться
+                        
+                        .proposal__item.swiper-slide
+                            .proposal__item-bg
+                                img(src="assets/images/proposal-2.jpg", alt="img")
+                            .proposal__item-title При заказе онлайн<br>Скидка 5%
+                            .proposal__item-text Для постоянных и новых пациентов!
+                            .button-style.button-style--fill-white В каталог
 
                 .slider-navigation
                     .slider-nav.slider-nav-prev
@@ -463,7 +548,6 @@ block main
                     .slider-nav.slider-nav-next
                         img(src="assets/images/chevron-right-white.svg", alt="icon")
                         img.disabled(src="assets/images/chevron-left-gray.svg", alt="icon")
-
 
     section.section-faq.section-gray
 
@@ -514,32 +598,6 @@ block main
                                 img.plus(src="assets/images/plus.svg", alt="icon")
                                 img.minus(src="assets/images/minus.svg", alt="icon")
                         .faq__answer Результаты анализов, проводимых Инвитро, отвечают международным стандартам качества и признаны достоверными.
-
-    section.section-map
-
-        .container
-        
-            h2.map__title.title Адреса медицинских офисов
-
-        .map__wrapper
-
-            .map__dropdown
-                .map__dropdown-select Выбрать медицинский офис
-
-                ul.map__dropdown-list
-                    li.map__dropdown-item Офис «Маяковская»
-                    li.map__dropdown-item Офис «Фрунзенская»
-                    li.map__dropdown-item Офис «Багратионовская»
-                    li.map__dropdown-item Офис «Мичуринский проспект»
-                    li.map__dropdown-item Офис «Электрозаводская»
-                    li.map__dropdown-item Офис «Перово»
-                    li.map__dropdown-item Офис «Первомайская»
-                    li.map__dropdown-item Офис «Коньково»
-                    li.map__dropdown-item Офис «Беломорская»
-                    li.map__dropdown-item Офис «Сходненская»
-                    li.map__dropdown-item Офис «Коммунарка»
-
-            #map(style="width:100%; height:100%")
 
     section.section-seo
 

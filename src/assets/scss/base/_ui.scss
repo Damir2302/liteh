@@ -135,6 +135,16 @@ section {
   color: $dgreen;
 }
 
+.button-style--fill-green {
+  background: $green;
+  border: none;
+  color: #fff;
+}
+
+.button-style--fill-green:hover {
+  background: $dgreen;
+}
+
 .button-style--gray {
   border-color: $gray;
 }
@@ -180,15 +190,22 @@ section {
 }
 
 .title {
+    margin-bottom: 20px;
     font-weight: 700;
     font-size: 24px;
     line-height: 120%;
 
+    @include breakpoint(md) {
+      margin-bottom: 24px;
+    }
+
     @include breakpoint(lg) {
+        margin-bottom: 28px;
         font-size: 28px;
     }
 
     @include breakpoint(xl) {
+        margin-bottom: 40px;
         font-size: 32px;
     }
 }
@@ -245,4 +262,75 @@ section {
 
 .slider-nav-next.swiper-button-disabled {
   transform: rotate(180deg);
+}
+
+.add_basket.active {
+  background: $green;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination__arrow {
+  background: $green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.pagination__arrow.disabled {
+  background: #F8F8F8;
+}
+
+.pagination__arrow img {
+  height: 12px;
+}
+
+.pagination__arrow img.disabled-icon {
+  display: none;
+}
+
+.pagination__arrow.disabled img.disabled-icon {
+  display: block;
+}
+
+.pagination__arrow.disabled img:not(.disabled-icon) {
+  display: none;
+}
+
+.pagination__items {
+  margin: 0 20px;
+  padding: 6px;
+  background: #F8F8F8;
+  display: flex;
+  align-items: center;
+  border-radius: 42px;
+}
+
+.pagination__item {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.pagination__item:first-child {
+  margin-left: 0;
+}
+
+.pagination__item.active {
+  background: $green;
+  color: #fff;
+  border-radius: 50%;
 }

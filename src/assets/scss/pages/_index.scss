@@ -404,7 +404,6 @@
 }
 
 .popular__title {
-    margin-bottom: 16px;
 
     @include breakpoint(md) {
         margin-bottom: 0;
@@ -808,10 +807,6 @@
         width: 174px;
         height: 294px;
     }
-}
-
-.section-programs {
-
 }
 
 .programs__title {
@@ -1241,6 +1236,10 @@
     }
 }
 
+.section-map {
+    padding-bottom: 0;
+}
+
 .section-map .cluster {
     display: flex;
     align-items: center;
@@ -1353,7 +1352,6 @@
 }
 
 .section-seo {
-    padding-top: 0;
     
     @include breakpointMax(md) {
         display: none;
@@ -1453,6 +1451,7 @@
 .subscribe__input {
     background: #FFFFFF;
     position: relative;
+    display: flex;
     border-radius: 52px;
     overflow: hidden;
 

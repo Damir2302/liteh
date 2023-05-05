@@ -14,6 +14,12 @@ $(document).ready(function() {
         $(this).parent().toggleClass('expanded')
         $(this).parent().find('.faq__answer').slideToggle()
     })
+
+    // CATALOG ASIDE
+    $('.catalog__menu-title').on('click', function() {
+        $(this).parent().toggleClass('expanded')
+        $(this).parent().find('.catalog__list').slideToggle()
+    })
     
     // FOOTER TAB
     $('.footer__tab-item').on('click', function() {
