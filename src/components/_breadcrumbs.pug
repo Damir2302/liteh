@@ -1,7 +1,7 @@
 mixin breadcrumbs(...items)
 
     .breadcrumbs
-        
+
         .container
 
             .breadcrumbs-wrapper
@@ -17,6 +17,6 @@ mixin breadcrumbs(...items)
                             span= item
 
                     else
-                        span.breadcrumbs-separator
+                        span.breadcrumbs-separator /
                         .breadcrumbs-item
                             a(href="#")= item

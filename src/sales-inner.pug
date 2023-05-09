@@ -1,0 +1,60 @@
+---
+title: Литех | Недели любимых
+---
+
+extends includes/_page
+
+block main
+
+    include components/_breadcrumbs
+    +breadcrumbs('Акции', 'Недели любимых')
+
+    section.section-sales-content
+
+        .container
+
+            h1.title Недели любимых
+
+            .sales-content__img
+                img(src="assets/images/unsplash_c_rnPbSYVFM.jpg", alt="img")
+
+            .sales-content__expire
+                .expire-title Акция действует до:
+                .expire-date 30 июня
+
+            .sales-content__either
+                .either-title В акции участвуют:
+                .either-cities Москва, Санкт-Петербург, Воронеж
+
+            .sales-content__text
+
+                p Во взрослой жизни мы продолжаем заботиться о себе и своём партнёре, планируем беременность или просто хотим проверить работу организма в условиях городской среды.
+                  br
+                  br
+                  |В первые две недели февраля действует <b>скидка 14% на анализы</b>, связанные с работой репродуктивных систем у мужчин и женщин.
+                  br
+                  br
+                  |Для получения скидки сообщите администратору <b>промокод ЗАБОТА</b>
+                  br
+                  br
+                  |Уточняйте возможность сдачи отдельных исследований в <a href="#">вашем мед. центре</a>
+
+    section.section-subscribe
+
+        .container
+
+            .subscribe
+
+                .subscribe__title.title Подпишитесь на&nbsp;нашу&nbsp;рассылку
+
+                .subscribe__wrapper
+
+                    form
+
+                        .subscribe__input
+                            input#email(type="email", name="email" placeholder="Ваш e-mail")
+                            button.button-style.button-style--fill-orange(type="submit") Подписаться
+
+                    .subscribe__agreement
+                        img(src="assets/images/check-square.svg", alt="icon")
+                        p Даю согласие на обработку персональных данных
