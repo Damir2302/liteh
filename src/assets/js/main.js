@@ -20,6 +20,12 @@ $(document).ready(function() {
         $(this).parent().toggleClass('expanded')
         $(this).parent().find('.catalog__list').slideToggle()
     })
+
+    // SALES ANALYZES
+    $('.analyzes__item-title').on('click', function() {
+        $(this).parent().toggleClass('expanded')
+        $(this).parent().find('.analyzes__item-wrap').slideToggle()
+    })
     
     // FOOTER TAB
     $('.footer__tab-item').on('click', function() {
