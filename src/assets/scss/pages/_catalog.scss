@@ -1,3 +1,7 @@
+.catalog-page .popular__slider {
+    display: block;
+}
+
 .section-catalog {
     padding-top: 0;
 }
@@ -370,7 +374,7 @@
     font-size: 15px;
     line-height: 18px;
     text-align: center;
-    
+
     @include breakpoint(md) {
         padding: 16px 40px;
     }

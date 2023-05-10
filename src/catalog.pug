@@ -1,5 +1,6 @@
 ---
 title: Литех | Сдать анализы в Москве
+bodyClass: catalog-page
 ---
 
 extends includes/_page
@@ -36,13 +37,13 @@ block main
 
                     .catalog__menu-item
                         .catalog__menu-title Общеклинические исследования
-                        
+
                         .catalog__list
                             .catalog__list-item
                                 .catalog__list-title Гормоны
                                 .catalog__list-link
                                     a(href="#") Определение уровня гормонов
-                        
+
                             .catalog__list-item
                                 .catalog__list-title Онкология
                                 .catalog__list-link
@@ -122,7 +123,7 @@ block main
 
                     .catalog__menu-item
                         .catalog__menu-title Анализы для детей
-                        
+
                     .catalog__menu-item
                         .catalog__menu-title Анализы для женщин
 
@@ -176,7 +177,7 @@ block main
                         .catalog__item
                             .catalog__item-info
                                 .catalog__item-code Код № 52
-                                .catalog__item-title Панель антинуклеарных антител при склеродермии(SCLERODERMA ANTIBODIES PANEL) (Scl-70, СENP A,CENP B, RP 11, RP 155, фибриллярин, NOR 90, Th/To, PM-Sc100, PM-Scl 75, Ku, PDGFR, Ro-52) 
+                                .catalog__item-title Панель антинуклеарных антител при склеродермии(SCLERODERMA ANTIBODIES PANEL) (Scl-70, СENP A,CENP B, RP 11, RP 155, фибриллярин, NOR 90, Th/To, PM-Sc100, PM-Scl 75, Ku, PDGFR, Ro-52)
                                 .catalog__item-bottom
                                     .catalog__item-time
                                         img(src="assets/images/clock.svg", alt="icon")
@@ -313,11 +314,7 @@ block main
 
                     h2.popular__title.title Популярные анализы
 
-                    .popular__tab
-                        .popular__tab-item.active(data-active=1) Анализы
-                        .popular__tab-item(data-active=2) Комплекс анализов
-                
-                .popular__slider.active(data-show=1)
+                .popular__slider
 
                     .swiper
 
@@ -335,19 +332,6 @@ block main
                                 .popular__block-bottom
                                     .popular__block-price 100 000 ₽
                                     .popular__block-btn.button-style.button-style--fill-orange.add_basket В корзину
-                            
-                            .popular__block.swiper-slide
-                                .popular__block-code Код № 52
-                                .popular__block-label Лейкоцитарная формула (дифференцированный подсчет лейкоцитов, лейкоцитограмма, патологич...
-                                .popular__block-time
-                                    img(src="assets/images/clock.svg", alt="icon")
-                                    p 1 рабочий день
-                                .popular__block-home
-                                    img(src="assets/images/home.svg", alt="icon")
-                                    p Можно сдать дома
-                                .popular__block-bottom
-                                    .popular__block-price 100 000 ₽
-                                    .popular__block-btn.button-style.button-style--fill-orange.add_basket В корзину
 
                             .popular__block.swiper-slide
                                 .popular__block-code Код № 52
@@ -399,85 +383,6 @@ block main
                                     p Можно сдать дома
                                 .popular__block-bottom
                                     .popular__block-price 100 000 ₽
-                                    .popular__block-btn.button-style.button-style--fill-orange.add_basket В корзину
-
-                    .slider-navigation
-                        .slider-nav.slider-nav-prev
-                            img(src="assets/images/chevron-right-white.svg", alt="icon")
-                            img.disabled(src="assets/images/chevron-left-gray.svg", alt="icon")
-                        .slider-nav.slider-nav-next
-                            img(src="assets/images/chevron-right-white.svg", alt="icon")
-                            img.disabled(src="assets/images/chevron-left-gray.svg", alt="icon")
-                
-                .popular__slider(data-show=2)
-
-                    .swiper
-
-                        .swiper-wrapper
-
-                            .popular__block.swiper-slide
-                                .popular__block-code Код № 25
-                                .popular__block-label Дифференцированный блабла (подсчет лейкоцитов, лейкоцитограмма, патологич...
-                                .popular__block-time
-                                    img(src="assets/images/clock.svg", alt="icon")
-                                    p 1 рабочий день
-                                .popular__block-home
-                                    img(src="assets/images/home.svg", alt="icon")
-                                    p Можно сдать дома
-                                .popular__block-bottom
-                                    .popular__block-price 90 000 ₽
-                                    .popular__block-btn.button-style.button-style--fill-orange.add_basket В корзину
-                            
-                            .popular__block.swiper-slide
-                                .popular__block-code Код № 25
-                                .popular__block-label Дифференцированный блабла (подсчет лейкоцитов, лейкоцитограмма, патологич...
-                                .popular__block-time
-                                    img(src="assets/images/clock.svg", alt="icon")
-                                    p 1 рабочий день
-                                .popular__block-home
-                                    img(src="assets/images/home.svg", alt="icon")
-                                    p Можно сдать дома
-                                .popular__block-bottom
-                                    .popular__block-price 90 000 ₽
-                                    .popular__block-btn.button-style.button-style--fill-orange.add_basket В корзину
-                            
-                            .popular__block.swiper-slide
-                                .popular__block-code Код № 25
-                                .popular__block-label Дифференцированный блабла (подсчет лейкоцитов, лейкоцитограмма, патологич...
-                                .popular__block-time
-                                    img(src="assets/images/clock.svg", alt="icon")
-                                    p 1 рабочий день
-                                .popular__block-home
-                                    img(src="assets/images/home.svg", alt="icon")
-                                    p Можно сдать дома
-                                .popular__block-bottom
-                                    .popular__block-price 90 000 ₽
-                                    .popular__block-btn.button-style.button-style--fill-orange.add_basket В корзину
-
-                            .popular__block.swiper-slide
-                                .popular__block-code Код № 25
-                                .popular__block-label Дифференцированный блабла (подсчет лейкоцитов, лейкоцитограмма, патологич...
-                                .popular__block-time
-                                    img(src="assets/images/clock.svg", alt="icon")
-                                    p 1 рабочий день
-                                .popular__block-home
-                                    img(src="assets/images/home.svg", alt="icon")
-                                    p Можно сдать дома
-                                .popular__block-bottom
-                                    .popular__block-price 90 000 ₽
-                                    .popular__block-btn.button-style.button-style--fill-orange.add_basket В корзину
-
-                            .popular__block.swiper-slide
-                                .popular__block-code Код № 25
-                                .popular__block-label Дифференцированный блабла (подсчет лейкоцитов, лейкоцитограмма, патологич...
-                                .popular__block-time
-                                    img(src="assets/images/clock.svg", alt="icon")
-                                    p 1 рабочий день
-                                .popular__block-home
-                                    img(src="assets/images/home.svg", alt="icon")
-                                    p Можно сдать дома
-                                .popular__block-bottom
-                                    .popular__block-price 90 000 ₽
                                     .popular__block-btn.button-style.button-style--fill-orange.add_basket В корзину
 
                             .popular__block.swiper-slide
@@ -533,7 +438,7 @@ block main
                             .proposal__item-title Тест на антитела к короновирусу<br>800 ₽
                             .proposal__item-text Lorem ipsum dolor sit amet consectetur. Auctor in neque viverra gravida enim
                             .button-style.button-style--fill-white Записаться
-                        
+
                         .proposal__item.swiper-slide
                             .proposal__item-bg
                                 img(src="assets/images/proposal-2.jpg", alt="img")
@@ -556,7 +461,7 @@ block main
             .faq
 
                 h2.faq__title.title Часто задаваемые вопросы
-                
+
                 .faq__wrapper
 
                     .faq__item
@@ -616,7 +521,7 @@ block main
         .container
 
             .subscribe
-                
+
                 .subscribe__title.title Подпишитесь на&nbsp;нашу&nbsp;рассылку
 
                 .subscribe__wrapper

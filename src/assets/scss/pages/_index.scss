@@ -3,7 +3,7 @@
 }
 
 .section-banner .container {
-    
+
     @include breakpointMax(md) {
         padding: 0;
     }
@@ -107,7 +107,7 @@
         font-size: 22px;
         max-width: 195px;
     }
-    
+
     @include breakpoint(xl) {
         font-size: 24px;
         max-width: 225px;
@@ -236,7 +236,7 @@
     position: relative;
     border-radius: 12px;
     overflow: hidden;
-    
+
     @include breakpoint(md) {
         margin-top: 0;
         padding: 20px 25px;
@@ -724,7 +724,7 @@
 }
 
 .services__banner-text p {
-    
+
     @include breakpointMax(md) {
         display: inline;
     }
@@ -912,7 +912,7 @@
     @include breakpoint(lg) {
         width: calc(100% / 12 * 6 + 10px);
     }
-    
+
     @include breakpoint(xl) {
         width: 585px;
     }
@@ -995,7 +995,7 @@
 }
 
 .advantages__desc {
-    
+
     @include breakpointMax(md) {
         margin-left: 12px;
     }
@@ -1236,7 +1236,7 @@
     }
 }
 
-.section-map {
+.main-page .section-map {
     padding-bottom: 0;
 }
 
@@ -1294,7 +1294,7 @@
     left: 12px;
     width: calc(100% - 24px);
     z-index: 1;
-    
+
     @include breakpoint(md) {
         top: 32px;
         left: 52px;
@@ -1352,7 +1352,7 @@
 }
 
 .section-seo {
-    
+
     @include breakpointMax(md) {
         display: none;
     }
@@ -1399,7 +1399,7 @@
 }
 
 .section-subscribe .container {
-    
+
     @include breakpointMax(md) {
         padding: 0;
     }
