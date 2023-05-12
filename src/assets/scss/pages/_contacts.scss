@@ -1,0 +1,299 @@
+.section-contacts {
+    padding-top: 0;
+}
+
+.contacts__aside {
+    padding: 12px;
+    background: #F8F8F8;
+    border-radius: 12px;
+
+    @include breakpoint(md) {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.contacts__aside-title {
+    margin-bottom: 6px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.contacts__aside-text {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.contacts__aside-btn {
+    margin-top: 30px;
+    padding: 14px 30px;
+    display: inline-block;
+
+    @include breakpoint(md) {
+        margin-top: 0;
+    }
+}
+
+.contacts__left {
+    margin-top: 20px;
+}
+
+.contacts__left-login {
+    padding: 12px 16px;
+    background: #F8F8F8;
+    font-size: 16px;
+    line-height: 150%;
+    border-radius: 12px;
+}
+
+.contacts__left-login a {
+    font-weight: 700;
+    color: $green;
+}
+
+.contacts__tab {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contacts__tab-btn {
+    padding: 15px;
+    background: #F8F8F8;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    border-radius: 41px;
+    transition: all .3s ease;
+    user-select: none;
+    cursor: pointer;
+}
+
+.contacts__tab-btn ~ .contacts__tab-btn {
+    margin-left: 20px;
+}
+
+.contacts__tab-btn::before {
+    content: '';
+    margin-right: 8px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.contacts__tab-btn.list::before {
+    background: url('../images/view-list.svg') no-repeat;
+}
+
+.contacts__tab-btn.map::before {
+    background: url('../images/location-marker.svg') no-repeat;
+}
+
+.contacts__tab-btn.active {
+    background: $green;
+    color: #fff;
+}
+
+.contacts__tab-btn.active::before {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(1047%) hue-rotate(249deg) brightness(124%) contrast(100%);
+}
+
+.contacts__offices {
+    margin-top: 20px;
+}
+
+.contacts__select {
+    margin-top: 16px;
+}
+
+.contacts__select {
+    background: #FFFFFF;
+    position: relative;
+    border: 1px solid #E1E1E1;
+    border-radius: 52px;
+    user-select: none;
+}
+
+.contacts__select.active {
+    border-color: transparent;
+}
+
+.contacts__select-value {
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 150%;
+    color: $gray;
+    cursor: pointer;
+
+    @include breakpoint(md) {
+        padding: 18px 32px;
+    }
+}
+
+.contacts__select-value::after {
+    content: '';
+    background: url('../images/chevron-down.svg') no-repeat;
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    z-index: 2;
+    transition: all .3s ease;
+
+    .contacts__select.active & {
+        transform: rotate(180deg);
+    }
+}
+
+.contacts__select-variant {
+    padding: 18px 32px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+
+    .contacts__select.active & {
+        position: absolute;
+        top: 0;
+        display: flex;
+        border: 1px solid #e1e1e1;
+        border-radius: 24px;
+        z-index: 1;
+    }
+}
+
+.contacts__select-option {
+    cursor: pointer;
+}
+
+.contacts__select-option ~ .contacts__select-option {
+    margin-top: 12px;
+}
+
+.contacts__select-option.active {
+    color: $green;
+}
+
+.contacts__list {
+    margin-top: 30px;
+    display: none;
+}
+
+.contacts__list.active {
+    display: block;
+}
+
+.contacts__block {
+    margin-bottom: 8px;
+    padding: 20px;
+    background: #F8F8F8;
+    border-radius: 12px;
+}
+
+.contacts__block:last-child {
+    margin-bottom: 0;
+}
+
+.contacts__block div {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.contacts__block div::before {
+    content: '';
+    margin-right: 10px;
+    background-position: center;
+    background-size: contain;
+    flex-shrink: 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+div.contacts__block-title {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+div.contacts__block-title::before {
+    content: none;
+}
+
+.contacts__block-metro::before {
+    background: url('../images/moscow-metro.svg') no-repeat;
+}
+
+.contacts__block-address::before {
+    background: url('../images/location-marker.svg') no-repeat;
+    filter: brightness(0) saturate(100%) invert(44%) sepia(100%) saturate(359%) hue-rotate(106deg) brightness(98%) contrast(101%);
+}
+
+.contacts__block-phone::before {
+    background: url('../images/phone.svg') no-repeat;
+    filter: brightness(0) saturate(100%) invert(44%) sepia(100%) saturate(359%) hue-rotate(106deg) brightness(98%) contrast(101%);
+}
+
+.contacts__block-mail::before {
+    background: url('../images/mail.svg') no-repeat;
+}
+
+.contacts__block-worktime::before {
+    background: url('../images/clock.svg') no-repeat;
+}
+
+.contacts__block-dayoff::before {
+    background: url('../images/clock.svg') no-repeat;
+    filter: brightness(0) saturate(100%) invert(40%) sepia(0%) saturate(0%) hue-rotate(164deg) brightness(98%) contrast(82%);
+}
+
+div.contacts__block-note::before {
+    content: none;
+}
+
+div.contacts__block-btn::before {
+    content: none;
+}
+
+.contacts__block-dayoff {
+    color: $dgray;
+}
+
+div.contacts__block-note {
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.contacts__block-note span {
+    margin-right: 5px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+div.contacts__block-btn {
+    margin-top: 25px;
+    margin-bottom: 0;
+    padding: 11px 22px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 17px;
+    color: $dgray;
+    border-color: $dgray;
+}

@@ -10,8 +10,41 @@
     padding-top: 0;
 }
 
+.back-to-desc {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: $green;
+
+    @include breakpoint(md) {
+        position: absolute;
+        top: 4px;
+        right: 20px;
+    }
+
+    @include breakpoint(lg) {
+        right: 32px;
+    }
+}
+
+.back-to-desc::before {
+    content: '';
+    margin-right: 8px;
+    background: url('../images/arrow-down.svg') no-repeat;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    transform: rotate(180deg);
+}
+
 .cat-inner {
-    width: calc(100% / 6 * 5);
+    
+    @include breakpoint(md) {
+        width: calc(100% / 6 * 5);
+    }
 
     @include breakpoint(lg) {
         display: flex;
@@ -33,6 +66,10 @@
     @include breakpoint(lg) {
         width: calc(100% / 12 * 4 - 10px);
     }
+
+    @include breakpoint(xl) {
+        width: 380px;
+    }
 }
 
 .cat__aside > div {
@@ -53,6 +90,10 @@
     background: #FFFFFF;
     border: 1px solid #E1E1E1;
     border-radius: 12px;
+
+    @include breakpoint(xl) {
+        padding: 20px 32px;
+    }
 }
 
 .cat__aside-wrap:not(:first-child) {
@@ -223,12 +264,22 @@
         margin-top: 0;
         width: calc(100% / 12 * 8 - 10px);
     }
+
+    @include breakpoint(xl) {
+        width: 790px;
+    }
 }
 
 .cat__tabs {
     position: relative;
     user-select: none;
     z-index: 1;
+
+    @include breakpoint(lg) {
+        background: #F8F8F8;
+        max-width: 568px;
+        border-radius: 51px;
+    }
 }
 
 .cat__tabs-select {
@@ -277,7 +328,12 @@
     width: 100%;
 
     @include breakpoint(lg) {
+        padding: 6px;
+        background: unset;
+        position: static;
         display: flex;
+        align-items: center;
+        flex-direction: row;
     }
 
     .cat__tabs.active & {
@@ -295,6 +351,18 @@
     font-size: 16px;
     line-height: 150%;
     cursor: pointer;
+
+    @include breakpoint(lg) {
+        margin-top: 0;
+        padding: 12px 27px;
+        width: calc(100% / 3);
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        border-radius: 33px;
+        transition: all .3s ease;
+    }
 }
 
 .cat__tabs-btn:first-child {
@@ -303,11 +371,20 @@
 
 .cat__tabs-btn.active {
     color: $green;
+
+    @include breakpoint(md) {
+        background: $green;
+        color: #fff;
+    }
 }
 
 .cat__content {
     margin-top: 30px;
     display: none;
+
+    @include breakpoint(md) {
+        margin-top: 40px;
+    }
 }
 
 .cat__content.active {
@@ -319,6 +396,10 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 120%;
+
+    @include breakpoint(xl) {
+        font-size: 20px;
+    }
 }
 
 .cat__content h3 {
@@ -326,6 +407,10 @@
     font-weight: 700;
     font-size: 22px;
     line-height: 120%;
+
+    @include breakpoint(xl) {
+        font-size: 24px;
+    }
 }
 
 .cat__content p {

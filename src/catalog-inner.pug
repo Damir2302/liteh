@@ -11,7 +11,7 @@ block main
     include components/_breadcrumbs
     +breadcrumbs('Анализы и цены', 'Название категории', 'Анализ ВИЧ 1-2 АГ / АТ (hiv ag / ab combo) (ихла)')
 
-    section.section-catalog-inner
+    section.section-catalog-inner#section-desc
 
         .container
 
@@ -53,7 +53,8 @@ block main
                                 .cat__aside-download
                                     a(href="#") Скачать примеры результатов
                             
-                        .cat__aside-find-office Найти ближайший медицинский офис
+                        .cat__aside-find-office
+                            a.js-anchor(href="#section-map") Найти ближайший медицинский офис
 
                 .cat__main
 
@@ -64,7 +65,7 @@ block main
                             .cat__tabs-btn(data-selected=2) Подготовка
                             .cat__tabs-btn(data-selected=3) Расшифровка
                     
-                    .cat__content.active(data-active=1)
+                    .cat__content.animate__animated.animate__fadeIn.active(data-active=1)
 
                         h4 Исследуемый материал
                         p Кровь из вены
@@ -375,9 +376,12 @@ block main
                         .advantages__desc-title Ценности заложенные при открытии
                         .advantages__desc-text Качество важнее количества
 
-    section.section-map
+    section.section-map#section-map
 
         .container
+
+            .back-to-desc
+                a.js-anchor(href="#section-desc") Вернуться к описанию анализа
 
             h2.map__title.title Адреса медицинских офисов
 
