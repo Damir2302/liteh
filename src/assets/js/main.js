@@ -45,8 +45,8 @@ $(document).ready(function() {
         $('.contacts__tab-btn').removeClass('active')
         $(this).addClass('active')
 
-        $('.contacts__list').removeClass('active')
-        $(`.contacts__list[data-active=${$(this).attr('data-show')}]`).addClass('active')
+        $('.contacts__section').removeClass('active')
+        $(`.contacts__section[data-active=${$(this).attr('data-show')}]`).addClass('active')
     })
     
     // FOOTER TAB

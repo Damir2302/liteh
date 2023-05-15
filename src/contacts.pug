@@ -34,92 +34,107 @@ block main
                     
                     .contacts__offices 50 отделений
 
-                    .contacts__select
-                        .contacts__select-value Выбрать медицинский офис
-                        .contacts__select-variant
-                            .contacts__select-option Офис «Фрунзенская»
-                            .contacts__select-option Офис «Фрунзенская»
-                            .contacts__select-option Офис «Фрунзенская»
-                            .contacts__select-option Офис «Фрунзенская»
-                            .contacts__select-option Офис «Фрунзенская»
-                            .contacts__select-option Офис «Фрунзенская»
+                    .contacts__select.select-custom
+                        .select-value Выбрать медицинский офис
+                        .select-variants.animate__animated.animate__fadeIn.animate__faster
+                            .select-option Офис «Фрунзенская»
+                            .select-option Офис «Маяковская»
+                            .select-option Офис «Багратионовская»
+                            .select-option Офис «Мичуринский проспект»
+                            .select-option Офис «Электрозаводская»
+                            .select-option Офис «Перово»
             
-            .contacts__list.animate__animated.animate__fadeIn.active(data-active=1)
+            .contacts__section.animate__animated.animate__fadeIn.active(data-active=1)
 
-                .contacts__block
-                    .contacts__block-title Офис «Фрунзенская»
-                    .contacts__block-metro Фрунзенская
-                    .contacts__block-address г. Москва, ул. Малая Пироговская, дом 1А
-                    .contacts__block-phone +7 (499) 245-92-00
-                    .contacts__block-phone +7 (967) 119-73-44
-                    .contacts__block-mail operator.frunzenskaya@analyz24.ru
-                    .contacts__block-worktime ПН-ПТ: 8:00 - 19:00
-                    .contacts__block-worktime СБ: 10:00 - 16:00
-                    .contacts__block-dayoff ВС: выходной
-                    .contacts__block-note <span>!</span> Сокращённый график работы 8:00 -14:00
-                    .contacts__block-btn.button-style Подробнее
-                
-                .contacts__block
-                    .contacts__block-title Офис «Фрунзенская»
-                    .contacts__block-address г. Москва, ул. Малая Пироговская, дом 1А
-                    .contacts__block-phone +7 (499) 245-92-00
-                    .contacts__block-phone +7 (967) 119-73-44
-                    .contacts__block-mail operator.frunzenskaya@analyz24.ru
-                    .contacts__block-worktime ПН-ПТ: 8:00 - 19:00
-                    .contacts__block-worktime СБ: 10:00 - 16:00
-                    .contacts__block-dayoff ВС: выходной
-                    .contacts__block-note <span>!</span> Сокращённый график работы 8:00 -14:00
-                    .contacts__block-btn.button-style Подробнее
-                
-                .contacts__block
-                    .contacts__block-title Офис «Фрунзенская»
-                    .contacts__block-address г. Москва, ул. Малая Пироговская, дом 1А
-                    .contacts__block-phone +7 (499) 245-92-00
-                    .contacts__block-phone +7 (967) 119-73-44
-                    .contacts__block-mail operator.frunzenskaya@analyz24.ru
-                    .contacts__block-worktime ПН-ПТ: 8:00 - 19:00
-                    .contacts__block-worktime СБ: 10:00 - 16:00
-                    .contacts__block-dayoff ВС: выходной
-                    .contacts__block-note <span>!</span> Сокращённый график работы 8:00 -14:00
-                    .contacts__block-btn.button-style Подробнее
-                
-                .contacts__block
-                    .contacts__block-title Офис «Фрунзенская»
-                    .contacts__block-address г. Москва, ул. Малая Пироговская, дом 1А
-                    .contacts__block-phone +7 (499) 245-92-00
-                    .contacts__block-phone +7 (967) 119-73-44
-                    .contacts__block-mail operator.frunzenskaya@analyz24.ru
-                    .contacts__block-worktime ПН-ПТ: 8:00 - 19:00
-                    .contacts__block-worktime СБ: 10:00 - 16:00
-                    .contacts__block-dayoff ВС: выходной
-                    .contacts__block-note <span>!</span> Сокращённый график работы 8:00 -14:00
-                    .contacts__block-btn.button-style Подробнее
-                
-                .contacts__block
-                    .contacts__block-title Офис «Фрунзенская»
-                    .contacts__block-address г. Москва, ул. Малая Пироговская, дом 1А
-                    .contacts__block-phone +7 (499) 245-92-00
-                    .contacts__block-phone +7 (967) 119-73-44
-                    .contacts__block-mail operator.frunzenskaya@analyz24.ru
-                    .contacts__block-worktime ПН-ПТ: 8:00 - 19:00
-                    .contacts__block-worktime СБ: 10:00 - 16:00
-                    .contacts__block-dayoff ВС: выходной
-                    .contacts__block-note <span>!</span> Сокращённый график работы 8:00 -14:00
-                    .contacts__block-btn.button-style Подробнее
-                
-                .contacts__block
-                    .contacts__block-title Офис «Фрунзенская»
-                    .contacts__block-address г. Москва, ул. Малая Пироговская, дом 1А
-                    .contacts__block-phone +7 (499) 245-92-00
-                    .contacts__block-phone +7 (967) 119-73-44
-                    .contacts__block-mail operator.frunzenskaya@analyz24.ru
-                    .contacts__block-worktime ПН-ПТ: 8:00 - 19:00
-                    .contacts__block-worktime СБ: 10:00 - 16:00
-                    .contacts__block-dayoff ВС: выходной
-                    .contacts__block-note <span>!</span> Сокращённый график работы 8:00 -14:00
-                    .contacts__block-btn.button-style Подробнее
+                .contacts__list
 
-            .contacts__list.animate__animated.animate__fadeIn(data-active=2)
+                    .contacts__block
+                        .contacts__block-title Офис «Фрунзенская»
+                        .contacts__block-metro Фрунзенская
+                        .contacts__block-address г. Москва, ул. Малая Пироговская, дом 1А
+                        .contacts__block-phone +7 (499) 245-92-00
+                        .contacts__block-phone +7 (967) 119-73-44
+                        .contacts__block-mail operator.frunzenskaya@analyz24.ru
+                        .contacts__block-worktime ПН-ПТ: 8:00 - 19:00
+                        .contacts__block-worktime СБ: 10:00 - 16:00
+                        .contacts__block-dayoff ВС: выходной
+                        .contacts__block-note <span>!</span> Сокращённый график работы<br>8:00 -14:00
+                        .contacts__block-btn.button-style
+                            a(href="#") Подробнее
+                    
+                    .contacts__block
+                        .contacts__block-title Офис «Маяковская»
+                        .contacts__block-metro Маяковская
+                        .contacts__block-address г. Москва, ул. Малая Пироговская, дом 1А
+                        .contacts__block-phone +7 (499) 245-92-00
+                        .contacts__block-phone +7 (967) 119-73-44
+                        .contacts__block-mail operator.frunzenskaya@analyz24.ru
+                        .contacts__block-worktime ПН-ПТ: 8:00 - 19:00
+                        .contacts__block-worktime СБ: 10:00 - 16:00
+                        .contacts__block-dayoff ВС: выходной
+                        .contacts__block-note <span>!</span> Сокращённый график работы<br>8:00 -14:00
+                        .contacts__block-btn.button-style
+                            a(href="#") Подробнее
+                    
+                    .contacts__block
+                        .contacts__block-title Офис «Багратионовская»
+                        .contacts__block-metro Багратионовская
+                        .contacts__block-address г. Москва, ул. Малая Пироговская, дом 1А
+                        .contacts__block-phone +7 (499) 245-92-00
+                        .contacts__block-phone +7 (967) 119-73-44
+                        .contacts__block-mail operator.frunzenskaya@analyz24.ru
+                        .contacts__block-worktime ПН-ПТ: 8:00 - 19:00
+                        .contacts__block-worktime СБ: 10:00 - 16:00
+                        .contacts__block-dayoff ВС: выходной
+                        .contacts__block-note <span>!</span> Сокращённый график работы<br>8:00 -14:00
+                        .contacts__block-btn.button-style
+                            a(href="#") Подробнее
+                    
+                    .contacts__block
+                        .contacts__block-title Офис «Мичуринский проспект»
+                        .contacts__block-metro Мичуринский проспект
+                        .contacts__block-address г. Москва, ул. Малая Пироговская, дом 1А
+                        .contacts__block-phone +7 (499) 245-92-00
+                        .contacts__block-phone +7 (967) 119-73-44
+                        .contacts__block-mail operator.frunzenskaya@analyz24.ru
+                        .contacts__block-worktime ПН-ПТ: 8:00 - 19:00
+                        .contacts__block-worktime СБ: 10:00 - 16:00
+                        .contacts__block-dayoff ВС: выходной
+                        .contacts__block-note <span>!</span> Сокращённый график работы<br>8:00 -14:00
+                        .contacts__block-btn.button-style
+                            a(href="#") Подробнее
+                    
+                    .contacts__block
+                        .contacts__block-title Офис «Электрозаводская»
+                        .contacts__block-metro Электрозаводская
+                        .contacts__block-address г. Москва, ул. Малая Пироговская, дом 1А
+                        .contacts__block-phone +7 (499) 245-92-00
+                        .contacts__block-phone +7 (967) 119-73-44
+                        .contacts__block-mail operator.frunzenskaya@analyz24.ru
+                        .contacts__block-worktime ПН-ПТ: 8:00 - 19:00
+                        .contacts__block-worktime СБ: 10:00 - 16:00
+                        .contacts__block-dayoff ВС: выходной
+                        .contacts__block-note <span>!</span> Сокращённый график работы<br>8:00 -14:00
+                        .contacts__block-btn.button-style
+                            a(href="#") Подробнее
+                    
+                    .contacts__block
+                        .contacts__block-title Офис «Перово»
+                        .contacts__block-metro Перово
+                        .contacts__block-address г. Москва, ул. Малая Пироговская, дом 1А
+                        .contacts__block-phone +7 (499) 245-92-00
+                        .contacts__block-phone +7 (967) 119-73-44
+                        .contacts__block-mail operator.frunzenskaya@analyz24.ru
+                        .contacts__block-worktime ПН-ПТ: 8:00 - 19:00
+                        .contacts__block-worktime СБ: 10:00 - 16:00
+                        .contacts__block-dayoff ВС: выходной
+                        .contacts__block-note <span>!</span> Сокращённый график работы<br>8:00 -14:00
+                        .contacts__block-btn.button-style
+                            a(href="#") Подробнее
+
+            .contacts__section.animate__animated.animate__fadeIn(data-active=2)
+                .contacts__map
+                    #map(style="width:100%; height:100%")
 
     section.section-subscribe
 

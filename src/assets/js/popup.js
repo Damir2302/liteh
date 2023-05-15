@@ -44,17 +44,17 @@ $(document).ready(function () {
     }
 
     // CONTACTS PAGE SELECT
-    $('.contacts__select-value').on('click', function() {
+    $('.select-value').on('click', function() {
         $(this).parent().toggleClass('active')
     })
 
-    $('.contacts__select-option').on('click', function() {
-        $('.contacts__select-option').removeClass('active')
+    $('.select-option').on('click', function() {
+        $('.select-option').removeClass('active')
         $(this).addClass('active')
 
-        $('.contacts__select-value').text($(this).text())
+        $('.select-value').text($(this).text())
 
-        $('.contacts__select').toggleClass('active')
+        $('.select-custom').toggleClass('active')
     })
 
 });

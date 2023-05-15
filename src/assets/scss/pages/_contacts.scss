@@ -2,6 +2,48 @@
     padding-top: 0;
 }
 
+.contacts__map {
+    width: 100%;
+    height: 600px;
+
+    @include breakpoint(md) {
+        height: 740px;
+    }
+}
+
+.contacts-map {
+    padding: 12px 16px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.contacts-map > div {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+[class*=balloon] {
+    border-radius: 8px;
+}
+
+[class$=balloon__content] * {
+    width: auto!important;
+    height: auto!important;
+}
+
+.contacts {
+
+    @include breakpoint(lg) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
 .contacts__aside {
     padding: 12px;
     background: #F8F8F8;
@@ -13,6 +55,18 @@
         align-items: center;
         justify-content: space-between;
     }
+
+    @include breakpoint(lg) {
+        padding: 30px 20px;
+        display: block;
+        width: calc(100% / 12 * 4 - 10px);
+    }
+
+    @include breakpoint(xl) {
+        padding: 30px 43px;
+        width: 380px;
+        text-align: center;
+    }
 }
 
 .contacts__aside-title {
@@ -20,6 +74,15 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 120%;
+
+    @include breakpoint(lg) {
+        margin-bottom: 9px;
+        font-size: 18px;
+    }
+
+    @include breakpoint(xl) {
+        font-size: 20px;
+    }
 }
 
 .contacts__aside-text {
@@ -35,10 +98,32 @@
     @include breakpoint(md) {
         margin-top: 0;
     }
+
+    @include breakpoint(lg) {
+        margin-top: 30px;
+        padding: 21px 37px;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    @include breakpoint(xl) {
+        padding: 21px 50px;
+    }
 }
 
 .contacts__left {
     margin-top: 20px;
+
+    @include breakpoint(lg) {
+        margin-top: 0;
+        width: calc(100% / 12 * 8 - 10px);
+        max-width: 552px;
+    }
+
+    @include breakpoint(xl) {
+        width: 790px;
+        max-width: unset;
+    }
 }
 
 .contacts__left-login {
@@ -47,6 +132,14 @@
     font-size: 16px;
     line-height: 150%;
     border-radius: 12px;
+
+    @include breakpoint(lg) {
+        padding: 20px 30px;
+    }
+
+    @include breakpoint(xl) {
+        max-width: 640px;
+    }
 }
 
 .contacts__left-login a {
@@ -58,6 +151,18 @@
     margin-top: 20px;
     display: flex;
     align-items: center;
+
+    @include breakpoint(md) {
+        margin-top: 24px;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 28px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 32px;
+    }
 }
 
 .contacts__tab-btn {
@@ -105,105 +210,83 @@
 
 .contacts__offices {
     margin-top: 20px;
-}
 
-.contacts__select {
-    margin-top: 16px;
-}
-
-.contacts__select {
-    background: #FFFFFF;
-    position: relative;
-    border: 1px solid #E1E1E1;
-    border-radius: 52px;
-    user-select: none;
-}
-
-.contacts__select.active {
-    border-color: transparent;
-}
-
-.contacts__select-value {
-    padding: 18px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 16px;
-    line-height: 150%;
-    color: $gray;
-    cursor: pointer;
-
-    @include breakpoint(md) {
-        padding: 18px 32px;
+    @include breakpoint(xl) {
+        margin-top: 25px;
     }
 }
 
-.contacts__select-value::after {
-    content: '';
-    background: url('../images/chevron-down.svg') no-repeat;
-    position: relative;
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    z-index: 2;
-    transition: all .3s ease;
-
-    .contacts__select.active & {
-        transform: rotate(180deg);
-    }
-}
-
-.contacts__select-variant {
-    padding: 18px 32px;
-    background: #fff;
-    position: absolute;
-    left: 0;
-    top: 0;
+.contacts__section {
+    margin-top: 30px;
     display: none;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100%;
 
-    .contacts__select.active & {
-        position: absolute;
-        top: 0;
-        display: flex;
-        border: 1px solid #e1e1e1;
-        border-radius: 24px;
-        z-index: 1;
+    @include breakpoint(lg) {
+        margin-top: 40px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 50px;
     }
 }
 
-.contacts__select-option {
-    cursor: pointer;
-}
-
-.contacts__select-option ~ .contacts__select-option {
-    margin-top: 12px;
-}
-
-.contacts__select-option.active {
-    color: $green;
+.contacts__section.active {
+    display: block;
 }
 
 .contacts__list {
-    margin-top: 30px;
-    display: none;
-}
 
-.contacts__list.active {
-    display: block;
+    @include breakpoint(md) {
+        margin-bottom: -16px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    @include breakpoint(lg) {
+        margin-bottom: -20px;
+        margin-left: -20px;
+        justify-content: unset;
+    }
+
+    @include breakpoint(xl) {
+        margin-bottom: -30px;
+        margin-left: -30px;
+    }
 }
 
 .contacts__block {
     margin-bottom: 8px;
     padding: 20px;
     background: #F8F8F8;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
     border-radius: 12px;
+
+    @include breakpoint(md) {
+        margin-bottom: 16px;
+        width: calc(50% - 8px);
+    }
+
+    @include breakpoint(lg) {
+        margin-bottom: 20px;
+        margin-left: 20px;
+        width: calc(100% / 3 - 20px);
+    }
+
+    @include breakpoint(xl) {
+        margin-bottom: 30px;
+        margin-left: 30px;
+        padding: 30px;
+        width: calc(100% / 3 - 30px);
+    }
 }
 
 .contacts__block:last-child {
-    margin-bottom: 0;
+    
+    @include breakpointMax(md) {
+        margin-bottom: 0;
+    }
 }
 
 .contacts__block div {
@@ -214,7 +297,8 @@
     line-height: 150%;
 }
 
-.contacts__block div::before {
+.contacts__block div::before,
+.contacts-map div::before {
     content: '';
     margin-right: 10px;
     background-position: center;
@@ -230,6 +314,10 @@ div.contacts__block-title {
     font-weight: 700;
     font-size: 16px;
     line-height: 150%;
+}
+
+.contacts__block-metro {
+    font-weight: 700;
 }
 
 div.contacts__block-title::before {
@@ -276,7 +364,7 @@ div.contacts__block-btn::before {
 }
 
 div.contacts__block-note {
-    margin-bottom: 0;
+    margin-bottom: 25px;
     font-weight: 700;
 }
 
@@ -288,7 +376,7 @@ div.contacts__block-note {
 }
 
 div.contacts__block-btn {
-    margin-top: 25px;
+    margin-top: auto;
     margin-bottom: 0;
     padding: 11px 22px;
     display: inline-block;

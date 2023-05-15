@@ -1240,21 +1240,6 @@
     padding-bottom: 0;
 }
 
-.section-map .cluster {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 150%;
-    color: #fff;
-
-    @include breakpoint(md) {
-        font-size: 18px;
-    }
-}
-
 .map__wrapper {
     position: relative;
     height: 600px;
