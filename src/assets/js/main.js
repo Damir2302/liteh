@@ -31,7 +31,6 @@ $(document).ready(function() {
     // CATALOG ASIDE
     $('.catalog__menu-title').on('click', function() {
         $(this).parent().toggleClass('expanded')
-        $(this).parent().find('.catalog__list').slideToggle()
     })
 
     // SALES ANALYZES
@@ -47,6 +46,15 @@ $(document).ready(function() {
 
         $('.contacts__section').removeClass('active')
         $(`.contacts__section[data-active=${$(this).attr('data-show')}]`).addClass('active')
+    })
+
+    // SELECT PREPARATION
+    $('.select-option[data-show]').on('click', function() {
+        $('.select-option').removeClass('active')
+        $(this).addClass('active')
+
+        $('.preparation__content').removeClass('active')
+        $(`.preparation__content[data-active=${$(this).attr('data-show')}]`).addClass('active')
     })
     
     // FOOTER TAB

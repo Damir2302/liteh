@@ -282,10 +282,22 @@ section {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
+  &.left {
+    transform: rotate(180deg);
+  }
 }
 
 .pagination__arrow.disabled {
   background: #F8F8F8;
+
+  &.left {
+    transform: unset;
+  }
+
+  &.right {
+    transform: rotate(180deg);
+  }
 }
 
 .pagination__arrow img {
@@ -381,6 +393,10 @@ section {
   @include breakpoint(md) {
       padding: 18px 32px;
   }
+}
+
+.select-custom:has(.active) .select-value {
+  color: $black;
 }
 
 .select-value::after {

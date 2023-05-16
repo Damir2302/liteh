@@ -124,6 +124,38 @@ $(document).ready(function() {
         }
     })
 
+    // GALLERY SLIDER
+    var gallerySlider = new Swiper(`.gallery .swiper`, {
+        slidesPerView: 1.2,
+        spaceBetween: 8,
+        freeMode: true,
+
+        navigation: {
+            nextEl: `.gallery .slider-nav-next`,
+            prevEl: `.gallery .slider-nav-prev`,
+        },
+
+        breakpoints: {
+            744: {
+                slidesPerView: 3,
+                spaceBetween: 16,
+                freeMode: false
+            },
+
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                freeMode: false
+            },
+
+            1260: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                freeMode: false
+            }
+        }
+    })
+
     // FOOTER TAB
     let footerTabSlider;
     let footerTabSliderInit;

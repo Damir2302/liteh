@@ -207,7 +207,13 @@
 
 .catalog__list {
     padding-left: 32px;
-    display: none;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all .5s ease;
+
+    .catalog__menu-item.expanded & {
+        max-height: 2000px;
+    }
 }
 
 .catalog__list-item {

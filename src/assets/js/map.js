@@ -243,5 +243,35 @@ $(document).ready(function() {
         addYaMaps();
     }
 
+    if ($("#office_map").length) {
+
+        function addOfficeMap() {
+            var officeMap;
+            ymaps.ready(init);
+
+            function init() {
+                officeMap = new ymaps.Map('office_map', {
+                    center: [55.738294, 37.627584],
+                    zoom: 10,
+                    controls: []
+                }),
+
+                placemark = new ymaps.Placemark([55.738294, 37.627584], {}, {
+                    iconLayout: 'default#image',
+                    iconImageHref: 'assets/images/map-pin-orange.svg',
+                    iconImageSize: pointSize,
+                    iconImageOffset: [-37, -45],
+                    balloonOffset: [-25, -5]
+                });
+                
+                officeMap.geoObjects.add(placemark);
+
+                ymapsTouchScroll(officeMap, {preventScroll: true, preventTouch: true});
+            }
+        }
+
+        addOfficeMap();
+    }
+
 })
 

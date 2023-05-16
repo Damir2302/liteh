@@ -4,13 +4,13 @@ $(document).ready(function () {
     $("html").on("click", function (e) {
         if (
             !$(e.target).closest(".cat__tabs").length &&
-            !$(e.target).closest(".contacts__select").length
+            !$(e.target).closest(".select-custom").length
         ) {
             $("body").removeClass("overflow-hidden")
             $('#page').removeClass('bg-overlay')
 
             $('.cat__tabs').removeClass('active')
-            $('.contacts__select').removeClass('active')
+            $('.select-custom').removeClass('active')
         }
     });
 

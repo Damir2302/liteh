@@ -1,3 +1,135 @@
 .section-preparation {
     padding-top: 0;
 }
+
+.preparation {
+
+    @include breakpoint(md) {
+        max-width: calc(100% / 6 * 5 - 40px);
+    }
+
+    @include breakpoint(xl) {
+        max-width: 790px;
+    }
+}
+
+.preparation p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.preparation p:first-child {
+    font-size: 18px;
+
+    @include breakpoint(xl) {
+        font-size: 20px;
+    }
+}
+
+.preparation h3 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+
+    @include breakpoint(md) {
+        margin-bottom: 16px;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 28px;
+        margin-bottom: 24px;
+        font-size: 22px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 40px;
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+}
+
+.preparation h4 {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+
+    @include breakpoint(lg) {
+        margin-bottom: 12px;
+        font-size: 18px;
+    }
+
+    @include breakpoint(xl) {
+        margin-bottom: 16px;
+        font-size: 20px;
+    }
+}
+
+.preparation ul {
+    margin-bottom: 20px;
+}
+
+.preparation ul li {
+    display: flex;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.preparation ul li ~ li {
+    margin-top: 10px;
+}
+
+.preparation ul li::before {
+    content: '';
+    margin-right: 8px;
+    background: $green;
+    flex-shrink: 0;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    transform: translateY(6px);
+}
+
+.preparation ul li ul li {
+    margin-top: 12px;
+}
+
+.preparation ul li ul li::before {
+    width: 4px;
+    height: 4px;
+    transform: translateY(10px);
+}
+
+.preparation__select-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.preparation__select {
+    margin-bottom: 20px;
+
+    @include breakpoint(md) {
+        margin-bottom: 24px;
+    }
+
+    @include breakpoint(lg) {
+        margin-bottom: 28px;
+    }
+
+    @include breakpoint(xl) {
+        margin-bottom: 30px;
+    }
+}
+
+.preparation__content {
+    display: none;
+}
+
+.preparation__content.active {
+    display: block;
+}

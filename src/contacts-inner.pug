@@ -1,0 +1,182 @@
+---
+title: Литех | Медицинские анализы в Москве возле метро Фрунзенская, ул. Малая Пироговская, дом 1А
+bodyClass: contacts-inner-page
+yandexMap: true
+---
+
+extends includes/_page
+
+block main
+
+    include components/_breadcrumbs
+    +breadcrumbs('Контакты', 'Название офиса')
+
+    section.section-contacts-map
+
+        .container
+
+            h1.c-map__title.title Медицинские анализы в Москве возле <span>метро Фрунзенская</span>, ул. Малая Пироговская, дом 1А
+
+            .c-map
+
+                .c-map__contacts
+                    h3.c-map__contacts-title Контакты
+                    
+                    .contacts__block
+                        .contacts__block-metro Фрунзенская
+                        .contacts__block-address г. Москва, ул. Малая Пироговская, дом 1А
+                        .contacts__block-phone +7 (499) 245-92-00
+                        .contacts__block-phone +7 (967) 119-73-44
+                        .contacts__block-mail operator.frunzenskaya@analyz24.ru
+                    
+                    .c-map__contacts-worktime
+                        a.js-anchor(href="#") График работы мед. офиса
+
+                .contacts-map__office-map
+                    #office_map(style="width:100%;height:100%")
+
+    section.section-gallery
+
+        .container
+
+            .gallery
+
+                .swiper
+
+                    .swiper-wrapper
+
+                        .gallery__image.swiper-slide(data-src="assets/images/img1.png" data-fancybox)
+                            img(src="assets/images/img1.png", alt="img")
+                        .gallery__image.swiper-slide(data-src="assets/images/img2.png" data-fancybox)
+                            img(src="assets/images/img2.png", alt="img")
+                        .gallery__image.swiper-slide(data-src="assets/images/img3.png" data-fancybox)
+                            img(src="assets/images/img3.png", alt="img")
+                        .gallery__image.swiper-slide(data-src="assets/images/img1.png" data-fancybox)
+                            img(src="assets/images/img1.png", alt="img")
+                        .gallery__image.swiper-slide(data-src="assets/images/img2.png" data-fancybox)
+                            img(src="assets/images/img2.png", alt="img")
+                        .gallery__image.swiper-slide(data-src="assets/images/img3.png" data-fancybox)
+                            img(src="assets/images/img3.png", alt="img")
+
+                .slider-navigation
+                    .slider-nav.slider-nav-prev
+                        img(src="assets/images/chevron-right-white.svg", alt="icon")
+                        img.disabled(src="assets/images/chevron-left-gray.svg", alt="icon")
+                    .slider-nav.slider-nav-next
+                        img(src="assets/images/chevron-right-white.svg", alt="icon")
+                        img.disabled(src="assets/images/chevron-left-gray.svg", alt="icon")
+
+    section.section-proposal
+
+        .container
+
+            h2.proposal__title.title Акции и спецпредложения офиса
+
+            .proposal
+
+                .swiper
+
+                    .swiper-wrapper
+
+                        .proposal__item.swiper-slide
+                            .proposal__item-bg
+                                img(src="assets/images/proposal-1.jpg", alt="img")
+                            .proposal__item-title Сдать анализы на дому
+                            .proposal__item-text Выезд по Москве в пределах МКАД бесплатно при заказе от&nbsp;1500₽
+                            .button-style.button-style--fill-white Подробнее
+
+                        .proposal__item.swiper-slide
+                            .proposal__item-bg
+                                img(src="assets/images/proposal-2.jpg", alt="img")
+                            .proposal__item-title При заказе онлайн<br>Скидка 5%
+                            .proposal__item-text Для постоянных и новых пациентов!
+                            .button-style.button-style--fill-white В каталог
+
+                        .proposal__item.swiper-slide
+                            .proposal__item-bg
+                                img(src="assets/images/proposal-3.jpg", alt="img")
+                            .proposal__item-title Тест на антитела к короновирусу<br>800 ₽
+                            .proposal__item-text Lorem ipsum dolor sit amet consectetur. Auctor in neque viverra gravida enim
+                            .button-style.button-style--fill-white Записаться
+
+                        .proposal__item.swiper-slide
+                            .proposal__item-bg
+                                img(src="assets/images/proposal-2.jpg", alt="img")
+                            .proposal__item-title При заказе онлайн<br>Скидка 5%
+                            .proposal__item-text Для постоянных и новых пациентов!
+                            .button-style.button-style--fill-white В каталог
+
+                .slider-navigation
+                    .slider-nav.slider-nav-prev
+                        img(src="assets/images/chevron-right-white.svg", alt="icon")
+                        img.disabled(src="assets/images/chevron-left-gray.svg", alt="icon")
+                    .slider-nav.slider-nav-next
+                        img(src="assets/images/chevron-right-white.svg", alt="icon")
+                        img.disabled(src="assets/images/chevron-left-gray.svg", alt="icon")
+
+    section.section-info
+
+        .container
+
+            h2.s-info__title Сведения о юридическом лице
+
+            .info
+
+                .info__wrap
+
+                    .info__item
+                        p
+                            b Офис «Фрунзенская»
+                        p
+                            b ООО "Литех-Диагностика"
+                    
+                    .info__item
+                        p
+                            b Лицензия
+                        p ЛО-77-01-006579
+
+                    .info__item
+                        p
+                            b Юридический адрес
+                        p 107023 г. Москва, ул. Малая Семеновская д. 3А стр. 2
+                    
+                    .info__item
+                        p
+                            b Дата начала действия лицензии:
+                        p 23.08.2013 г.
+                    
+                    .info__item
+                        p
+                            b Фактический адрес
+                        p г. Москва, ул. Малая Пироговская, дом 1А
+
+                    .info__item
+                        p
+                            b Лицензирующий орган:
+                        p Департамент здравоохранения г. Москвы
+                
+                .info__text
+                    p Сеть «Литех» имеет более 20 представительств на территории России. Для проживающих в ЦАО столицы в шаговой доступности имеется медицинский офис на ул. Малая Пироговская, 1а (5 мин ходьбы от метро Фрунзенская). Лаборатория принимает анализы мочи и крови (общий клинический, билирубин, пролактин и т.д.), а также проводит различные исследования.
+                      br
+                      br
+                      |Чтобы сдать анализы, запишитесь в лабораторию на Фрунзенской в любое удобное для Вас время, позвонив по телефону +7 (967) 119-73-44. Также вы можете выбрать другой медицинский офис из списка адресов в разделе «Контакты». Для получения дополнительной информации позвоните по бесплатному номеру горячей линии 8-800-700-45-82.
+
+    section.section-subscribe
+
+        .container
+
+            .subscribe
+
+                .subscribe__title.title Подпишитесь на&nbsp;нашу&nbsp;рассылку
+
+                .subscribe__wrapper
+
+                    form
+
+                        .subscribe__input
+                            input#email(type="email", name="email" placeholder="Ваш e-mail")
+                            button.button-style.button-style--fill-orange(type="submit") Подписаться
+
+                    .subscribe__agreement
+                        img(src="assets/images/check-square.svg", alt="icon")
+                        p Даю согласие на обработку персональных данных
