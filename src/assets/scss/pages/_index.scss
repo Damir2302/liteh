@@ -438,7 +438,10 @@
 .popular__block {
     padding: 20px;
     background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
     width: auto;
+    height: auto;
     border: 1px solid #E1E1E1;
     border-radius: 12px;
 }
@@ -478,13 +481,17 @@
     color: $gray;
 }
 
+.popular__block-home {
+    margin-bottom: 20px;
+}
+
 .popular__block-time p,
 .popular__block-home p {
     margin-left: 8px;
 }
 
 .popular__block-bottom {
-    margin-top: 20px;
+    margin-top: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -771,7 +778,7 @@
 .services__banner-img {
     position: absolute;
     right: -24px;
-    bottom: -10px;
+    bottom: -1px;
     width: 378px;
     height: 253px;
 
@@ -786,7 +793,6 @@
     }
 
     @include breakpoint(xl) {
-        bottom: -22px;
         width: 784px;
         height: 522px;
     }
@@ -798,7 +804,7 @@
     display: block;
     position: absolute;
     left: 0;
-    bottom: 10px;
+    bottom: 0;
     width: 117px;
     height: 237px;
     transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -864,16 +870,19 @@
 
 .programs__item-img {
     padding: 9px;
+    display: flex;
     width: 44px;
     height: 44px;
     border-radius: 50%;
 
     @include breakpoint(lg) {
+        padding: 11.5px;
         width: 52px;
         height: 52px;
     }
 
     @include breakpoint(xl) {
+        padding: 13px;
         width: 60px;
         height: 60px;
     }
@@ -1227,12 +1236,19 @@
 }
 
 .faq__answer {
-    padding-top: 16px;
-    display: none;
+    padding-top: 0px;
+    max-height: 0px;
     line-height: 150%;
+    overflow: hidden;
+    transition: all .3s ease;
 
-    @include breakpoint(lg) {
-        padding-top: 20px;
+    .faq__item.expanded & {
+        padding-top: 16px;
+        max-height: 500px;
+
+        @include breakpoint(lg) {
+            padding-top: 20px;
+        }
     }
 }
 

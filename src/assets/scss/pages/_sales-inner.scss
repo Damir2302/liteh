@@ -210,6 +210,9 @@
 
 .analyzes__item-wrap {
     margin-top: 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all .5s ease;
 
     @include breakpoint(md) {
         margin-bottom: -16px;
@@ -227,6 +230,10 @@
         margin-top: 30px;
         margin-bottom: -30px;
         margin-left: -30px;
+    }
+    
+    .analyzes__item.expanded & {
+        max-height: 1000px;
     }
 }
 

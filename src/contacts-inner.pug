@@ -32,8 +32,175 @@ block main
                     .c-map__contacts-worktime
                         a.js-anchor(href="#") График работы мед. офиса
 
-                .contacts-map__office-map
+                .c-map__office-map
                     #office_map(style="width:100%;height:100%")
+
+    section.section-route
+
+        .container
+
+            .route
+
+                .route__banner
+                    .route__banner-title Не нашли офис поблизости? 
+                    .route__banner-text Закажите услугу "Анализы на дому"
+                    .route__banner-btn.button-style.button-style--green Сдать анализы на дому
+                    .route__banner-img
+                        img(src="assets/images/family-spending-time-together-living-room.png", alt="img")
+
+                .route__desc
+                    h2.title Как добраться до офиса
+
+                    h4 На машине
+                    p Двигайтесь по дублеру Алтуфьевского ш. в сторону МКАД до д. 82. Вход в Центр находится со стороны Алтуфьевского ш., между магазином «Красная икра» и пунктом выдачи OZON.
+
+                    h4 Общественный транспорт
+                    p Из центра: до остановки «Алтуфьевское шоссе, д. 87». От остановки перейдите дублер к ТЦ «Арфа», идите прямо до д. 82. Вход в Центр находится со стороны Алтуфьевского ш., между магазином «Красная икра» и пунктом выдачи OZON.Автобусы № т73, 98, 259, 571.Со стороны МКАД: до остановки «Ст. м. «Алтуфьево». От остановки перейдите по подземному переходу к выходу из метро 6. Пройдите 145 метров прямо до д. 82. Вход в Центр находится со стороны Алтуфьевского ш., между магазином «Красная икра» и пунктом выдачи OZON.Автобусы № т73, 259.Со стороны Лианозово: до остановки «Ст. м. «Алтуфьево». От остановки перейдите по подземному переходу к выходу из метро 6. Пройдите 145 метров прямо до д. 82. Вход в Центр находится со стороны Алтуфьевского ш., между магазином «Красная икра» и пунктом выдачи OZON.Автобусы № 53, 92, 98, 273, 284, 302, 352, 415к, 456, 459, 519, 559, 571, 572, 545, 601, 644, 685, 705, 774, 815, 836, 909, 928, 1062.Со стороны Бибирево: до остановки «Ст. м. «Алтуфьево». Перейдите ул. Лескова и двигайтесь вдоль Алтуфьевского ш. мимо входа в метро до д. 82. Вход в Центр находится со стороны Алтуфьевского ш., между магазином «Красная икра» и пунктом выдачи «OZON».Автобусы № 53, 284, 559, 601, 705, 774, 815, 909, 928.
+
+                    h4 Пешком
+                    p От ст. м. «Алтуфьево» (выход 6) пройдите 145 метров прямо до д. 82. Вход в Центр находится со стороны Алтуфьевского ш., между магазином «Красная икра» и пунктом выдачи «OZON».
+
+    section.section-schedule
+
+        .container
+
+            h2.title График работы офиса
+            .schedule-notice <span>! </span> 9 мая 2023 года офис не работает
+
+            .schedule__table
+
+                .table__row.table__head
+                    .table__cell
+                    .table__cell ПН
+                    .table__cell ВТ
+                    .table__cell СР
+                    .table__cell ЧТ
+                    .table__cell ПТ
+                    .table__cell СБ
+                    .table__cell ВС
+
+                .table__row
+                    .table__cell Взятие анализов крови
+                    .table__cell <span>ПН: </span>8:00 <p>-</p> 18:00
+                    .table__cell <span>ВТ: </span>8:00 <p>-</p> 18:00
+                    .table__cell <span>СР: </span>8:00 <p>-</p> 18:00
+                    .table__cell <span>ЧТ: </span>8:00 <p>-</p> 18:00
+                    .table__cell <span>ПТ: </span>8:00 <p>-</p> 18:00
+                    .table__cell <span>СБ: </span>8:00 <p>-</p> 14:00
+                    .table__cell.unavailable <span>ВС: </span>-
+
+                .table__row
+                    .table__cell Взятие урогенитальных мазков
+                    .table__cell <span>ПН: </span>8:00 <p>-</p> 18:00
+                    .table__cell <span>ВТ: </span>8:00 <p>-</p> 18:00
+                    .table__cell <span>СР: </span>8:00 <p>-</p> 18:00
+                    .table__cell <span>ЧТ: </span>8:00 <p>-</p> 18:00
+                    .table__cell <span>ПТ: </span>8:00 <p>-</p> 18:00
+                    .table__cell <span>СБ: </span>8:00 <p>-</p> 14:00
+                    .table__cell.unavailable <span>ВС: </span>-
+
+                .table__row
+                    .table__cell Приём биоматериала (кал, моча)
+                    .table__cell <span>ПН: </span>8:00 <p>-</p> 18:00
+                    .table__cell <span>ВТ: </span>8:00 <p>-</p> 18:00
+                    .table__cell <span>СР: </span>8:00 <p>-</p> 18:00
+                    .table__cell <span>ЧТ: </span>8:00 <p>-</p> 18:00
+                    .table__cell <span>ПТ: </span>8:00 <p>-</p> 18:00
+                    .table__cell <span>СБ: </span>8:00 <p>-</p> 14:00
+                    .table__cell.unavailable <span>ВС: </span>-
+
+                .table__row
+                    .table__cell Сокращенный график приёма
+                        p
+                            a Список исследований, доступных до указанного времени
+                    .table__cell <span>ПН: </span>8:00 <p>-</p> 18:00
+                    .table__cell <span>ВТ: </span>8:00 <p>-</p> 18:00
+                    .table__cell <span>СР: </span>8:00 <p>-</p> 18:00
+                    .table__cell <span>ЧТ: </span>8:00 <p>-</p> 18:00
+                    .table__cell <span>ПТ: </span>8:00 <p>-</p> 18:00
+                    .table__cell.unavailable <span>СБ: </span>-
+                    .table__cell.unavailable <span>ВС: </span>-
+
+                .table__row
+                    .table__cell Спермограмма
+                        p Приём по предварительно записи
+                        .button-style.button-style--fill-orange Записаться
+                    .table__cell <span>ПН: </span>8:00 <p>-</p> 18:00
+                    .table__cell <span>ВТ: </span>8:00 <p>-</p> 18:00
+                    .table__cell <span>СР: </span>8:00 <p>-</p> 18:00
+                    .table__cell <span>ЧТ: </span>8:00 <p>-</p> 18:00
+                    .table__cell <span>ПТ: </span>8:00 <p>-</p> 18:00
+                    .table__cell.unavailable <span>СБ: </span>-
+                    .table__cell.unavailable <span>ВС: </span>-
+
+    section.section-additional 
+
+        .container
+
+            h2.title Дополнительные услуги медицинского офиса
+
+            .additional
+                
+                .additional__block
+                    .additional__label Приём врача
+
+                    .additional__item
+                        .additional__item-wrap
+                            .additional__item-label Врач гинеколог-эндокринолог
+                            .additional__item-inner
+                                .additional__item-name Петрова Светлана Валентиновна
+                                .additional__item-skill Высшая квалификация
+                        .additional__item-btn.button-style.button-style--fill-orange Записаться на приём
+
+                    .additional__item
+                        .additional__item-wrap
+                            .additional__item-label Врач гинеколог-эндокринолог
+                            .additional__item-inner
+                                .additional__item-name Петрова Светлана Валентиновна
+                                .additional__item-skill Высшая квалификация
+                        .additional__item-btn.button-style.button-style--fill-orange Записаться на приём
+
+                    .additional__item
+                        .additional__item-wrap
+                            .additional__item-label Врач гинеколог-эндокринолог
+                            .additional__item-inner
+                                .additional__item-name Петрова Светлана Валентиновна
+                                .additional__item-skill Высшая квалификация
+                        .additional__item-btn.button-style.button-style--fill-orange Записаться на приём
+
+                    .additional__item
+                        .additional__item-wrap
+                            .additional__item-label Врач гинеколог-эндокринолог
+                            .additional__item-inner
+                                .additional__item-name Петрова Светлана Валентиновна
+                                .additional__item-skill Высшая квалификация
+                        .additional__item-btn.button-style.button-style--fill-orange Записаться на приём
+
+                .additional__block
+                    .additional__label УЗИ
+                    
+                    .additional__item
+                        .additional__item-wrap
+                            .additional__item-label УЗИ малого таза
+                        .additional__item-btn.button-style.button-style--fill-orange Записаться на приём
+
+                    .additional__item
+                        .additional__item-wrap
+                            .additional__item-label УЗИ органов брюшной полости
+                        .additional__item-btn.button-style.button-style--fill-orange Записаться на приём
+
+                .additional__block
+                    .additional__label Другие услуги
+                    
+                    .additional__item
+                        .additional__item-wrap
+                            .additional__item-label Медицинские справки
+                        .additional__item-btn.button-style.button-style--fill-orange Записаться на приём
+
+                    .additional__item
+                        .additional__item-wrap
+                            .additional__item-label Оформление больничных листов
+                        .additional__item-btn.button-style.button-style--fill-orange Записаться на приём
 
     section.section-gallery
 
@@ -174,7 +341,7 @@ block main
                     form
 
                         .subscribe__input
-                            input#email(type="email", name="email" placeholder="Ваш e-mail")
+                            input#email(type="email", name="email" placeholder="Ваш e-mail" required)
                             button.button-style.button-style--fill-orange(type="submit") Подписаться
 
                     .subscribe__agreement

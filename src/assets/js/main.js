@@ -25,7 +25,6 @@ $(document).ready(function() {
     // FAQ
     $('.faq__question').on('click', function() {
         $(this).parent().toggleClass('expanded')
-        $(this).parent().find('.faq__answer').slideToggle()
     })
 
     // CATALOG ASIDE
@@ -36,7 +35,6 @@ $(document).ready(function() {
     // SALES ANALYZES
     $('.analyzes__item-title').on('click', function() {
         $(this).parent().toggleClass('expanded')
-        $(this).parent().find('.analyzes__item-wrap').slideToggle()
     })
 
     // CONTACTS TABS
