@@ -236,8 +236,13 @@ section {
   width: 32px;
   height: 32px;
   border-radius: 50%;
+  transition: background .3s ease;
   cursor: pointer;
   z-index: 1;
+}
+
+.slider-nav:hover {
+  background: $dgreen;
 }
 
 .slider-nav.swiper-button-disabled {
@@ -445,4 +450,20 @@ section {
 
 .select-option.active {
   color: $green;
+}
+
+ul.list-style li {
+  display: flex;
+}
+
+ul.list-style li::before {
+  content: '';
+  margin-right: 8px;
+  background: $green;
+  flex-shrink: 0;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  transform: translateY(6px);
 }

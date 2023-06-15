@@ -1,0 +1,181 @@
+---
+title: Литех | Корзина
+bodyClass: cart-page
+---
+
+extends includes/_page
+
+block main
+
+    include components/_breadcrumbs
+    +breadcrumbs('Корзина')
+
+    section.section-cart
+
+        .container
+
+            h1.title Корзина
+
+            form
+
+                .cart
+
+                    .cart__main
+
+                        .cart__clear Очистить корзину
+
+                        .cart__block
+
+                            .cart__item
+                                .cart__item-wrap
+                                    .cart__item-num №2020
+                                    .cart__item-title Клинический анализ крови: общий анализ, лейкоформула, СОЭ (с микроскопией мазка крови при наличии патологических сдвигов) (Clinical Blood Analysis: General Blood Analysis, Leucocyte Formula, ESR (with Microscopic Examination of Blood Smear if Presence of Pathologic Changes))
+                                    .cart__item-price
+                                        .cart__item-price-wrap
+                                            .cart__item-price-main 2 000
+                                            .cart__item-price-old ₽ 3 000 ₽ 
+                                        .cart__item-price-bonus + 100 бонусов на счёт
+                                    .cart__item-discount Скидка 10% по дисконтной карте
+                                    .cart__item-extra 250 ₽ взятие венозной крови 
+
+                                .cart__item-remove
+
+                            .cart__item
+                                .cart__item-wrap
+                                    .cart__item-num №2020
+                                    .cart__item-title СОЭ по Вестергрену (венозная кровь)
+                                    .cart__item-price
+                                        .cart__item-price-wrap
+                                            .cart__item-price-main 2 000
+                                            .cart__item-price-old ₽ 3 000 ₽ 
+                                        .cart__item-price-bonus + 100 бонусов на счёт
+                                    .cart__item-discount Скидка 10% по дисконтной карте
+                                    .cart__item-extra 250 ₽ взятие венозной крови 
+
+                                .cart__item-remove
+
+                            .cart__item
+                                .cart__item-wrap
+                                    .cart__item-num №2020
+                                    .cart__item-title ПЦР-тест на коронавирус SARS-CoV-2, мазок (PCR, Coronavirus SARS-CoV-2, nasopharyngeal and oropharyngeal smear)
+                                    .cart__item-price
+                                        .cart__item-price-wrap
+                                            .cart__item-price-main 2 000
+                                            .cart__item-price-old ₽ 3 000 ₽ 
+                                        .cart__item-price-bonus + 100 бонусов на счёт
+                                    .cart__item-discount Скидка 10% по дисконтной карте
+                                    .cart__item-extra 250 ₽ взятие венозной крови 
+
+                                .cart__item-remove
+
+                        .cart__promocode
+                            input(type="text" placeholder="Промокод")
+                            .button-style.button-style--fill-orange Применить
+
+                        h2.title Где вы будете сдавать анализы?
+
+                        .cart__tab
+                            .cart__tab-item.active(data-active=1) В мед. офисе
+                            .cart__tab-item(data-active=2) Дома
+                            
+                        .cart__place.active(data-show=1)
+
+                            // Выводить, если авторизованный пользователь
+                            .cart__address.hide
+                                .cart__address-wrap
+                                    .cart__address-office Офис «Беломорская»
+                                    .cart__address-text г. Москва, ул. Петрозаводская, д. 11, корпус 3
+
+                                .cart__address-btn.select-address.button-style Выбрать другой адрес
+
+                            // Выводить, если неавторизованный пользователь
+                            .cart__place-btn.select-address.button-style.button-style--gray Выберите адрес мед. офиса
+
+                        .cart__place(data-show=2)
+
+                            p Введите адрес для вызова
+                            .cart__input
+                                input(type="text" placeholder="Введите адрес" autocomplete="off")
+
+                        
+                        .cart__personal
+
+                            h2.title Кто будет сдавать анализы? 
+
+                            .cart__login Войти в личный кабинет
+                            
+                            // Добавляем класс .no-edit для авторизованных
+                            .cart__personal-form
+                                // Выводим кнопку для авторизованных
+                                .cart__personal-edit.hide
+                                    span.action-edit Редактировать
+                                    span.action-save Сохранить
+
+                                .cart__form-input.input-name
+                                    label ФИО
+                                    input(type="text" value="Анна Новопашина" autocomplete="off" required)
+                                
+                                .cart__form-input.input-phone
+                                    label Телефон
+                                    input(type="tel" value="8 123 456-56-56" autocomplete="off" required)
+
+                                .cart__form-input.input-email
+                                    label E-mail
+                                    input(type="email" value="Anna@gmail.com" autocomplete="")
+
+                                .cart__form-input.input-date
+                                    label Дата посещения
+                                    input(type="date" value="2023-03-14" autocomplete="off" required)
+
+                    .cart__total
+
+                        .cart__total-wrap
+
+                            .cart__total-title Итого
+
+                            .cart__total-item
+                                .cart__total-item-name Анализы
+                                .cart__total-item-quantity 200
+                                .cart__total-item-value 100 000 ₽
+
+                            .cart__total-item
+                                .cart__total-item-name Взятие биоматериала
+                                .cart__total-item-quantity 200
+                                .cart__total-item-value 100 000 ₽
+
+                            .cart__total-discount
+                                .cart__total-discount-title Скидка
+                                .cart__total-discount-value -100 000 ₽ 
+
+                            .cart__total-final
+                                .cart__total-final-title Итого
+                                .cart__total-final-value 100 000 ₽
+
+                            button.button-style.button-style--fill-orange(type="submit") Подтвердить предзаказ
+
+    section.section-subscribe
+
+        .container
+
+            .subscribe
+
+                .subscribe-container
+
+                    .subscribe__title.title Подпишитесь на&nbsp;нашу&nbsp;рассылку
+
+                    .subscribe__wrapper
+
+                        form
+
+                            .subscribe__input
+                                input#email(type="email", name="email" placeholder="Ваш e-mail" required)
+                                button.button-style.button-style--fill-orange(type="submit") Подписаться
+
+                        .subscribe__agreement
+                            img(src="assets/images/check-square.svg", alt="icon")
+                            p Даю согласие на обработку персональных данных
+
+                // Успешная подписка
+                .subscribe-success.hide
+                    .subscribe-success__title Спасибо за подписку!
+                    .subscribe-success__text Мы отправили вам письмо для подтверждения почтового ящика

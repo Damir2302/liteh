@@ -132,6 +132,11 @@
 
 .sales__item-img img {
     width: 100%;
+    transition: transform .3s ease;
+}
+
+.sales__item-img:hover img {
+    transform: scale(1.2);
 }
 
 .sales__item-title {

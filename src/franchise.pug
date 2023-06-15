@@ -1,0 +1,136 @@
+---
+title: Литех | Франшиза
+bodyClass: franchise-page
+---
+
+extends includes/_page
+
+block main
+
+    include components/_breadcrumbs
+    +breadcrumbs('Франшиза')
+
+    section.section-franchise
+
+        .container
+
+            .franchise-banner
+                .franchise-banner__wrap
+                    .franchise-banner__title Франшиза лаборатории&nbsp;ЛИТЕХ
+                    .franchise-banner__text Откройте медицинскую лабораторию и получайте стабильный доход
+
+                    .franchise-banner__btn.button-style.button-style--fill-white Оставить заявку
+
+                .franchise-banner__img
+                    img(src="assets/images/franchise.png", alt="img")
+
+            .franchise-text
+                p ЛИТЕХ — высокотехнологичная активно развивающаяся многопрофильная диагностическая лаборатория. Мы работаем на рынке лабораторных услуг с 1992 г. Первоначально лаборатория являлась структурным подразделением Научно-производственной фирмы «Литех», основанной на базе НИИ физико-химической медицины ФМБА России.
+
+            .franchise-features
+                .franchise-features__item
+                    p от 100 000₽
+                    p Паушальный взнос
+
+                .franchise-features__item
+                    p от 1‑2 млн ₽
+                    p Стартовые инвестиции
+
+                .franchise-features__item
+                    p 8-9 месяцев
+                    p Паушальный взнос
+                
+                .franchise-features__item
+                    p 20-24 месяца
+                    p Возврат инвестиций
+
+                .franchise-features__item
+                    p до 100%
+                    p Компенсация затрат на доставку
+
+                .franchise-features__item
+                    p 100%
+                    p Обеспечение расходными материалами
+                
+                .franchise-features__item
+                    p от 100 000₽
+                    p Роялти (начиная с 7 месяца работы)
+
+    section.section-invest
+
+        .container
+
+            .invest-container
+                
+                .invest-main
+                    .invest-main__title.title Инвестируйте в бизнес, который нужен людям
+                    .invest-main__subtitle Наши условия — одни из самых выгодных для старта бизнеса: минимальный паушальный взнос, честный расчёт инвестиций без завышения или занижения сметы, компенсация расходов на доставку биоматериалов. На многие анализы наши цены ниже, чем у конкурентов.
+
+                .invest
+                    .invest__item
+                        .invest__item-icon
+                            img(src="assets/images/001-experience.svg", alt="icon")
+                        .invest__item-wrap
+                            .invest__item-title &gt; 25 лет
+                            .invest__item-text На рынке лабораторий диагностики
+
+                    .invest__item
+                        .invest__item-icon
+                            img(src="assets/images/002-team.svg", alt="icon")
+                        .invest__item-wrap
+                            .invest__item-title &gt; 400
+                            .invest__item-text Медучреждений сотрудничают с Литех
+
+                    .invest__item
+                        .invest__item-icon
+                            img(src="assets/images/003-research.svg", alt="icon")
+                        .invest__item-wrap
+                            .invest__item-title &gt; 1 500
+                            .invest__item-text Лабораторных исследований
+
+                    .invest__item
+                        .invest__item-icon
+                            img(src="assets/images/004-patient.svg", alt="icon")
+                        .invest__item-wrap
+                            .invest__item-title &gt; 3 000
+                            .invest__item-text Пациентов в день
+
+            .invest-block
+
+                .swiper
+
+                    .invest-block__wrapper.swiper-wrapper
+
+                        .invest-block__item.swiper-slide
+                            h4 Начните с малого — мы поможем
+                            ul.list-style
+                                li Объективно оценим коммерческий потенциал помещения;
+                                li Поможем подготовиться и успешно пройти лицензирование
+                                li Обеспечим вас расходным материалами;
+                                li Обучим административный персонал и медицинских работников;
+                                li Подключим офис к программному обеспечению сети ЛИТЕХ для регистрации заказов и получения результатов в режиме реального времени на сервере лаборатории. 
+                        
+                        .invest-block__item.swiper-slide
+                            h4 Заручитесь доверием клиентов
+                            ul.list-style
+                                li Большая часть исследований выполняется за 1 рабочий день;
+                                li Повторный визит в лабораторию не нужен — пациент получает результат по электронной почте или через личный кабинет на сайте;
+                                li Результаты анализов сохраняются в нашей IT-системе в течение 5 лет и могут быть восстановлены в любой момент;
+                                li Полезный бонус для клиентов — быстрое оформление справок для налогового вычета на лечение.
+                        
+                        .invest-block__item.swiper-slide
+                            h4 Начните с малого — мы поможем
+                            p Вы получите готовую программу развития бизнеса, адаптированную к условиям вашего города и объекта для максимальной отдачи инвестиций. За каждым франчайзи закрепляется персональный менеджер, который поможет в решении рабочих вопросов.
+
+                        .invest-block__item.swiper-slide
+                            h4 Заручитесь доверием клиентов
+                            p Для действующих медицинских центров мы разработали франчайзинг-программу с минимальным стартовым бюджетом и ускоренной подготовкой к открытию. Уже через несколько недель ваша лаборатория примет первых пациентов.
+
+                .slider-navigation
+
+                    .slider-nav.slider-nav-prev
+                            img(src="assets/images/chevron-right-white.svg", alt="icon")
+                            img.disabled(src="assets/images/chevron-left-gray.svg", alt="icon")
+                    .slider-nav.slider-nav-next
+                        img(src="assets/images/chevron-right-white.svg", alt="icon")
+                        img.disabled(src="assets/images/chevron-left-gray.svg", alt="icon")

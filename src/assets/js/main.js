@@ -13,6 +13,16 @@ $(document).ready(function() {
         })
     }
 
+    // INPUT MASK PHONE NUMBER
+    $('input[type="tel"]').inputmask({"mask": "+7 (999) 999-99-99"});
+
+    $('#fileUpload').on('change', function() {
+        if ($(this).val().length) {
+          let fileName = $('#fileUpload').val().split("\\");
+          $('#fileUploadLabel span').html(fileName[fileName.length - 1]);
+        }
+    });
+
     // POPULAR SLIDER
     $('.popular__tab-item').on('click', function() {
         $('.popular__tab-item').removeClass('active')
@@ -53,6 +63,20 @@ $(document).ready(function() {
 
         $('.preparation__content').removeClass('active')
         $(`.preparation__content[data-active=${$(this).attr('data-show')}]`).addClass('active')
+    })
+
+    // CART TAB
+    $('.cart__tab-item').on('click', function() {
+        $('.cart__tab-item').removeClass('active')
+        $(this).addClass('active')
+
+        $('.cart__place').removeClass('active')
+        $(`.cart__place[data-show=${$(this).attr('data-active')}]`).addClass('active')
+    })
+
+    // CART PERSONAL
+    $('.cart__personal-edit').on('click', function() {
+        $(this).parent().toggleClass('no-edit')
     })
     
     // FOOTER TAB

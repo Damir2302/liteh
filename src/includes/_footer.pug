@@ -16,9 +16,10 @@ block footer
                             .swiper-wrapper
 
                                 .footer__tab-item.swiper-slide.active(data-active=1) Пациентам
-                                .footer__tab-item.swiper-slide(data-active=2) Франшиза
-                                .footer__tab-item.swiper-slide(data-active=2) Корпоративным клиентам
-                                .footer__tab-item.swiper-slide(data-active=3) О лаборатории
+                                .footer__tab-item.swiper-slide(data-active=2) Полезная информация
+                                .footer__tab-item.swiper-slide(data-active=3) Франшиза
+                                .footer__tab-item.swiper-slide(data-active=4) Корпоративным клиентам
+                                .footer__tab-item.swiper-slide(data-active=5) О лаборатории
 
                     .footer__block.active(data-show=1)
                         a.footer__block-title(href="#") Пациентам
@@ -43,6 +44,20 @@ block footer
                                 a(href="#") Адреса
 
                     .footer__block(data-show=2)
+                        a.footer__block-title(href="#") Полезная информация
+                        ul.footer__menu-list
+                            li
+                                a(href="#") Научно популярные статьи
+                            li
+                                a(href="#") Программа лояльности
+
+                    .footer__block(data-show=3)
+                        a.footer__block-title(href="#") Франшиза
+                        ul.footer__menu-list
+                            li
+                                a(href="#") Франшиза
+
+                    .footer__block(data-show=4)
                         a.footer__block-title(href="#") Корпоративным клиентам
                         ul.footer__menu-list
                             li
@@ -58,7 +73,7 @@ block footer
                             li
                                 a(href="#") Новости наших партнёров
 
-                    .footer__block(data-show=3)
+                    .footer__block(data-show=5)
                         a.footer__block-title(href="#") О лаборатории
                         ul.footer__menu-list
                             li
@@ -111,8 +126,14 @@ block footer
                         img(src="assets/images/logo.svg", alt="logo")
 
                 .footer__bottom-wrap
-                
-                    .footer__copyright © Литех 1992-2023 - интеллектуальная лабораторная диагностика
 
-                    .footer__policy
-                        a(href="#") Политика конфиденциальности
+                    .footer__devs
+                        a(href="https://di-project.studio/") Разработка сайта
+                        span Di-Project.Studio
+
+                    .footer__copy
+                
+                        .footer__copyright © Литех 1992-2023 - интеллектуальная лабораторная диагностика
+
+                        .footer__policy
+                            a(href="#") Политика конфиденциальности

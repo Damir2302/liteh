@@ -1,0 +1,50 @@
+.search-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-input input {
+    padding: 11px 15px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 150%;
+    border: 1px solid #E1E1E1;
+    border-radius: 52px;
+
+    @include breakpoint(md) {
+        padding: 18px 25px;
+    }
+}
+
+.search-input .button-style {
+    margin-left: 8px;
+    padding: 14px;
+    flex-shrink: 0;
+    width: 115px;
+    font-size: 15px;
+    line-height: 18px;
+
+    @include breakpoint(md) {
+        margin-left: 20px;
+        padding: 21px;
+        width: 174px;
+    }
+
+    @include breakpoint(xl) {
+        margin-left: 30px;
+    }
+}
+
+.search-page .catalog {
+
+    @include breakpoint(lg) {
+        display: block;
+        max-width: 594px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 40px;
+        max-width: 680px;
+    }
+}

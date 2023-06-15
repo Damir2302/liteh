@@ -156,6 +156,36 @@ $(document).ready(function() {
         }
     })
 
+    // INVEST BLOCK SLIDER
+    let investSlider;
+    let investSliderInit;
+
+    investSliderRun();
+
+    $(window).on("resize", function () {
+        investSliderRun();
+    });
+
+    function investSliderRun() {
+        if (!investSliderInit && $(window).width() < 744) {
+            investSliderInit = true;
+            investSlider = new Swiper(".invest-block .swiper", {
+                slidesPerView: "auto",
+                spaceBetween: 20,
+
+                navigation: {
+                    nextEl: `.invest-block .slider-nav-next`,
+                    prevEl: `.invest-block .slider-nav-prev`,
+                },
+            })
+        } else {
+            if (typeof investSlider !== "undefined") {
+                investSliderInit = false;
+                investSlider.destroy();
+            }
+        }
+    }
+
     // FOOTER TAB
     let footerTabSlider;
     let footerTabSliderInit;

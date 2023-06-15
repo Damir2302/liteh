@@ -30,7 +30,7 @@ block main
                         .contacts__block-mail operator.frunzenskaya@analyz24.ru
                     
                     .c-map__contacts-worktime
-                        a.js-anchor(href="#") График работы мед. офиса
+                        a.js-anchor(href="#schedule") График работы мед. офиса
 
                 .c-map__office-map
                     #office_map(style="width:100%;height:100%")
@@ -60,7 +60,7 @@ block main
                     h4 Пешком
                     p От ст. м. «Алтуфьево» (выход 6) пройдите 145 метров прямо до д. 82. Вход в Центр находится со стороны Алтуфьевского ш., между магазином «Красная икра» и пунктом выдачи «OZON».
 
-    section.section-schedule
+    section.section-schedule#schedule
 
         .container
 
@@ -334,16 +334,23 @@ block main
 
             .subscribe
 
-                .subscribe__title.title Подпишитесь на&nbsp;нашу&nbsp;рассылку
+                .subscribe-container
 
-                .subscribe__wrapper
+                    .subscribe__title.title Подпишитесь на&nbsp;нашу&nbsp;рассылку
 
-                    form
+                    .subscribe__wrapper
 
-                        .subscribe__input
-                            input#email(type="email", name="email" placeholder="Ваш e-mail" required)
-                            button.button-style.button-style--fill-orange(type="submit") Подписаться
+                        form
 
-                    .subscribe__agreement
-                        img(src="assets/images/check-square.svg", alt="icon")
-                        p Даю согласие на обработку персональных данных
+                            .subscribe__input
+                                input#email(type="email", name="email" placeholder="Ваш e-mail" required)
+                                button.button-style.button-style--fill-orange(type="submit") Подписаться
+
+                        .subscribe__agreement
+                            img(src="assets/images/check-square.svg", alt="icon")
+                            p Даю согласие на обработку персональных данных
+
+                // Успешная подписка
+                .subscribe-success.hide
+                    .subscribe-success__title Спасибо за подписку!
+                    .subscribe-success__text Мы отправили вам письмо для подтверждения почтового ящика

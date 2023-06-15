@@ -9,7 +9,7 @@ extends includes/_page
 block main
 
     include components/_breadcrumbs
-    +breadcrumbs('Анализы и цены', 'Название категории', 'Анализ ВИЧ 1-2 АГ / АТ (hiv ag / ab combo) (ихла)')
+    +breadcrumbs('Анализы и цены', 'Название категории', 'Панель антинуклеарных антител при склеродермии(SCLERODERMA ANTIBODIES PANEL) (Scl-70, СENP A,CENP B, RP 11, RP 155, фибриллярин, NOR 90, Th/To, PM-Sc100, PM-Scl 75, Ku, PDGFR, Ro-52)')
 
     section.section-catalog-inner#section-desc
 
@@ -384,9 +384,6 @@ block main
                 a.js-anchor(href="#section-desc") Вернуться к описанию анализа
 
             h2.map__title.title Адреса медицинских офисов
-
-        .map__wrapper
-
             .map__dropdown
                 .map__dropdown-select Выбрать медицинский офис
 
@@ -403,6 +400,8 @@ block main
                     li.map__dropdown-item Офис «Сходненская»
                     li.map__dropdown-item Офис «Коммунарка»
 
+
+        .map__wrapper
             #map(style="width:100%; height:100%")
 
     section.section-faq.section-gray

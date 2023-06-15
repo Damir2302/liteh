@@ -57,6 +57,14 @@
     }
 }
 
+.breadcrumbs-item span {
+    display: inline-block;
+    max-width: 195px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 // .breadcrumbs-separator {
 //     margin: 0 3px;
 //     font-weight: 700;
@@ -65,7 +73,3 @@
 //     color: $gray;
 //     cursor: default;
 // }
-
-.breadcrumbs-item span {
-    @include textLimit(1)
-}

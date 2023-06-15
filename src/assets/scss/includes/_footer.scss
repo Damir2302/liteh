@@ -5,29 +5,27 @@
     }
 }
 
-.footer__main {
-
-    @include breakpoint(xl) {
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
 .footer__menu {
 
     @include breakpoint(md) {
-        padding: 44px 0 18px;
+        margin-left: -5px;
+        padding: 44px 0 30px;
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-height: 468px;
+        overflow: hidden;
     }
 
     @include breakpoint(lg) {
-        padding: 52px 0 12px;
+        margin-left: -20px;
+        padding: 52px 0 30px;
+        max-height: 500px;
     }
 
     @include breakpoint(xl) {
-        padding: 60px 0 16px;
-        width: 894px;
+        margin-left: -30px;
+        padding: 60px 0 50px;
     }
 }
 
@@ -52,6 +50,7 @@
     border-radius: 33px;
     cursor: pointer;
     transition: all .3s ease;
+    user-select: none;
 }
 
 .footer__tab-item.active {
@@ -60,24 +59,33 @@
 }
 
 .footer__block {
-    display: none;
+    
+    @include breakpointMax(md) {
+        display: none;
+    }
 
     @include breakpoint(md) {
-        display: block;
-        width: calc(100% / 3 - 12px);
+        margin-left: 5px;
+        margin-bottom: 20px;
+        width: calc(25% - 12px);
     }
 
     @include breakpoint(lg) {
-        width: calc(100% / 3 - 15px);
+        margin-left: 20px;
+        width: calc(25% - 16px);
     }
 
     @include breakpoint(xl) {
+        margin-left: 30px;
         width: 278px;
     }
 }
 
 .footer__block.active {
-    display: block;
+    
+    @include breakpointMax(md) {
+        display: block;
+    }
 }
 
 .footer__block-title {
@@ -104,15 +112,14 @@
 }
 
 .footer__menu-list {
-    margin-left: -5px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 166px;
-    overflow: hidden;
-
-    @include breakpoint(md) {
-        height: auto;
+    
+    @include breakpointMax(md) {
+        margin-left: -5px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 166px;
+        overflow: hidden;
     }
 }
 
@@ -122,6 +129,7 @@
     width: calc(50% - 8px);
 
     @include breakpoint(md) {
+        margin-left: 0;
         margin-bottom: 10px;
         width: auto;
     }
@@ -163,10 +171,7 @@
     }
 
     @include breakpoint(xl) {
-        padding-top: 60px;
-        display: block;
-        width: 277px;
-        border: none;
+        align-items: flex-end;
     }
 }
 
@@ -184,10 +189,6 @@
     
     @include breakpoint(lg) {
         display: flex;
-    }
-
-    @include breakpoint(xl) {
-        display: block;
     }
 }
 
@@ -246,8 +247,7 @@
     }
 
     @include breakpoint(xl) {
-        margin-top: 38px;
-        margin-left: 0;
+        margin-left: 38px;
     }
 }
 
@@ -271,7 +271,7 @@
     }
 
     @include breakpoint(xl) {
-        margin-top: 100px;
+        display: flex;
     }
 }
 
@@ -292,6 +292,11 @@
         margin-top: 16px;
         margin-left: 0;
     }
+
+    @include breakpoint(xl) {
+        margin-top: 0;
+        margin-left: 16px;
+    }
 }
 
 .footer__bottom {
@@ -300,6 +305,7 @@
     @include breakpoint(md) {
         padding: 28px 0;
         display: flex;
+        align-items: center;
     }
 
     @include breakpoint(lg) {
@@ -313,43 +319,93 @@
 }
 
 .footer__logo {
-    display: none;
+    margin-bottom: 20px;
+    width: 167px;
 
     @include breakpoint(md) {
-        display: block;
-        width: 167px;
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+
+    @include breakpoint(xl) {
+        margin-right: 60px;
     }
 }
 
-.footer__logo img {
+.footer__logo a {
+    display: block;
+}
 
-    @include breakpoint(md) {
-        width: 100%;
-    }
+.footer__logo img {
+    width: 100%;
 }
 
 .footer__bottom-wrap {
 
     @include breakpoint(md) {
-        margin-left: 44px;
-    }
-
-    @include breakpoint(lg) {
         display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     @include breakpoint(xl) {
         margin-left: 0;
-        margin-right: 30px;
+        width: 100%;
+    }
+}
+
+.footer__devs {
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+
+    @include breakpoint(md) {
+        margin: 0 44px;
+        flex-shrink: 0;
+        width: 168px;
+    }
+
+    @include breakpoint(lg) {
+        margin: 0 54px;
+    }
+
+    @include breakpoint(xl) {
+        margin: 0;
+        margin-right: 60px;
+    }
+}
+
+.footer__devs span {
+    margin-top: 8px;
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #373737;
+}
+
+.footer__copy {
+
+    @include breakpoint(xl) {
+        display: flex;
     }
 }
 
 .footer__copyright {
+    margin-top: 12px;
     font-size: 14px;
     line-height: 150%;
 
     @include breakpoint(md) {
-        color: $gray;
+        margin-top: 0;
+        color: $dgray;
+    }
+
+    @include breakpoint(xl) {
+        margin-right: 60px;
     }
 }
 
@@ -360,15 +416,10 @@
 
     @include breakpoint(md) {
         margin-top: 6px;
-        color: $gray;
+        color: $dgray;
     }
 
     @include breakpoint(lg) {
         margin-top: 0;
-        margin-left: 54px;
-    }
-
-    @include breakpoint(xl) {
-        margin-left: 160px;
     }
 }

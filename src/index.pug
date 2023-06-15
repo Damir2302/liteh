@@ -521,9 +521,6 @@ block main
         .container
 
             h2.map__title.title Адреса медицинских офисов
-
-        .map__wrapper
-
             .map__dropdown
                 .map__dropdown-select Выбрать медицинский офис
 
@@ -540,6 +537,7 @@ block main
                     li.map__dropdown-item Офис «Сходненская»
                     li.map__dropdown-item Офис «Коммунарка»
 
+        .map__wrapper
             #map(style="width:100%; height:100%")
 
     section.section-seo
@@ -560,16 +558,23 @@ block main
 
             .subscribe
 
-                .subscribe__title.title Подпишитесь на&nbsp;нашу&nbsp;рассылку
+                .subscribe-container
 
-                .subscribe__wrapper
+                    .subscribe__title.title Подпишитесь на&nbsp;нашу&nbsp;рассылку
 
-                    form
+                    .subscribe__wrapper
 
-                        .subscribe__input
-                            input#email(type="email", name="email" placeholder="Ваш e-mail" required)
-                            button.button-style.button-style--fill-orange(type="submit") Подписаться
+                        form
 
-                    .subscribe__agreement
-                        img(src="assets/images/check-square.svg", alt="icon")
-                        p Даю согласие на обработку персональных данных
+                            .subscribe__input
+                                input#email(type="email", name="email" placeholder="Ваш e-mail" required)
+                                button.button-style.button-style--fill-orange(type="submit") Подписаться
+
+                        .subscribe__agreement
+                            img(src="assets/images/check-square.svg", alt="icon")
+                            p Даю согласие на обработку персональных данных
+
+                // Успешная подписка
+                .subscribe-success.hide
+                    .subscribe-success__title Спасибо за подписку!
+                    .subscribe-success__text Мы отправили вам письмо для подтверждения почтового ящика
