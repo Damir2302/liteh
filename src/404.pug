@@ -9,3 +9,59 @@ block main
 
     include components/_breadcrumbs
     +breadcrumbs('404')
+
+    section.page404 
+        .container 
+            .page404-wrapper 
+                .page404__left 
+                    .page404__title Страница не найдена
+                    .page404__text Вы попали на эту страницу, потому что запрашиваемая вами страница не существует или была удалена.
+                    .page404__text Вернитесь на главную или свяжитесь с нами, если нужна помощь в поиске анализа или оформлении заказа
+                    a(href="/").button-style.button-style--fill-green.button-style--error
+                        img(src="assets/images/arrow-left-white.svg", alt="")
+                        | Вернуться на главную
+                .page404__right
+                    .page404__img 
+                        img(src="assets/images/404.svg", alt="")
+
+    section.call-us 
+        .container 
+            .call-us-wrapper
+                .call-us__left Свяжитесь с нами, если нужна помощь
+                .call-us__middle
+                    .call-us__phone
+                        img(src="assets/images/phone-orange.svg", alt="")
+                        span +7 (495) 260-11-26
+                    .button-style.button-style--fill-green Заказать звонок
+                .call-us__right
+                    .call-us__icon 
+                        img(src="assets/images/tg-ic.svg", alt="")
+                    .call-us__icon 
+                        img(src="assets/images/vk-ic.svg", alt="")
+
+    section.section-subscribe
+
+        .container
+
+            .subscribe
+
+                .subscribe-container
+
+                    .subscribe__title.title Подпишитесь на&nbsp;нашу&nbsp;рассылку
+
+                    .subscribe__wrapper
+
+                        form
+
+                            .subscribe__input
+                                input#email(type="email", name="email" placeholder="Ваш e-mail" required)
+                                button.button-style.button-style--fill-orange(type="submit") Подписаться
+
+                        .subscribe__agreement
+                            img(src="assets/images/check-square.svg", alt="icon")
+                            p Даю согласие на обработку персональных данных
+
+                // Успешная подписка
+                .subscribe-success.hide
+                    .subscribe-success__title Спасибо за подписку!
+                    .subscribe-success__text Мы отправили вам письмо для подтверждения почтового ящика
