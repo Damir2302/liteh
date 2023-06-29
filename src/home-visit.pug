@@ -1,0 +1,254 @@
+---
+title: Литех | Анализы на дому
+bodyClass: home-visit-page
+---
+
+extends includes/_page
+
+block main
+
+    include components/_breadcrumbs
+    +breadcrumbs('Анализы на дому')
+
+    .home-visit__content
+
+        .container
+
+            .services__banner
+                .services__banner-title Сдать анализы на дому
+                .services__banner-text
+                    | Выезд по Москве в пределах МКАД
+                    p
+                        span бесплатно при заказе от&nbsp;1500₽
+                .services__banner-text Заказать анализ на дом вы можете на нашем сайте или по телефону
+
+                .services__banner-btn.button-style.button-style--green Оставить завку
+                .services__banner-img
+                    img(src="assets/images/family-spending-time-together-living-room.png", alt="img")
+
+            .home-visit__cost
+
+                .title Стоимость выезда
+
+                .home-visit__cost-items
+
+                    .home-visit__cost-item
+
+                        .home-visit__cost-item-row 
+                            span В пределах МКАД
+                            div (Бесплатно при заказе от 1500 ₽)
+                        .home-visit__cost-item-row
+                            .home-visit__cost-item-price 1000 ₽
+
+                    .home-visit__cost-item
+
+                        .home-visit__cost-item-row 
+                            span 5 км от МКАД
+                            div (Бесплатно при заказе от 3000 ₽)
+                        .home-visit__cost-item-row
+                            .home-visit__cost-item-price 2000 ₽
+
+                    .home-visit__cost-item
+
+                        .home-visit__cost-item-row 
+                            span 10 км от МКАД
+                            div (Бесплатно при заказе от 5000 ₽)
+                        .home-visit__cost-item-row
+                            .home-visit__cost-item-price 3000 ₽
+
+                    
+                    .home-visit__cost-item
+
+                        .home-visit__cost-item-row 
+                            span 15 км от МКАД
+                            div (Бесплатно при заказе от 10 000 ₽)
+                        .home-visit__cost-item-row
+                            .home-visit__cost-item-price 4000 ₽
+
+                    .home-visit__cost-item
+
+                        .home-visit__cost-item-row 
+                            span 20 км от МКАД
+                            div (Бесплатно при заказе от 15 000 ₽)
+                        .home-visit__cost-item-row
+                            .home-visit__cost-item-price 5000 ₽
+
+                    .home-visit__cost-item
+                        .home-visit__cost-item-row 
+                            span Доставка результатов курьером в пределах МКАД
+                        .home-visit__cost-item-row
+                            .home-visit__cost-item-price 300 ₽
+
+                    .home-visit__cost-item
+                        .home-visit__cost-item-row 
+                            span Взятие биоматериала
+                        .home-visit__cost-item-row
+                            .home-visit__cost-item-price 300 ₽
+                
+            .home-visit__advantages 
+
+                .home-visit__advantage
+                    .home-visit__advantage-icon 
+                        img(src="assets/images/home-vis-icon1.svg", alt="")    
+                    .home-visit__advantage-title Выезжаем по Москве и в пределах 20 км МКАД
+
+                .home-visit__advantage
+                    .home-visit__advantage-icon 
+                        img(src="assets/images/home-vis-icon2.svg", alt="")    
+                    .home-visit__advantage-title Выезжаем с 7:00 до 16:00, ежедневно
+
+                .home-visit__advantage
+                    .home-visit__advantage-icon 
+                        img(src="assets/images/home-vis-icon3.svg", alt="")    
+                    .home-visit__advantage-title Назначаем дату визита по предварительному согласованию
+
+                .home-visit__advantage
+                    .home-visit__advantage-icon 
+                        img(src="assets/images/home-vis-icon4.svg", alt="")    
+                    .home-visit__advantage-title Консультируем по подготовке к анализам: <a href="tel:+7 495 260-11-26">+7 495 260-11-26</a>
+
+            .home-visit__steps 
+
+                .title 4 шага для сдачи анализов на дому
+
+                .home-visit__steps-items 
+
+                    .home-visit__step
+                        .home-visit__step-number 1
+                        .home-visit__step-title Оформите заявку на выезд
+                        .home-visit__step-text На сайте или по телефону. Заполните данные и ожидайте звонка. Предоплата не требуется
+                        .button-style.button-style--fill-orange Оставить заявку
+                        a(href="tel:+7 (495) 260-11-26").home-visit__step-link +7 (495) 260-11-26
+
+                    .home-visit__step
+                        .home-visit__step-number 2
+                        .home-visit__step-title Подтвердите выезд
+                        .home-visit__step-text Сообщите оператору интересующие вас исследования и контактные данные для выезда
+
+                    .home-visit__step
+                        .home-visit__step-number 3
+                        .home-visit__step-title Примите специалистов
+                        .home-visit__step-text Мы приедем к вам в назначенное время, чтобы взять анализы. Оплатить услугу можно сотруднику наличными или по карте
+                        
+                    .home-visit__step
+                        .home-visit__step-number 4
+                        .home-visit__step-title Получите результат
+                        ul.home-visit__step-list
+                            li в личном кабинете
+                            li по электронной почте
+                            li доставка курьером (300 ₽ в пределах МКАД)
+
+            .home-visit__form 
+                form(action="")
+                    .home-visit__form-title.title Заказать выезд на дом
+                    .home-visit__form-middle
+                        .home-visit__form-col 
+                            label
+                                span ФИО
+                                input(placeholder="Фамилия Имя Отчество")   
+                            label
+                                span Телефон
+                                input(placeholder="+7 999 999-99-99")   
+                        .home-visit__form-col 
+                            label
+                                span E-mail
+                                input(placeholder="login@mail.com")   
+                            label
+                                span Дата посещения
+                                input( type="date")   
+                    .home-visit__form-bottom 
+                        button(type="submit").button-style.button-style--green Оставить заявку
+                        .check-group-wrapper
+                            .check-group
+                                input(type="checkbox" id="form-check" checked)
+                                label(for="form-check")
+                            .check-group__text Даю согласие на обработку персональных данных
+
+    section.section-faq.section-gray
+
+        .container
+
+            .faq
+
+                h2.faq__title.title Часто задаваемые вопросы о выезде на дом
+
+                .faq__wrapper
+
+                    .faq__item
+                        .faq__question
+                            .faq__question-text Как узнать результаты?
+                            .faq__question-icon
+                                img.plus(src="assets/images/plus.svg", alt="icon")
+                                img.minus(src="assets/images/minus.svg", alt="icon")
+                        .faq__answer Результаты анализов, проводимых Инвитро, отвечают международным стандартам качества и признаны достоверными.
+
+                    .faq__item.expanded
+                        .faq__question
+                            .faq__question-text Насколько достоверны результаты исследований?
+                            .faq__question-icon
+                                img.plus(src="assets/images/plus.svg", alt="icon")
+                                img.minus(src="assets/images/minus.svg", alt="icon")
+                        .faq__answer(style="display: block") Результаты анализов, проводимых Инвитро, отвечают международным стандартам качества и признаны достоверными.
+
+                    .faq__item
+                        .faq__question
+                            .faq__question-text У меня сложности с поиском анализа
+                            .faq__question-icon
+                                img.plus(src="assets/images/plus.svg", alt="icon")
+                                img.minus(src="assets/images/minus.svg", alt="icon")
+                        .faq__answer Результаты анализов, проводимых Инвитро, отвечают международным стандартам качества и признаны достоверными.
+
+                    .faq__item
+                        .faq__question
+                            .faq__question-text Как узнать результаты?
+                            .faq__question-icon
+                                img.plus(src="assets/images/plus.svg", alt="icon")
+                                img.minus(src="assets/images/minus.svg", alt="icon")
+                        .faq__answer Результаты анализов, проводимых Инвитро, отвечают международным стандартам качества и признаны достоверными.
+
+                    .faq__item
+                        .faq__question
+                            .faq__question-text У меня сложности с поиском анализа
+                            .faq__question-icon
+                                img.plus(src="assets/images/plus.svg", alt="icon")
+                                img.minus(src="assets/images/minus.svg", alt="icon")
+                        .faq__answer Результаты анализов, проводимых Инвитро, отвечают международным стандартам качества и признаны достоверными.
+
+    section.section-seo
+
+        .container
+
+            h2.seo__title.title Сдать анализы в лаборатории «Литех»
+
+            h3 Все виды медицинских анализовбыстро и без очереди
+            p Вам нужно сдать анализы для госпитализации, пройти диагностическое обследование или оформить санаторно-курортную карту? Медицинская лаборатория «Литех» выполняет более 1500 исследований без талонов и очередей. Результаты большинства анализов будут готовы за 1 день и направлены на вашу электронную почту. Получить медицинские услуги по современным стандартам можно не только в Москве, но и в других городах России. А еще у вас и ваших близких есть возможность сдать анализы на дому — сообщите свой адрес, и мы направим к вам выездную бригаду.
+            br
+            h3 Широкие возможности лабораторной диагностики
+            p Каждый день более 3000 пациентов обращаются в лаборатории «Литех», чтобы выполнить общеклинические анализы, пройти биохимические, гормональные, иммунологические, аллергологические исследования. Спектр самых востребованных услуг лабораторной диагностики включает серологические исследования крови на бактериальные и вирусные инфекции, ПЦР-диагностику инфекций, анализы на онкомаркеры и цитогенетические исследования. Мы выполним любую чек-ап программу для раннего выявления хронических заболеваний, составленную вашим лечащим врачом.
+
+    section.section-subscribe
+
+        .container
+
+            .subscribe
+
+                .subscribe-container
+
+                    .subscribe__title.title Подпишитесь на&nbsp;нашу&nbsp;рассылку
+
+                    .subscribe__wrapper
+
+                        form
+
+                            .subscribe__input
+                                input#email(type="email", name="email" placeholder="Ваш e-mail" required)
+                                button.button-style.button-style--fill-orange(type="submit") Подписаться
+
+                        .subscribe__agreement
+                            img(src="assets/images/check-square.svg", alt="icon")
+                            p Даю согласие на обработку персональных данных
+
+                // Успешная подписка
+                .subscribe-success.hide
+                    .subscribe-success__title Спасибо за подписку!
+                    .subscribe-success__text Мы отправили вам письмо для подтверждения почтового ящика

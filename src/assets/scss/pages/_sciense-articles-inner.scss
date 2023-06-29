@@ -1,4 +1,22 @@
 .science-articles-inner {
+
+    .section-subscribe {
+        padding-top: 30px;
+
+        @include breakpoint(md) {
+            padding-top: 50px;
+        }
+
+        @include breakpoint(lg) {
+            padding-top: 60px;
+        }
+
+        @include breakpoint(xl) {
+            padding-top: 70px;
+        }
+
+    }
+
 }
 
 .text-page-inner {
@@ -241,7 +259,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 30px;
-    
+
     img {
         border-radius: 12px;
         overflow: hidden;
