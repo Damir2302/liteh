@@ -1,0 +1,165 @@
+.covid-page {
+
+    .franchise-banner__img img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+
+}
+
+.covid-page__simptomes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.covid-page__about {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    justify-content: space-between;
+
+    @include breakpoint(md) {
+        padding-top: 50px;
+    }
+
+    @include breakpoint(lg) {
+        padding-top: 60px;
+    }
+
+    @include breakpoint(xl) {
+        padding-top: 70px;
+    }
+}
+.covid-page__about-content {
+    width: 100%;
+    margin-bottom: 15px;
+
+    @include breakpoint(md) {
+        width: calc( 100% / 6 * 2.8 );
+    }
+
+    @include breakpoint(xl) {
+        width: calc( 100% / 12 * 5 );
+    }
+
+    .title {
+
+    }
+
+    p {
+        color:  #353535;
+        font-size: 16px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+    }
+}
+
+.covid-page__about-img {
+    width: 100%;
+
+    @include breakpoint(md) {
+        width: calc( 100% / 6 * 3 );
+    }
+
+    @include breakpoint(xl) {
+        width: calc( 100% / 12 * 6.8 );
+    }
+}
+
+.covid-page__simptomes {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(md) {
+        padding-top: 50px;
+    }
+
+    @include breakpoint(lg) {
+        padding-top: 60px;
+    }
+
+    @include breakpoint(xl) {
+        padding-top: 70px;
+    }
+}
+
+
+.covid-page__simptomes-title {
+    
+}
+.covid-page__simptomes-text {
+    color:  #353535;
+    font-size: 18px;
+    font-family: Inter;
+    font-style: normal;
+    line-height: 120%;
+    max-width: 688px;
+}
+.covid-page__simptomes-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.covid-page__simptomes-item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 12px;
+    background:  #F8F8F8;
+    margin-bottom: 8px;
+    width: calc( 100% / 2 - 4px );
+
+    @include breakpoint(md) {
+        width: calc( 100% / 4 - 16px );
+        margin-bottom: 16px;
+    }
+    
+}
+.covid-page__simptomes-item-icon {
+    width: 60px;
+    height: 60px;
+}
+.covid-page__simptomes-item-title {
+    margin-top: 20px;
+    color:  #353535;
+    font-size: 16px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.covid-page__simptomes-important {
+    color:  #353535;
+    font-size: 16px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 20px 20px 20px 30px;
+    border-radius: 12px;
+    background:  #FFEBE8;
+    position: relative;
+    margin-top: 20px;
+    
+    &::before {
+        content: '!';
+        color: var(--status-cancel, #EB5757);
+        font-size: 20px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        width: 5px;
+        height: 24px;
+        top: 20px;
+        left: 20px;
+        position: absolute;
+    }
+
+}
