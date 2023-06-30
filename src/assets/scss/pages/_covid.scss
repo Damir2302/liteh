@@ -73,18 +73,22 @@
 
 .covid-page__simptomes {
     padding-top: 40px;
+    padding-bottom: 40px;
     display: flex;
     flex-direction: column;
     @include breakpoint(md) {
         padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     @include breakpoint(lg) {
         padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     @include breakpoint(xl) {
         padding-top: 70px;
+        padding-bottom: 70px;
     }
 }
 
@@ -118,6 +122,11 @@
     @include breakpoint(md) {
         width: calc( 100% / 4 - 16px );
         margin-bottom: 16px;
+    }
+
+    @include breakpoint(lg) {
+        width: calc( 100% / 4 - 20px );
+        margin-bottom: 25px;
     }
     
 }
@@ -162,4 +171,211 @@
         position: absolute;
     }
 
+}
+
+.section-covid-status {
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @include breakpoint(md) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    @include breakpoint(lg) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @include breakpoint(xl) {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    
+    .title {
+        
+    }
+
+}
+
+.section-covid-status__text {
+    color:  #353535;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.section-covid-status__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.section-covid-status__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    border-radius: 12px;
+    background:  #FFF;
+    margin-bottom: 10px;
+
+    @include breakpoint(md) {
+        width: calc( 100% / 2 - 10px );
+    }
+
+}
+.section-covid-status__item-title {
+    color:  #0CAA70;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 10px;
+}
+.section-covid-status__item-text {
+    color:  #353535;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.section-covid__attention {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @include breakpoint(md) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    @include breakpoint(lg) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @include breakpoint(xl) {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+.section-covid__attention-title {
+}
+.section-covid__attention-text {
+    color:  #353535;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 30px;
+}
+.section-covid__attention-content {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include breakpoint(md) {
+        margin-bottom: 50px;
+    }
+
+    @include breakpoint(lg) {
+        margin-bottom: 60px;
+    }
+
+    @include breakpoint(xl) {
+        margin-bottom: 70px;
+    }
+
+
+    p {
+        color:  #353535;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        margin-bottom: 15px;
+    }
+
+    ul {
+        margin-bottom: 20px;
+    }
+
+    li {
+        list-style-type: disc;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        color:  #353535;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+
+        &::marker {
+            color: #0CAA70;
+        }
+
+    }
+
+}
+.section-covid__attention-content-left {
+    width: 100%;
+
+    @include breakpoint(lg) {
+        width: 48%;
+    }
+}
+.section-covid__attention-content-img {
+    width: 100%;
+
+    @include breakpoint(lg) {
+        width: 50%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+}
+.section-covid__attention-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section-covid__attention-item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    border-radius: 12px;
+    background:  #FFEBE8;
+    margin-bottom: 8px;
+    width: calc( 100% / 2 - 4px );
+
+    @include breakpoint(md) {
+        width: calc( 100% / 3 - 10px );
+        margin-bottom: 16px;
+        padding: 30px 20px;
+    }
+
+    @include breakpoint(lg) {
+        width: calc( 100% / 4 - 20px );
+        margin-bottom: 25px;
+    }
+}
+.section-covid__attention-item-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 20px;
+}
+.section-covid__attention-item-title {
+    color:  #353535;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    word-break: break-word;
 }
