@@ -1,0 +1,161 @@
+.sidebar-text-page {
+
+}
+
+.sidebar-page {
+    display: flex;
+    padding-bottom: 30px;
+}
+.container {
+}
+.sidebar-page-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    @include breakpoint(lg) {
+        justify-content: space-between;
+    }
+
+}
+.sidebar-page__nav {
+    width: 100%;
+
+   
+
+    @include breakpoint(lg) {
+        width: calc( 100% / 12 * 4 );
+    }
+
+
+}
+.sidebar-page__list {
+    background:  #f8f8f8;
+    padding: 20px 20px 20px 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    li {
+        font-size: 16px;
+        font-family: Inter;
+        font-weight: 700;
+        line-height: 150%;
+        margin-bottom: 16px;
+
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    li.active {
+        color: $bggreen;
+    }
+
+}
+.sidebar-page__content {
+    width: 100%;
+    margin-top: 20px;
+
+    @include breakpoint(lg) {
+        width: calc( 100% / 12 * 7.7 );
+        margin-top: 0;
+    }
+
+
+    * {
+        width: 100%;
+
+        // @include breakpoint(md) {
+        //     max-width: 584px;
+        // }
+
+    }
+
+    p, ul, ol {
+        margin-bottom: 20px;
+    }
+
+    li {
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    a {
+        width: fit-content;
+    }
+
+    p a {
+        color: #0CAA70;
+        font-weight: 600;
+    }
+
+    ul li ~ li {
+        margin-top: 12px;
+    }
+    
+    ul li::before {
+        content: '';
+        margin-right: 12px;
+        background: $green;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        transform: translateY(-3px);
+    }
+    
+    ol {
+        counter-reset: number;
+    }
+    
+    ol li {
+        display: flex;
+        font-size: 16px;
+        line-height: 150%;
+    }
+    
+    ol li ~ li {
+        margin-top: 12px;
+    }
+    
+    ol li::before {
+        content: counter(number) '.';
+        counter-increment: number;
+        margin-right: 13px;
+        position: relative;
+        display: inline-block;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        color: $green;
+    }
+
+    h3 {
+        margin-bottom: 16px;
+        font-weight: 700;
+        font-size: 2.2rem;
+        line-height: 120%;
+    }
+
+    .table-container {
+        margin-bottom: 20px;
+
+       
+    }
+
+    h4 {
+        margin-bottom: 8px;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 120%;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+}

@@ -1,0 +1,274 @@
+.science-articles-inner {
+
+    .section-subscribe {
+        padding-top: 30px;
+
+        @include breakpoint(md) {
+            padding-top: 50px;
+        }
+
+        @include breakpoint(lg) {
+            padding-top: 60px;
+        }
+
+        @include breakpoint(xl) {
+            padding-top: 70px;
+        }
+
+    }
+
+}
+
+.text-page-inner {
+	blockquote {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		padding: 20px;
+		border-radius: 20px;
+		background: #f8f8f8;
+		margin: 0;
+		margin-bottom: 30px;
+
+		&::before {
+			position: absolute;
+			content: "";
+			background: url(../images/quotes.svg);
+			width: 25px;
+			height: 25px;
+			background-size: contain;
+			top: 20px;
+			left: 25px;
+		}
+	}
+
+	.blockquote__content {
+		display: flex;
+		flex-direction: column;
+		font-size: 16px;
+		font-style: italic;
+		line-height: 150%;
+		margin-bottom: 12px;
+		margin-top: 40px;
+	}
+
+	.blockquote__author {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.blockquote__author-name {
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 150%;
+	}
+
+	.blockquote__author-position {
+		font-size: 14px;
+		line-height: 150%;
+		color: #686868;
+	}
+}
+
+.hided-table-wrapper {
+	margin-bottom: 30px;
+
+	table {
+		background-color: rgba(0, 0, 0, 0);
+		border: 0;
+		border-spacing: 0;
+		border-collapse: collapse;
+		border-style: hidden;
+
+		th {
+			padding: 14px 12px;
+			width: 50%;
+			min-width: 50%;
+			text-align: left;
+		}
+
+		td,
+		th {
+			border: 1px solid #dee2e6;
+		}
+
+		td {
+			padding: 14px 12px;
+		}
+
+		td:nth-child(1),
+		td:nth-child(3) {
+			max-width: 80px;
+			width: 80px;
+		}
+
+		td:nth-child(2),
+		td:nth-child(4) {
+			width: calc(100% / 2 - 160px);
+		}
+
+        td a {
+            color: #29c189;
+        }
+
+		.bg-gray {
+			background: #f8f8f8;
+		}
+	}
+}
+
+.hided-table {
+}
+
+.table-row p,
+.table-head p {
+	margin: 0;
+}
+
+.hided-table-wrapper {
+	border-radius: 10px;
+	border: 1px solid #dee2e6;
+	overflow: hidden;
+
+	tr:nth-child(6) ~ tr {
+		display: none;
+	}
+}
+
+.hided-table__show-all {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 14px 12px;
+	background: #29c189;
+	cursor: pointer;
+
+	img {
+		width: 16px;
+		height: 16px;
+		margin-left: 5px;
+		margin-top: 3px;
+	}
+
+	span {
+		font-size: 14px;
+		color: #fff;
+		font-weight: 700;
+		line-height: 150%;
+		display: flex;
+		width: fit-content;
+	}
+}
+
+.table-allergent {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 12px;
+    border: 1px solid  #E1E1E1;
+    margin-bottom: 30px;
+}
+
+.table-allergent__item {
+    width: calc( 100% / 2 );
+    display: flex;
+    flex-direction: row;
+}
+
+.table-allergent__item-content {
+    display: flex;
+    flex-direction: column;
+    width: calc( 100% - 80px );
+    padding: 12px 14px;
+
+
+    a {
+        color: #29c189;
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    img {
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+}
+
+.table-allergent__item-number {
+    width: 80px;
+    height: 100%;
+    padding: 12px 14px;
+    border-right: 1px solid  #E1E1E1;
+    background: #F8F8F8;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.table-panels {
+    margin-bottom: 30px;
+    border-radius: 10px;
+	border: 1px solid #dee2e6;
+	overflow: hidden;
+
+	table {
+		background-color: rgba(0, 0, 0, 0);
+		border: 0;
+		border-spacing: 0;
+		border-collapse: collapse;
+		border-style: hidden;
+
+		th {
+			padding: 14px 12px;
+			width: 50%;
+			min-width: 50%;
+			text-align: left;
+		}
+
+		td,
+		th {
+			border: 1px solid #dee2e6;
+		}
+
+		td {
+			padding: 14px 12px;
+		}
+
+		td:nth-child(1),
+		td:nth-child(3) {
+			max-width: 80px;
+			width: 80px;
+		}
+
+		td:nth-child(2),
+		td:nth-child(4) {
+			width: calc(100% / 2 - 160px);
+		}
+
+        td a {
+            color: #29c189;
+        }
+
+		.bg-gray {
+			background: #f8f8f8;
+		}
+	}
+}
+
+.table-images {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+    img {
+        border-radius: 12px;
+        overflow: hidden;
+        margin-right: 15px;
+        width: fit-content;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+}

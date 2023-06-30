@@ -1,0 +1,108 @@
+---
+title: Литех | COVID
+bodyClass: covid-page
+---
+
+extends includes/_page
+
+block main
+
+    include components/_breadcrumbs
+    +breadcrumbs('COVID')
+
+    .section-covid 
+        .container 
+
+            .franchise-banner.covid-banner
+                .franchise-banner__wrap
+                    .franchise-banner__title Проверьте свой иммунитет
+                    .franchise-banner__text Анализы на антитела к возбудителю Covid-19
+
+                    .franchise-banner__btn.button-style.button-style--fill-white Где сдать анализы
+
+                .franchise-banner__img
+                    img(src="assets/images/covid-bg.png", alt="img")
+
+            .covid-page__about 
+                .covid-page__about-content 
+                    .title Коронавирус COVID-19
+                    p Новый коронавирус SARS-CoV-2 стал причиной беспрецедентных карантинных мер. Мутации и передача коронавирусов от животных к людям происходили и раньше: мир уже сталкивался со вспышками атипичной пневмонии SARS и ближневосточного респираторного синдрома MERS. Но с появлением SARS-CoV 2 распространение коронавирусной инфекции впервые приняло масштабы пандемии. ВОЗ зарегистрирована первые случаи заболевания в декабре 2019 года. Острая респираторная коронавирусная инфекция, которую вызывает SARS-CoV 2, получила название COVID-19 (coronavirus disease 2019).
+                .covid-page__about-img 
+                    img(src="assets/images/covid-about.png", alt="covid")
+
+            .covid-page__simptomes
+
+                .title.covid-page__simptomes-title Симптомы заболевания
+
+                .covid-page__simptomes-text <b>Наиболее распространённые признаки коронавирусной инфекции</b> у взрослых и детей схожи с типичными проявлениями простуды или гриппа
+                
+                .covid-page__simptomes-items
+
+                    .covid-page__simptomes-item
+                        .covid-page__simptomes-item-icon
+                            img(src="assets/images/cov-ic1.svg", alt="")
+                        .covid-page__simptomes-item-title Повышение температуры тела
+
+                    .covid-page__simptomes-item
+                        .covid-page__simptomes-item-icon
+                            img(src="assets/images/cov-ic2.svg", alt="")
+                        .covid-page__simptomes-item-title Сухой кашель и боль в горле
+
+                    .covid-page__simptomes-item
+                        .covid-page__simptomes-item-icon
+                            img(src="assets/images/cov-ic3.svg", alt="")
+                        .covid-page__simptomes-item-title Повышенная утомляемость
+
+                    .covid-page__simptomes-item
+                        .covid-page__simptomes-item-icon
+                            img(src="assets/images/cov-ic4.svg", alt="")
+                        .covid-page__simptomes-item-title Ощущение заложенности носа
+
+                    .covid-page__simptomes-item
+                        .covid-page__simptomes-item-icon
+                            img(src="assets/images/cov-ic5.svg", alt="")
+                        .covid-page__simptomes-item-title Боль в мышцах и суставах
+
+                    .covid-page__simptomes-item
+                        .covid-page__simptomes-item-icon
+                            img(src="assets/images/cov-ic6.svg", alt="")
+                        .covid-page__simptomes-item-title Утрата вкусовых ощущений и обоняния
+
+                    .covid-page__simptomes-item
+                        .covid-page__simptomes-item-icon
+                            img(src="assets/images/cov-ic7.svg", alt="")
+                        .covid-page__simptomes-item-title Одышка, затруднённое дыхание
+
+                    .covid-page__simptomes-item
+                        .covid-page__simptomes-item-icon
+                            img(src="assets/images/cov-ic8.svg", alt="")
+                        .covid-page__simptomes-item-title Ощущение тяжести в грудной клетке
+                        
+                br
+                .covid-page__simptomes-text 
+                    b Менее распространённые симптомы
+
+                .covid-page__simptomes-items
+
+                    .covid-page__simptomes-item
+                        .covid-page__simptomes-item-icon
+                            img(src="assets/images/cov-ic9.svg", alt="")
+                        .covid-page__simptomes-item-title Диарея, тошнота, рвота
+
+                    .covid-page__simptomes-item
+                        .covid-page__simptomes-item-icon
+                            img(src="assets/images/cov-ic10.svg", alt="")
+                        .covid-page__simptomes-item-title Головная боль
+
+                    .covid-page__simptomes-item
+                        .covid-page__simptomes-item-icon
+                            img(src="assets/images/cov-ic11.svg", alt="")
+                        .covid-page__simptomes-item-title Конъюнктивит
+
+                    .covid-page__simptomes-item
+                        .covid-page__simptomes-item-icon
+                            img(src="assets/images/cov-ic12.svg", alt="")
+                        .covid-page__simptomes-item-title Высыпания на коже
+                
+                .covid-page__simptomes-important Симптомы могут проявиться в течение 2-14 дней после контакта с вирусом. Более 80% людей переносят заболевание бессимптомно или в лёгкой форме при стандартном симптоматическом лечении.
+

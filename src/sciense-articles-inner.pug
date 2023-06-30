@@ -1,0 +1,481 @@
+---
+title: Литех | Научно популярная статья
+bodyClass: science-articles-inner
+---
+
+extends includes/_page
+
+block main
+
+    include components/_breadcrumbs
+    +breadcrumbs('Текстовая страница')
+    
+    section.text-page-wrapper 
+        .container 
+            .text-page-inner
+
+                h1.title Заголовок h1
+
+                blockquote
+                    .blockquote__content … мы в состоянии измерить температуру атмосферы Венеры, но не представляем, что творится внутри суфле на нашем столе
+                    .blockquote__author
+                        .blockquote__author-name Николас Курти
+                        .blockquote__author-position физик
+
+                p Подзаголовок orem ipsum dolor sit amet consectetur. Purus nibh integer maecenas tellus aliquam nunc. Morbi sed nunc eget rhoncus cursus at adipiscing. Dignissim nunc sit amet neque. Amet malesuada feugiat at ultrices posuere.
+                h2 Заголовок h2
+                p <a>Ссылка</a> dolor sit amet consectetur. Purus nibh integer maecenas tellus aliquam nunc. Morbi sed nunc eget rhoncus cursus at adipiscing. Dignissim nunc sit amet neque. Amet malesuada feugiat at ultrices posuere.
+                p Lorem ipsum dolor sit amet consectetur. Purus nibh integer maecenas tellus aliquam nunc. Morbi sed nunc eget rhoncus cursus at adipiscing. Dignissim nunc sit amet neque. Amet malesuada feugiat at ultrices posuere.
+
+                h2 Большая восьмёрка продуктов-аллергено
+                
+                .hided-table-wrapper
+                    table.hided-table
+                        tbody
+                            tr
+                                th(colspan='2').bg-gray 1. Коровье молоко
+                                th(colspan='2').bg-gray 6. Орехи
+                            tr
+                                td 30.04
+                                td
+                                    a(href='/katalog/ige-moloko-korove-f2-2260.html') IgE Молоко коровье
+                                td 36.01
+                                td
+                                    a(href='/katalog/ige-gretskiy-oreh-f256-2305.html') IgE Грецкий орех
+                            tr
+                                td 30.05
+                                td
+                                    a(href='/katalog/ige-moloko-kipyachenoe-f231-2261.html') IgE Молоко кипяченое
+                                td 36.03
+                                td
+                                    a(href='/katalog/ige-kedrovyy-f253-2306.html') IgE Кедровый орех
+                            tr
+                                td 30.06
+                                td
+                                    a(href='/katalog/ige-moloko-koze-f300-2262.html') IgE Молоко козье
+                                td 36.04
+                                td
+                                    a(href='/katalog/ige-keshyu-f202-2307.html') IgE Кешью
+                            tr
+                                td 30.07
+                                td
+                                    a(href='/katalog/ige-syvorotka-moloka-korovy-f236-2263.html') IgE Сыворотка молока коровы
+                                td 36.05
+                                td
+                                    a(href='/katalog/ige-kokos-f36-2308.html') IgE Кокосовый орех
+                            tr
+                                td(colspan='2').bg-gray
+                                    b Аллергокомпоненты
+                                td 36.06
+                                td
+                                    a(href='/katalog/ige-kunzhut-f10-2309.html') IgE Кунжут
+                            tr
+                                td П524
+                                td
+                                    a(href='/katalog/ige-f78-nbos-d-8-kazein-2130.html') IgE Казеин
+                                td 36.07
+                                td
+                                    a(href='/katalog/ige-mindal-f20-2310.html') IgE Миндаль
+                            tr
+                                td П525
+                                td
+                                    a(href='/katalog/ige-f76-nbos-d-4-laktalbumin-2131.html') IgE α -лактальбумин
+                                td 36.08
+                                td
+                                    a(href='/katalog/ige-fistashki-f203-2311.html') IgE Фисташки
+                            tr
+                                td П526
+                                td
+                                    a(href='/katalog/ige-f77-nbos-d-5-laktoglobulin-2132.html') IgE β-лактоглобулин
+                                td 36.09
+                                td
+                                    a(href='/katalog/ige-funduk-f17-2312.html') IgE Фундук
+                            tr
+                                th(colspan='2').bg-gray 2. Куриное яйцо
+                                th(colspan='2').bg-gray 7. Соя
+                            tr
+                                td 30.10
+                                td
+                                    a(href='/katalog/ige-yaytso-belok-f1-2265.html') IgE Яйцо – белок
+                                td 35.03
+                                td
+                                    a(href='/katalog/ige-soya-f14-2301.html') IgE Соевые бобы
+                            tr
+                                td 30.11
+                                td
+                                    a(href='/katalog/ige-yaytso-zheltok-f75-2266.html') IgE Яйцо – желток
+                                td
+                                td
+                            tr
+                                th(colspan='2').bg-gray 3. Рыба
+                                th(colspan='2').bg-gray 8. Морепродукты
+                            tr
+                                td 31.02
+                                td
+                                    a(href='/katalog/ige-kambala-f254-2268.html') IgE Камбала
+                                td 31.01
+                                td
+                                    a(href='/katalog/ige-kalmar-f258-2267.html') IgE Кальмар
+                            tr
+                                td 31.05
+                                td
+                                    a(href='/katalog/ige-losos-f41-2271.html') IgE Лосось
+                                td 31.03
+                                td
+                                    a(href='/katalog/ige-krab-f23-2269.html') IgE Крабовое мясо
+                            tr
+                                td 31.08
+                                td
+                                    a(href='/katalog/ige-sardina-f61-2273.html') IgE Сардина
+                                td 31.04
+                                td
+                                    a(href='/katalog/ige-krevetki-f24-2270.html') IgE Креветки
+                            tr
+                                td 31.09
+                                td
+                                    a(href='/katalog/ige-seld-f205-2274.html') IgE Сельдь
+                                td 31.07
+                                td
+                                    a(href='/katalog/ige-rak-rechnoy-f320-2272.html') IgE Рак речной
+                            tr
+                                th(colspan='2').bg-gray 4. Пшеница
+                                td 31.10
+                                td
+                                    a(href='/katalog/ige-skumbriya-f206-2275.html') IgE Скумбрия
+                            tr
+                                td 34.07
+                                td
+                                    a(href='/katalog/ige-pshenitsa-f4-2295.html') IgE Пшеница
+                                td 31.11
+                                td
+                                    a(href='/katalog/ige-stavrida-f60-2276.html') IgE Ставрида
+                            tr
+                                th(colspan='2').bg-gray 5. Арахис
+                                td 31.12
+                                td
+                                    a(href='/katalog/ige-treska-f3-2277.html') IgE Треска
+                            tr
+                                td 35.01
+                                td
+                                    a(href='/katalog/ige-arahis-f13-2299.html') IgE Арахис
+                                td 31.13
+                                td
+                                    a(href='/katalog/ige-tunets-f40-2278.html') IgE Тунец
+                            tr
+                                td 31.14
+                                td
+                                    a(href='/katalog/ige-forel-f204-2279.html') IgE Форель
+                                td
+                                td
+                            tr
+                                td 31.15
+                                td
+                                    a(href='/katalog/ige-hek-f307-2280.html') IgE Хек
+                                td
+                                td
+                    .hided-table__show-all
+                        span Показать все
+                        img(src="assets/images/chevron-down-white.svg", alt="")         
+                
+                h2 109 отдельных пищевых аллергенов
+
+                .table-allergent 
+                    .table-allergent__item
+                        .table-allergent__item-number 31.12
+                        .table-allergent__item-content
+                            a(href="") IgE Треска
+                            img(src="assets/images/tab1.png", alt="")
+                    .table-allergent__item
+                        .table-allergent__item-number 31.12
+                        .table-allergent__item-content
+                            a(href="") IgE Креветки
+                            img(src="assets/images/tab2.png", alt="")
+                    
+                h2 13 пищевых панелей
+
+                .table-panels
+                    table
+                        tbody
+                            tr
+                                td П521
+                                td
+                                    a(href='/katalog/ige-smes-allergenov-orehov-fm61-f13-f17-f20-f36-f256-arahis-funduk-mindal-kokos-gretskiy-oreh-2112.html') IgE Смесь аллергенов орехов
+                                    |  (арахис, фундук, миндаль, кокос, грецкий орех)
+                            tr
+                                td П522
+                                td
+                                    a(href='/katalog/ige-smes-allergenov-ryby-fm4-f3-f41-f205-f206-f254-treska-losossemga-seld-skumbriya-kambala-2113.html') IgE Смесь аллергенов рыбы
+                                    |  (треска, лосось/семга, сельдь, скумбрия, камбала)
+
+
+                .table-container
+                    .table
+                        .table-head
+                            p Сокращение
+                            p Описание
+                            p Функции
+                        .table-body
+                            .table-row
+                                p gp41 (TM, transmembrane)
+                                p Трансмембранный гликопротеин массой 41 кДа
+                                p Располагается во внешнем слое липидной мембраны, играет роль «якоря», удерживающего молекулы белка gp120
+                            .table-row
+                                p gp120 (SU, surface)
+                                p Гликопротеин массой 120 кДа
+                                p Наружный белок вириона. Нековалентно связан с трансмембранным белком gp41. С одной молекулой gp41 связаны 3—5 молекул gp120. Способен связывать рецептор CD4. Играет важную роль в процессе проникновения вируса в клетку.
+                            .table-row
+                                p p24 (CA, capsid)
+                                p Белок массой 24 кДа
+                                p Образует капсид вируса
+                            .table-row
+                                p p7 (NC, nucleocapsid)
+                                p Нуклеокапсидный белок массой 7 кДа
+                                p Входит в состав капсида вируса. Образует комплекс с вирусной РНК.
+
+                h2 Преимущества лаборатории Литех
+
+                p Мы предлагаем широкий спектр лабораторно-диагностических услуг и выполняем более 1 400 исследований. Диагностический комплекс включает 6 отделов, более 70 единиц высокотехнологичного оборудования, 150 сотрудников центра лабораторной диагностики.
+
+                .table-images
+                    img(src="assets/images/tab3.jpg", alt="")
+                    img(src="assets/images/tab4.jpg", alt="")
+                    img(src="assets/images/tab5.jpg", alt="")
+
+                h3 Литература
+                ol
+                    li Алан Г. Б. Клиническое руководство Тица по лабораторным тестам //М.: Лабора. – 2013. – Т. 1280.
+                    li Долгов В. В., Меньшиков В. В. Клиническая лабораторная диагностика. Национальное руководство //М.: ГЭОТАР-Медиа. – 2016. – С. 688.
+                    li <span>Материалы фирмы-производителя реагентов.</span>
+
+            
+                h3 Другие названия этого исследования
+                p Activated partial thromboplastin time (APTT),Antithrombin III,Coagulation test,Coagulogram of blood,Coagulopathy,D-dimer,Determination of thrombin time in diagnosis of dysfibrinogenemia or hypofibrinogenemia,Fibrin degradation fragment,Fibrinogen (FG, Factor I),Fragment D-dimer,Hemostasiogram,International normalized ratio,International normalized ratio (INR),Prothrombin,Prothrombin time (PT),Prothrombin time ratio,Сoagulogram
+                
+                h4 Названия на русском языке
+                p активированное частичное тромбопластиновое время (АЧТВ),антитромбин III,коагулограмма скрининг,маркер тромбообразования и фибринолизиса,международное нормализованное отношение (МНО),плазминоген,протромбиновое время (ПТВ),протромбиновый индекс (ПТИ),система гемостаза,тромбиновое время,фактор I (первый) свёртывающей системы плазмы,фибриноген,фрагмент расщепления фибрина
+
+    section.section-popular.section-gray
+
+        .container
+
+            .popular
+
+                .popular__head
+
+                    h2.popular__title.title Популярные анализы
+
+                    .popular__tab
+                        .popular__tab-item.active(data-active=1) Анализы
+                        .popular__tab-item(data-active=2) Комплекс анализов
+
+                .popular__slider.active(data-show=1)
+
+                    .swiper
+
+                        .swiper-wrapper
+
+                            .popular__block.swiper-slide
+                                .popular__block-code Код № 52
+                                .popular__block-label Лейкоцитарная формула (дифференцированный подсчет лейкоцитов, лейкоцитограмма, Differential White Blood  Cell Cell Cell
+                                .popular__block-time
+                                    img(src="assets/images/clock.svg", alt="icon")
+                                    p 1 рабочий день
+                                .popular__block-home
+                                    img(src="assets/images/home.svg", alt="icon")
+                                    p Можно сдать дома
+                                .popular__block-bottom
+                                    .popular__block-price 100 000 ₽
+                                    .popular__block-btn.button-style.button-style--fill-orange.add_basket В корзину
+
+                            .popular__block.swiper-slide
+                                .popular__block-code Код № 52
+                                .popular__block-label Лейкоцитарная формула (дифференцированный подсчет лейкоцитов, лейкоцитограмма, патологич...
+                                .popular__block-time
+                                    img(src="assets/images/clock.svg", alt="icon")
+                                    p 1 рабочий день
+                                .popular__block-home
+                                    img(src="assets/images/home.svg", alt="icon")
+                                    p Можно сдать дома
+                                .popular__block-bottom
+                                    .popular__block-price 100 000 ₽
+                                    .popular__block-btn.button-style.button-style--fill-orange.add_basket В корзину
+
+                            .popular__block.swiper-slide
+                                .popular__block-code Код № 52
+                                .popular__block-label Лейкоцитарная формула (дифференцированный подсчет лейкоцитов, лейкоцитограмма, патологич...
+                                .popular__block-time
+                                    img(src="assets/images/clock.svg", alt="icon")
+                                    p 1 рабочий день
+                                .popular__block-home
+                                    img(src="assets/images/home.svg", alt="icon")
+                                    p Можно сдать дома
+                                .popular__block-bottom
+                                    .popular__block-price 100 000 ₽
+                                    .popular__block-btn.button-style.button-style--fill-orange.add_basket В корзину
+
+                            .popular__block.swiper-slide
+                                .popular__block-code Код № 52
+                                .popular__block-label Лейкоцитарная формула (дифференцированный подсчет лейкоцитов, лейкоцитограмма, патологич...
+                                .popular__block-time
+                                    img(src="assets/images/clock.svg", alt="icon")
+                                    p 1 рабочий день
+                                .popular__block-home
+                                    img(src="assets/images/home.svg", alt="icon")
+                                    p Можно сдать дома
+                                .popular__block-bottom
+                                    .popular__block-price 100 000 ₽
+                                    .popular__block-btn.button-style.button-style--fill-orange.add_basket В корзину
+
+                            .popular__block.swiper-slide
+                                .popular__block-code Код № 52
+                                .popular__block-label Лейкоцитарная формула (дифференцированный подсчет лейкоцитов, лейкоцитограмма, патологич...
+                                .popular__block-time
+                                    img(src="assets/images/clock.svg", alt="icon")
+                                    p 1 рабочий день
+                                .popular__block-home
+                                    img(src="assets/images/home.svg", alt="icon")
+                                    p Можно сдать дома
+                                .popular__block-bottom
+                                    .popular__block-price 100 000 ₽
+                                    .popular__block-btn.button-style.button-style--fill-orange.add_basket В корзину
+
+                            .popular__block.swiper-slide
+                                .popular__block-code Код № 52
+                                .popular__block-label Лейкоцитарная формула (дифференцированный подсчет лейкоцитов, лейкоцитограмма, патологич...
+                                .popular__block-time
+                                    img(src="assets/images/clock.svg", alt="icon")
+                                    p 1 рабочий день
+                                .popular__block-home
+                                    img(src="assets/images/home.svg", alt="icon")
+                                    p Можно сдать дома
+                                .popular__block-bottom
+                                    .popular__block-price 100 000 ₽
+                                    .popular__block-btn.button-style.button-style--fill-orange.add_basket В корзину
+
+                    .slider-navigation
+                        .slider-nav.slider-nav-prev
+                            img(src="assets/images/chevron-right-white.svg", alt="icon")
+                            img.disabled(src="assets/images/chevron-left-gray.svg", alt="icon")
+                        .slider-nav.slider-nav-next
+                            img(src="assets/images/chevron-right-white.svg", alt="icon")
+                            img.disabled(src="assets/images/chevron-left-gray.svg", alt="icon")
+
+                .popular__slider(data-show=2)
+
+                    .swiper
+
+                        .swiper-wrapper
+
+                            .popular__block.swiper-slide
+                                .popular__block-code Код № 25
+                                .popular__block-label Дифференцированный блабла (подсчет лейкоцитов, лейкоцитограмма, патологич...
+                                .popular__block-time
+                                    img(src="assets/images/clock.svg", alt="icon")
+                                    p 1 рабочий день
+                                .popular__block-home
+                                    img(src="assets/images/home.svg", alt="icon")
+                                    p Можно сдать дома
+                                .popular__block-bottom
+                                    .popular__block-price 90 000 ₽
+                                    .popular__block-btn.button-style.button-style--fill-orange.add_basket В корзину
+
+                            .popular__block.swiper-slide
+                                .popular__block-code Код № 25
+                                .popular__block-label Дифференцированный блабла (подсчет лейкоцитов, лейкоцитограмма, патологич...
+                                .popular__block-time
+                                    img(src="assets/images/clock.svg", alt="icon")
+                                    p 1 рабочий день
+                                .popular__block-home
+                                    img(src="assets/images/home.svg", alt="icon")
+                                    p Можно сдать дома
+                                .popular__block-bottom
+                                    .popular__block-price 90 000 ₽
+                                    .popular__block-btn.button-style.button-style--fill-orange.add_basket В корзину
+
+                            .popular__block.swiper-slide
+                                .popular__block-code Код № 25
+                                .popular__block-label Дифференцированный блабла (подсчет лейкоцитов, лейкоцитограмма, патологич...
+                                .popular__block-time
+                                    img(src="assets/images/clock.svg", alt="icon")
+                                    p 1 рабочий день
+                                .popular__block-home
+                                    img(src="assets/images/home.svg", alt="icon")
+                                    p Можно сдать дома
+                                .popular__block-bottom
+                                    .popular__block-price 90 000 ₽
+                                    .popular__block-btn.button-style.button-style--fill-orange.add_basket В корзину
+
+                            .popular__block.swiper-slide
+                                .popular__block-code Код № 25
+                                .popular__block-label Дифференцированный блабла (подсчет лейкоцитов, лейкоцитограмма, патологич...
+                                .popular__block-time
+                                    img(src="assets/images/clock.svg", alt="icon")
+                                    p 1 рабочий день
+                                .popular__block-home
+                                    img(src="assets/images/home.svg", alt="icon")
+                                    p Можно сдать дома
+                                .popular__block-bottom
+                                    .popular__block-price 90 000 ₽
+                                    .popular__block-btn.button-style.button-style--fill-orange.add_basket В корзину
+
+                            .popular__block.swiper-slide
+                                .popular__block-code Код № 25
+                                .popular__block-label Дифференцированный блабла (подсчет лейкоцитов, лейкоцитограмма, патологич...
+                                .popular__block-time
+                                    img(src="assets/images/clock.svg", alt="icon")
+                                    p 1 рабочий день
+                                .popular__block-home
+                                    img(src="assets/images/home.svg", alt="icon")
+                                    p Можно сдать дома
+                                .popular__block-bottom
+                                    .popular__block-price 90 000 ₽
+                                    .popular__block-btn.button-style.button-style--fill-orange.add_basket В корзину
+
+                            .popular__block.swiper-slide
+                                .popular__block-code Код № 52
+                                .popular__block-label Лейкоцитарная формула (дифференцированный подсчет лейкоцитов, лейкоцитограмма, патологич...
+                                .popular__block-time
+                                    img(src="assets/images/clock.svg", alt="icon")
+                                    p 1 рабочий день
+                                .popular__block-home
+                                    img(src="assets/images/home.svg", alt="icon")
+                                    p Можно сдать дома
+                                .popular__block-bottom
+                                    .popular__block-price 100 000 ₽
+                                    .popular__block-btn.button-style.button-style--fill-orange.add_basket В корзину
+
+                    .slider-navigation
+                        .slider-nav.slider-nav-prev
+                            img(src="assets/images/chevron-right-white.svg", alt="icon")
+                            img.disabled(src="assets/images/chevron-left-gray.svg", alt="icon")
+                        .slider-nav.slider-nav-next
+                            img(src="assets/images/chevron-right-white.svg", alt="icon")
+                            img.disabled(src="assets/images/chevron-left-gray.svg", alt="icon")
+
+    section.section-subscribe
+
+        .container
+
+            .subscribe
+
+                .subscribe-container
+
+                    .subscribe__title.title Подпишитесь на&nbsp;нашу&nbsp;рассылку
+
+                    .subscribe__wrapper
+
+                        form
+
+                            .subscribe__input
+                                input#email(type="email", name="email" placeholder="Ваш e-mail" required)
+                                button.button-style.button-style--fill-orange(type="submit") Подписаться
+
+                        .subscribe__agreement
+                            img(src="assets/images/check-square.svg", alt="icon")
+                            p Даю согласие на обработку персональных данных
+
+                // Успешная подписка
+                .subscribe-success.hide
+                    .subscribe-success__title Спасибо за подписку!
+                    .subscribe-success__text Мы отправили вам письмо для подтверждения почтового ящика
+

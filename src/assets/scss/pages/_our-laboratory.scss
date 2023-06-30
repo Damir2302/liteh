@@ -1,0 +1,153 @@
+.our-laboratory-page {
+
+    .section-subscribe {
+        padding-top: 30px;
+
+        @include breakpoint(md) {
+            padding-top: 50px;
+        }
+
+    }
+
+}
+
+.our-laboratory__advantages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.our-laboratory__advantage {
+    padding: 30px 20px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    width: calc( 100% / 2 - 4px );
+    border-radius: 12px;
+    background: #F8F8F8;
+
+    @include breakpoint(md) {
+        width: calc( 100% / 4 - 4px );
+    }
+
+}
+
+.our-laboratory__advantage-number {
+    color:  #0CAA70;
+    font-size: 18px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 6px;
+}   
+
+.our-laboratory__advantage-text {
+    color:  #353535;
+    font-size: 14px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.our-labolatory__peculiarities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.our-labolatory__peculiaritie {
+    padding: 20px;
+    border-radius: 12px;
+    background: #EEF8F0;
+    margin-bottom: 8px;
+    color:  #353535;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    width: 100%;
+
+    @include breakpoint(md) {
+        width: calc( 100% / 2 - 5px );
+    }
+
+    &:last-child {
+        @include breakpoint(md) {
+            width: 100%;
+        }
+    }
+
+}
+
+.our-laboratory__names {
+
+}
+
+.our-laboratory__name {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #E1E1E1;
+    align-items: center;
+
+    &:last-child {
+        border: none;
+    }
+
+    div {
+        color:  #353535;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+    }
+
+    span {
+        color: #353535;
+        font-size: 16px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        margin-left: 10px;
+    }
+}
+
+.our-laboratory__authorities {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.our-laboratory__authoritie {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.our-laboratory__authoritie-title {
+    margin-bottom: 10px;
+    color: #353535;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.our-laboratory__authoritie-text {
+    color:  #353535;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+}

@@ -88,4 +88,20 @@ $(document).ready(function() {
         $(`.footer__block[data-show=${$(this).attr('data-active')}]`).addClass('active')
     })
 
+    // HIDE SHOW TABLE
+
+    function toogleTable() {
+
+        if( $('.hided-table-wrapper').length ) {
+    
+            $('.hided-table__show-all').click(function() {
+                $('.hided-table-wrapper tr').toggle();
+            });
+
+        }
+
+    }
+
+    toogleTable();
+
 })
