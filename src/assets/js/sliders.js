@@ -167,7 +167,7 @@ $(document).ready(function() {
     });
 
     function investSliderRun() {
-        if (!investSliderInit && $(window).width() < 744) {
+        if ($('.invest-block').length && !investSliderInit && $(window).width() < 744) {
             investSliderInit = true;
             investSlider = new Swiper(".invest-block .swiper", {
                 slidesPerView: "auto",
@@ -185,6 +185,31 @@ $(document).ready(function() {
             }
         }
     }
+
+    // FORMAT SLIDER
+    var formatSlider = new Swiper(`.format .swiper`, {
+        slidesPerView: 1,
+        spaceBetween: 8,
+        freeMode: true,
+
+        navigation: {
+            nextEl: `.format .slider-nav-next`,
+            prevEl: `.format .slider-nav-prev`,
+        },
+
+        breakpoints: {
+            744: {
+                slidesPerView: 1.2,
+                spaceBetween: 16
+            },
+
+            1024: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                freeMode: false
+            }
+        }
+    })
 
     // FOOTER TAB
     let footerTabSlider;
