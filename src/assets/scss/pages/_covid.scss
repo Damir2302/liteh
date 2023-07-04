@@ -200,6 +200,10 @@
         position: absolute;
     }
 
+    @include breakpoint(lg) {
+        padding-left: 35px;
+    }
+
 }
 
 .section-covid-status {
