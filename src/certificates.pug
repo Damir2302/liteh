@@ -1,0 +1,83 @@
+---
+title: Литех | Лицензии и сертификаты
+bodyClass: certificates-page
+---
+
+extends includes/_page
+
+block main
+
+    include components/_breadcrumbs
+    +breadcrumbs('О лаборатории', 'Лицензии и сертификаты')
+
+    .container
+        h1.title Лицензии и сертификаты
+
+    .sidebar-page
+        .container
+            .sidebar-page-wrapper
+
+                .sidebar-page__nav
+                    ul.sidebar-page__list
+                        li
+                            a(href="") Наша лаборатория
+                        li
+                            a(href="") Документы
+                        li
+                            a(href="") Ваши акции
+                        li.active
+                            a(href="") Лицензии и сертификаты
+                        li
+                            a(href="") Вакансии
+                        li
+                            a(href="") Франшиза
+                        li
+                            a(href="") Отзывы
+                        li
+                            a(href="") Вопрос и ответ
+                
+                .sidebar-page__content.certificates__content
+                    .certificates-items
+                        .certificates-items__img
+                            img(src="assets/images/certificate-1.jpg", alt="certificate")
+                        .certificates-items__img
+                            img(src="assets/images/certificate-2.jpg", alt="certificate")
+                        .certificates-items__img
+                            img(src="assets/images/certificate-3.jpg", alt="certificate")
+                        .certificates-items__img
+                            img(src="assets/images/certificate-4.jpg", alt="certificate")
+                        .certificates-items__img
+                            img(src="assets/images/certificate-5.jpg", alt="certificate")
+                        .certificates-items__img
+                            img(src="assets/images/certificate-6.jpg", alt="certificate")
+                        .certificates-items__img
+                            img(src="assets/images/certificate-7.jpg", alt="certificate")
+                        .certificates-items__img
+                            img(src="assets/images/certificate-8.jpg", alt="certificate")
+    
+    section.section-subscribe
+
+        .container
+
+            .subscribe
+
+                .subscribe-container
+
+                    .subscribe__title.title Подпишитесь на&nbsp;нашу&nbsp;рассылку
+
+                    .subscribe__wrapper
+
+                        form
+
+                            .subscribe__input
+                                input#email(type="email", name="email" placeholder="Ваш e-mail" required)
+                                button.button-style.button-style--fill-orange(type="submit") Подписаться
+
+                        .subscribe__agreement
+                            img(src="assets/images/check-square.svg", alt="icon")
+                            p Даю согласие на обработку персональных данных
+
+                // Успешная подписка
+                .subscribe-success.hide
+                    .subscribe-success__title Спасибо за подписку!
+                    .subscribe-success__text Мы отправили вам письмо для подтверждения почтового ящика
