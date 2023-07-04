@@ -1,5 +1,19 @@
 .covid-page {
 
+    .franchise-banner__img {
+        height: 330px;
+
+        @include breakpoint(md) {
+            height: 380px;
+        }
+
+        @include breakpoint(lg) {
+            height: 400px;
+        }
+
+    }
+
+
     .franchise-banner__img img {
         height: 100%;
         width: 100%;
@@ -7,6 +21,21 @@
     }
 
 
+    .section-useful {
+        padding-top: 40px;
+
+        @include breakpoint(md) {
+            padding-top: 50px;
+        }
+    
+        @include breakpoint(lg) {
+            padding-top: 60px;
+        }
+    
+        @include breakpoint(xl) {
+            padding-top: 70px;
+        }
+    }
 
 }
 
@@ -277,6 +306,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
     @include breakpoint(md) {
         margin-bottom: 50px;
     }
@@ -379,3 +409,126 @@
     line-height: 150%;
     word-break: break-word;
 }
+
+.section-covid__ways {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @include breakpoint(md) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    @include breakpoint(lg) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @include breakpoint(xl) {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+.section-gray {
+}
+.container {
+}
+.section-covid__ways-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 60px;
+
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+}
+.section-covid__ways-block-title {
+    margin-bottom: 20px;
+}
+
+.section-covid__ways-block-text {
+    max-width: 633px;
+}
+
+.title {
+}
+.section-covid__ways-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.section-covid__ways-wrapper-col-3 {
+
+    .section-covid__ways-item {
+        width: 100%;
+
+        @include breakpoint(md) {
+            width: calc( 100% / 3 - 16px );
+            margin-bottom: 16px;
+        }
+
+        @include breakpoint(lg) {
+            width: calc( 100% / 3 - 20px );
+            margin-bottom: 25px;
+        }
+    }
+
+}
+
+.section-covid__ways-wrapper-col-4 {
+
+    .section-covid__ways-item {
+        margin-bottom: 8px;
+        width: calc( 100% / 2 - 4px );
+    
+        @include breakpoint(md) {
+            width: calc( 100% / 4 - 16px );
+            margin-bottom: 16px;
+        }
+    
+        @include breakpoint(lg) {
+            width: calc( 100% / 4 - 20px );
+            margin-bottom: 25px;
+        }
+    }
+
+}
+
+.section-covid__ways-item {
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    background: #FFF;
+    border-radius: 12px;
+}
+
+.section-covid__ways-item-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+.section-covid__ways-item-title {
+    color:  #353535;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 10px;
+
+}
+.section-covid__ways-item-text {
+    color:  #353535;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+
+
+
