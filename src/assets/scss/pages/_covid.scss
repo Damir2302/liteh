@@ -259,6 +259,11 @@
         width: calc( 100% / 2 - 10px );
     }
 
+    @include breakpoint(lg) {
+        width: calc( 100% / 2 - 15px );
+    }
+
+
 }
 .section-covid-status__item-title {
     color:  #0CAA70;
