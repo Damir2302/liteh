@@ -36,6 +36,12 @@ $(document).ready(function() {
     $('.faq__question').on('click', function() {
         $(this).parent().toggleClass('expanded')
     })
+    $('.vacancies-question').each(function(i) {
+        $(this).on('click', function() {
+            $('.vacancies-answer').eq(i).slideToggle(700);
+            $(this).parent().toggleClass('expanded')
+        });
+    });
 
     // CATALOG ASIDE
     $('.catalog__menu-title').on('click', function() {

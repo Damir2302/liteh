@@ -1,0 +1,101 @@
+---
+title: Литех | Вакансии
+bodyClass: vacancies-page
+---
+
+extends includes/_page
+
+block main
+
+    include components/_breadcrumbs
+    +breadcrumbs('О лаборатории', 'Вакансии')
+
+    .container
+        h1.title Вакансии
+
+    .sidebar-page 
+        .container 
+            .sidebar-page-wrapper 
+
+                .sidebar-page__nav 
+                    ul.sidebar-page__list
+                        li
+                            a(href="") Наша лаборатория
+                        li
+                            a(href="") Документы
+                        li
+                            a(href="") Ваши акции
+                        li
+                            a(href="") Лицензии и сертификаты
+                        li.active
+                            a(href="") Вакансии
+                        li
+                            a(href="") Франшиза
+                        li
+                            a(href="") Отзывы
+                        li
+                            a(href="") Вопрос и ответ
+                
+                .sidebar-page__content.vacancies__content
+                    .vacancies__title Вакансии, открытые в настоящее время:
+                    .vacancies-wrapper
+                        .vacancies__item
+                            .vacancies-question
+                                .vacancies-question__title Медицинский лабораторный техник / Лаборант (ПЦР)
+                                .vacancies-question__icon
+                                    img.plus(src="assets/images/plus.svg", alt="icon")
+                                    img.minus(src="assets/images/minus.svg", alt="icon")
+                            .vacancies-answer
+                                .vacancies-answer__item
+                                    .vacancies-answer__title Обязанности:
+                                    ul.vacancies-answer__list
+                                        li Выделение ДНК из проб биоматериала;
+                                        li Работа с ЛИС;
+                                        li Соблюдение СанПин;
+                                        li Ведение медицинской документации;
+                                .vacancies-answer__item
+                                    .vacancies-answer__title Требования:
+                                    ul.vacancies-answer__list
+                                        li Среднее специальное медицинское образование;
+                                        li Опыт работы от 1 года по специальности;
+                                        li Действующий сертификат по специальности «Лабораторная диагностика»
+                                        li Уверенный пользователь ПК;
+                                        li Наличие действующей медицинской книжки;
+                                        li Стрессоустойчивость, внимательность, ответственность, умение работать в режиме многозадачности.
+                                .vacancies-answer__item
+                                    .vacancies-answer__title Условия:
+                                    ul.vacancies-answer__list
+                                        li Работа в современной, динамично развивающейся компании;
+                                        li Официальное оформление, выплата заработной платы 2 раза в месяц, социальные гарантии;
+                                        li График работы 2/2 с 18.00 до 06.00, суббота и воскресенье - выходные дни;
+                                        li Перспективы профессионального и карьерного роста;
+                                        li Скидки на услуги лаборатории (в том числе для членов семьи);
+                                        li Открытое и конструктивное сотрудничество.
+                                a.vacancies-answer__btn Откликнуться на вакансию
+                        .vacancies__item
+                            .vacancies-question
+                                .vacancies-question__title Руководитель отделения молекулярной диагностики клинико-диагностической лаборатории (ПЦР)
+                                .vacancies-question__icon
+                                    img.plus(src="assets/images/plus.svg", alt="plus")
+                                    img.minus(src="assets/images/minus.svg", alt="minus")
+                            .vacancies-answer
+                    .vacancies-contacts
+                        .vacancies-contacts-text
+                            .vacancies-contacts__title Не нашли подходящую вакансию?
+                            .vacancies-contacts__descr Наша компания : динамично растет, развивается, поэтому мы всегда находимся в поиске компетентных и грамотных специалистов. Присылайте свое резюме, звоните по контактным телефонам, приходите к нам на собеседование и расскажите о своём профессиональном опыте, о своих достижениях и успехах, и мы готовы найти индивидуальный подход к каждому!
+                        .vacancies-contacts-content
+                            .vacancies-contacts-content__title Титова Яна Викторовна
+                            .vacancies-contacts-content__subtitle Руководитель отдела по работе с персоналом
+                            .vacancies-contacts-content-items
+                                a.vacancies-contacts-content-items__link(href="mailto:y.titova@lablytech.ru")
+                                    .vacancies-contacts-content-items__icon
+                                        img(src="assets/images/mail.svg", alt="mail")
+                                    .vacancies-contacts-content-items__text y.titova@lablytech.ru
+                                a.vacancies-contacts-content-items__link(href="tel:+74955891403")
+                                    .vacancies-contacts-content-items__icon
+                                        img(src="assets/images/phone-green.svg", alt="phone")
+                                    .vacancies-contacts-content-items__text +7 495 589-14-03
+                                a.vacancies-contacts-content-items__link(href="tel:+79060914250")
+                                    .vacancies-contacts-content-items__icon
+                                        img(src="assets/images/phone-green.svg", alt="phone")
+                                    .vacancies-contacts-content-items__text +7 906 091-42-50
