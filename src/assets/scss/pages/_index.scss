@@ -866,17 +866,14 @@
     }
 }
 
-.programs__item {
-    position: relative;
-    border: 1px solid #E1E1E1;
-    border-radius: 124px;
-}
-
 .programs__item a {
+    position: relative;
     padding: 8px;
     display: flex;
     align-items: center;
     width: 100%;
+    border: 1px solid #E1E1E1;
+    border-radius: 124px;
 }
 
 .programs__item ~ .programs__item {
@@ -908,6 +905,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 120%;
+    user-select: none;
 
     @include breakpoint(lg) {
         margin-left: 20px;

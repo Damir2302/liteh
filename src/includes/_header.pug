@@ -21,7 +21,8 @@ block header
                     .header__phone
                         .header__phone-wrap
                             .header__phone-icon
-                                img(src="assets/images/phone.svg", alt="icon")
+                                a(href="tel:+7 (495) 260-11-26")
+                                    img(src="assets/images/phone.svg", alt="icon")
                             .header__phone-value
                                 a(href="tel:+7 (495) 260-11-26") +7 (495) 260-11-26
                         
@@ -35,6 +36,7 @@ block header
 
                     .header__burger
                         img(src="assets/images/burger.svg", alt="icon")
+                        img.close(src="assets/images/close-x.svg", alt="icon")
 
         .header__bottom
 
@@ -71,3 +73,56 @@ block header
 
                         .header__cart(data-count="4")
                             img(src="assets/images/cart.svg", alt="icon")
+
+        .header__menu
+
+            .container
+
+                .header__menu-phone
+                    a(href="tel:+7 (495) 260-11-26") +7 (495) 260-11-26
+                .header__menu-action Заказать звонок
+
+                ul.nav
+                    li.nav__item.has-submenu.opened
+                        .nav__item-link
+                            a(href="#") Пациентам
+                        ul.nav__submenu
+                            li.nav__submenu-item.highlight
+                                a(href="#") Анализы и цены
+                            li.nav__submenu-item 
+                                a(href="#") Анализы на дому
+                            li.nav__submenu-item  
+                                a(href="#") Акции
+                            li.nav__submenu-item
+                                a(href="#") Covid
+                            li.nav__submenu-item
+                                a(href="#") Подготовка к анализам
+                            li.nav__submenu-item
+                                a(href="#") Налоговый вычет
+                            li.nav__submenu-item.highlight
+                                a(href="#") Медицинские офисы
+
+                    li.nav__item.has-submenu.opened
+                        .nav__item-link
+                            a(href="#") Полезная информация
+                        ul.nav__submenu
+                            li.nav__submenu-item
+                                a(href="#") Научно популярные статьи
+                            li.nav__submenu-item
+                                a(href="#") Программа лояльности
+                    
+                    li.nav__item
+                        .nav__item-link
+                            a(href="#") Франшиза
+                    
+                    li.nav__item.has-submenu
+                        .nav__item-link
+                            a(href="#") Корпоративным клиентам
+                        ul.nav__submenu
+                            li
+                    
+                    li.nav__item.has-submenu
+                        .nav__item-link
+                            a(href="#") О лаборатории
+                        ul.nav__submenu
+                            li

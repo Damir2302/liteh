@@ -65,6 +65,23 @@ $(document).ready(function() {
         $(`.preparation__content[data-active=${$(this).attr('data-show')}]`).addClass('active')
     })
 
+    // FRANCHISE PAGE VANTAGES
+    function vantagesSlide() {
+        
+        $('.programs__item-wrap').on('click', function() {
+            if ($(window).width() >= 744) {
+                $('.programs__item').removeClass('active')
+                $(this).parent().addClass('active')
+                $('.programs__images-content').removeClass('active')
+                $(`.programs__images-content[data-show=${$(this).parent().attr('data-active')}]`).addClass('active')
+            } else {
+                $(this).parent().toggleClass('active')
+            }
+        })
+    }
+
+    vantagesSlide()
+
     // CART TAB
     $('.cart__tab-item').on('click', function() {
         $('.cart__tab-item').removeClass('active')
@@ -89,7 +106,6 @@ $(document).ready(function() {
     })
 
     // HIDE SHOW TABLE
-
     function toogleTable() {
 
         if( $('.hided-table-wrapper').length ) {
@@ -97,7 +113,6 @@ $(document).ready(function() {
             $('.hided-table__show-all').click(function() {
                 $('.hided-table-wrapper tr').toggle();
             });
-
         }
 
     }

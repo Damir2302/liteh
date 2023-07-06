@@ -5,6 +5,13 @@
     }
 }
 
+.footer .container {
+
+    @include breakpointMax(md) {
+        padding: 0;
+    }
+}
+
 .footer__menu {
 
     @include breakpoint(md) {
@@ -32,17 +39,40 @@
 .footer__tabs {
     margin-bottom: 12px;
     padding: 7px;
-    background: #F8F8F8;
 
     @include breakpoint(md) {
         display: none;
     }
 }
 
+.footer__tabs .swiper-slide {
+
+    @include breakpointMax(md) {
+        padding: 7px;
+        background: #F8F8F8;
+        width: auto;
+    }
+}
+
+.footer__tabs .swiper-slide:first-child {
+
+    @include breakpointMax(md) {
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+}
+
+.footer__tabs .swiper-slide:last-child {
+
+    @include breakpointMax(md) {
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+}
+
 .footer__tab-item {
     padding: 12px 20px;
     display: inline-block;
-    width: auto;
     font-weight: 600;
     font-size: 15px;
     line-height: 18px;
@@ -61,6 +91,7 @@
 .footer__block {
     
     @include breakpointMax(md) {
+        padding: 0 12px;
         display: none;
     }
 
@@ -154,11 +185,14 @@
 }
 
 .footer__services {
-    padding: 12px 0;
     display: flex;
     flex-direction: column;
     border-top: 1px solid #E1E1E1;
     border-bottom: 1px solid #E1E1E1;
+
+    @include breakpointMax(md) {
+        padding: 12px;
+    }
 
     @include breakpoint(md) {
         padding: 28px 0;
@@ -300,7 +334,10 @@
 }
 
 .footer__bottom {
-    padding: 12px 0 17px;
+
+    @include breakpointMax(md) {
+        padding: 12px 12px 17px;
+    }
 
     @include breakpoint(md) {
         padding: 28px 0;

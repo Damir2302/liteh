@@ -15,11 +15,16 @@ block footer
 
                             .swiper-wrapper
 
-                                .footer__tab-item.swiper-slide.active(data-active=1) Пациентам
-                                .footer__tab-item.swiper-slide(data-active=2) Полезная информация
-                                .footer__tab-item.swiper-slide(data-active=3) Франшиза
-                                .footer__tab-item.swiper-slide(data-active=4) Корпоративным клиентам
-                                .footer__tab-item.swiper-slide(data-active=5) О лаборатории
+                                .swiper-slide
+                                    .footer__tab-item.active(data-active=1) Пациентам
+                                .swiper-slide
+                                    .footer__tab-item(data-active=2) Полезная информация
+                                .swiper-slide
+                                    .footer__tab-item(data-active=3) Франшиза
+                                .swiper-slide
+                                    .footer__tab-item(data-active=4) Корпоративным клиентам
+                                .swiper-slide
+                                    .footer__tab-item(data-active=5) О лаборатории
 
                     .footer__block.active(data-show=1)
                         a.footer__block-title(href="#") Пациентам

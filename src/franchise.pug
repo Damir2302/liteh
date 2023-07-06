@@ -210,8 +210,285 @@ block main
                 .slider-navigation
 
                     .slider-nav.slider-nav-prev
-                            img(src="assets/images/chevron-right-white.svg", alt="icon")
-                            img.disabled(src="assets/images/chevron-left-gray.svg", alt="icon")
+                        img(src="assets/images/chevron-right-white.svg", alt="icon")
+                        img.disabled(src="assets/images/chevron-left-gray.svg", alt="icon")
                     .slider-nav.slider-nav-next
                         img(src="assets/images/chevron-right-white.svg", alt="icon")
                         img.disabled(src="assets/images/chevron-left-gray.svg", alt="icon")
+
+    section.section-programs
+
+        .container
+
+            h2.programs__title.title Требования к помещению
+
+            .programs
+
+                .programs__wrapper
+
+                    .programs__item(data-active=1).active
+                        .programs__item-wrap
+                            .programs__item-img.bg-orange
+                                img(src="assets/images/warning.svg", alt="icon")
+                            .programs__item-label Обязательные
+                            .programs__item-arrow
+                                img(src="assets/images/chevron-down-green.svg", alt="icon")
+
+                        .programs__item-content
+                            .programs__item-content-img
+                                img(src="assets/images/353769-laboratoriya-_liteh_l.jpg", alt="img")
+
+                            .programs__item-content-list
+                                ul.list-style
+                                    li Отдельный вход (не ниже 1 этажа)
+                                    li Общая площадь от 60 м2
+                                    li Высота потолков от 2.6 м
+                                    li Коммуникации (водоснабжение, канализация)
+                                    li Длительный договор аренды или собственность
+                                    li Наличие естественного освещения
+
+                    .programs__item(data-active=2)
+                        .programs__item-wrap
+                            .programs__item-img.bg-green
+                                img(src="assets/images/003-star.svg", alt="icon")
+                            .programs__item-label Рекомендуемые
+                            .programs__item-arrow
+                                img(src="assets/images/chevron-down-green.svg", alt="icon")
+
+                    .programs__item(data-active=3)
+                        .programs__item-wrap
+                            .programs__item-img.bg-pink
+                                img(src="assets/images/blueprint.svg", alt="icon")
+                            .programs__item-label Планировка
+                            .programs__item-arrow
+                                img(src="assets/images/chevron-down-green.svg", alt="icon")
+
+                .programs__images
+
+                    .programs__images-content(data-show=1).active
+                        .programs__images-img
+                            img(src="assets/images/353769-laboratoriya-_liteh_l.jpg", alt="img")
+
+                        .programs__item-content-list
+                            ul.list-style
+                                li Отдельный вход (не ниже 1 этажа)
+                                li Общая площадь от 60 м2
+                                li Высота потолков от 2.6 м
+                                li Коммуникации (водоснабжение, канализация)
+                                li Длительный договор аренды или собственность
+                                li Наличие естественного освещения
+
+                    .programs__images-content(data-show=2)
+                        .programs__images-img
+                            img(src="assets/images/tab2.png", alt="img")
+
+                        .programs__item-content-list
+                            ul.list-style
+                                li Отдельный вход (не ниже 1 этажа)
+                                li Длительный договор аренды или собственность
+                                li Наличие естественного освещения
+
+                    .programs__images-content(data-show=3)
+                        .programs__images-img
+                            img(src="assets/images/tab1.png", alt="img")
+
+                        .programs__item-content-list
+                            ul.list-style
+                                li Наличие естественного освещения
+                                li Наличие естественного освещения
+
+    section.section-vantage
+
+        .container
+
+            h2.title Преимущества франшизы ЛИТЕХ
+
+            .vantage
+
+                .vantage__img
+                    img(src="assets/images/franchise-tech-img.png", alt="img")
+                
+                .vantage__block
+
+                    .vantage__block-item ЛИТЕХ — одна из наиболее авторитетных компаний на российском рынке лабораторной диагностики.
+                    .vantage__block-item Мы участвуем в системах внешней оценки качества EQAS External Quality Assurance Services, BIO-Rad (США) и ФСВОК.
+                    .vantage__block-item Тесно сотрудничаем с НПФ ЛИТЕХ, производителем российских тест-систем для ПЦР и ИФА диагностики, а также с ФГБУ ФНКЦ ФХМ ФМБА России.
+                    .vantage__block-item Применяем инновационные методы исследования биоматериалов и внедряем собственные научные разработки, позволяющие снизить цены на анализы.
+                    .vantage__block-item Выполняем анализы для федеральных и муниципальных лечебно-профилактических учреждений, клиник пластической хирургии, родильных домов, медицинских центров, врачей частной практики.
+
+            .vantage-tiles
+
+                .vantage-tiles__item
+                    .vantage-tiles__item-icon
+                        img(src="assets/images/data-analytics.svg", alt="icon")
+                    .vantage-tiles__item-wrap
+                        .vantage-tiles__item-title Устойчивый рынок
+                        .vantage-tiles__item-text Бизнес в сфере здравоохранения не подвержен сезонности и сохраняет тенденцию к росту даже в кризисные периоды
+
+                .vantage-tiles__item
+                    .vantage-tiles__item-icon
+                        img(src="assets/images/health-care.svg", alt="icon")
+                    .vantage-tiles__item-wrap
+                        .vantage-tiles__item-title Социально значимый бизнес
+                        .vantage-tiles__item-text Запрос на лабораторную диагностику по доступным ценам есть и у частных клиентов, и у медицинских учреждений
+                
+                .vantage-tiles__item
+                    .vantage-tiles__item-icon
+                        img(src="assets/images/lawyer.svg", alt="icon")
+                    .vantage-tiles__item-wrap
+                        .vantage-tiles__item-title Юридическая защита
+                        .vantage-tiles__item-text Лаборатория по франшизе — это бизнес со стабильной доходностью, выстроенный по модели, прозрачной для надзорных органов
+
+                .vantage-tiles__item
+                    .vantage-tiles__item-icon
+                        img(src="assets/images/satisfaction.svg", alt="icon")
+                    .vantage-tiles__item-wrap
+                        .vantage-tiles__item-title Сервис, который оценят
+                        .vantage-tiles__item-text Мы предлагаем доступные цены, высокую точность результатов исследований, качественные расходные материалы, современные стандарты обслуживания
+
+    section.section-briefcase.section-gray
+
+        .container
+
+            h2.title Портфель партнёра ЛИТЕХ
+
+            .briefcase
+
+                .briefcase__item
+                    .briefcase__item-icon
+                        img(src="assets/images/check-circle.svg", alt="icon")
+                    .briefcase__item-text Персональный менеджер, который поможет в решении организационных и рабочих вопросов
+
+                .briefcase__item
+                    .briefcase__item-icon
+                        img(src="assets/images/check-circle.svg", alt="icon")
+                    .briefcase__item-text Консультации и пакет нормативных документов для успешного оформления лицензии
+
+                .briefcase__item
+                    .briefcase__item-icon
+                        img(src="assets/images/check-circle.svg", alt="icon")
+                    .briefcase__item-text Рекомендации по составу и квалификации персонала, обучение сотрудников перед открытием медицинского офиса
+
+                .briefcase__item
+                    .briefcase__item-icon
+                        img(src="assets/images/check-circle.svg", alt="icon")
+                    .briefcase__item-text Организация удалённого доступа в информационную систему для оформления заказов и получения результатов анализов в режиме реального времени
+
+                .briefcase__item
+                    .briefcase__item-icon
+                        img(src="assets/images/check-circle.svg", alt="icon")
+                    .briefcase__item-text 100% обеспечение расходными материалами
+
+                .briefcase__item
+                    .briefcase__item-icon
+                        img(src="assets/images/check-circle.svg", alt="icon")
+                    .briefcase__item-text Компенсация затрат на доставку биоматериалов до 100%
+
+                .briefcase__item
+                    .briefcase__item-icon
+                        img(src="assets/images/check-circle.svg", alt="icon")
+                    .briefcase__item-text Консультационная, методическая и технологическая поддержка на всех этапах открытия и дальнейшей работы медицинского офиса
+
+    section.section-associate
+
+        .container
+
+            h2.title Как стать партнёром
+
+            .associate
+
+                .associate__item
+                    .associate__item-label 1
+                    .associate__item-text Выберите оптимальный формат франшизы и свяжитесь с нами
+
+                .associate__item
+                    .associate__item-label 2
+                    .associate__item-text Подберите подходящее помещение под медицинский офис
+
+                .associate__item
+                    .associate__item-label 3
+                    .associate__item-text Заключите договор
+
+                .associate__item
+                    .associate__item-label 4
+                    .associate__item-text Обустройте медицинский офис для приёма пациентов — мы подготовим проект, подскажем поставщиков мебели и оборудования
+
+                .associate__item
+                    .associate__item-label 5
+                    .associate__item-text Подключитесь к IT-системе ЛИТЕХ
+
+                .associate__item
+                    .associate__item-label 6
+                    .associate__item-text Наберите персонал и направьте сотрудников на обучение по стандартам сети лабораторий ЛИТЕХ
+
+                .associate__item
+                    .associate__item-label 7
+                    .associate__item-text Зарабатывайте, предлагая доступные услуги лабораторной диагностики
+
+    section.section-f-form
+
+        .f-form-wrapper.bg-green
+
+            .container
+
+                .f-form
+
+                    .f-form__top
+                        .f-form__title Присоединяйтесь к сети лабораторий ЛИТЕХ
+                        .f-form__subtitle Оставьте заявку, и мы свяжемся с вами в ближайшее время
+
+                    .f-form__inner
+
+                        form
+
+                            .f-form__wrap
+
+                                .input-style
+                                    label ФИО*
+                                    input(type="text" placeholder="ФИО")
+
+                                .input-style
+                                    label E-mail*
+                                    input(type="email" placeholder="E-mail")
+
+                                .input-style
+                                    label Телефон
+                                    input(type="tel" placeholder="Телефон")
+
+                                .input-style
+                                    label Сообщение
+                                    textarea(placeholder="Сообщение")
+
+                                .f-form__submit
+                                    button.button-style.button-style--green(type="submit") Оставить заявку
+
+                                    .subscribe__agreement
+                                        img(src="assets/images/check-square.svg" alt="icon")
+                                        p Даю согласие на обработку персональных данных
+
+    section.section-subscribe
+
+        .container
+
+            .subscribe
+
+                .subscribe-container
+
+                    .subscribe__title.title Подпишитесь на&nbsp;нашу&nbsp;рассылку
+
+                    .subscribe__wrapper
+
+                        form
+
+                            .subscribe__input
+                                input#email(type="email", name="email" placeholder="Ваш e-mail" required)
+                                button.button-style.button-style--fill-orange(type="submit") Подписаться
+
+                        .subscribe__agreement
+                            img(src="assets/images/check-square.svg", alt="icon")
+                            p Даю согласие на обработку персональных данных
+
+                // Успешная подписка
+                .subscribe-success.hide
+                    .subscribe-success__title Спасибо за подписку!
+                    .subscribe-success__text Мы отправили вам письмо для подтверждения почтового ящика

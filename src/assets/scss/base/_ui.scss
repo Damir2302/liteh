@@ -24,13 +24,23 @@ body b {
   height: 0;
 
   @include breakpoint(lg) {
-    width: 2px;
+    width: 8px;
     height: 10px;
   }
 }
 
+::-webkit-scrollbar-thumb {
+  background: #0CAA70;
+  border-radius: 30px;
+}
+
 ::-webkit-scrollbar-track {
   background: #f7f7f7;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0CAA70 #f7f7f7;
 }
 
 input[type="search"]::-webkit-search-decoration,

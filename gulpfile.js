@@ -127,20 +127,20 @@ function scss(cb) {
             includePaths: './node_modules/',
             outputStyle: 'compressed'
         }))
-        .pipe(base64('../icons'))
+        // .pipe(base64('../icons'))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 2 versions', '> 1%', 'ie 9'],
             cascade: true
         }))
         .pipe(cssbeautify())
         .pipe(dest(path.build.css))
-        .pipe(cssnano({
-            zindex: false,
-            autoprefixer: false,
-            discardComments: {
-                removeAll: true
-            }
-        }))
+        // .pipe(cssnano({
+        //     zindex: false,
+        //     autoprefixer: false,
+        //     discardComments: {
+        //         removeAll: true
+        //     }
+        // }))
         .pipe(pxtorem({
 			rootValue: 10,
 			unitPrecision: 5,
@@ -191,7 +191,7 @@ function scssWatch(cb) {
             extname: ".css"
         }))
         .pipe(sourcemaps.write('.'))
-        .pipe(base64('../icons'))
+        // .pipe(base64('../icons'))
         .pipe(dest(path.build.css))
         .pipe(browserSync.reload({stream: true}));
 
