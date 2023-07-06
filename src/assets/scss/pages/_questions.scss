@@ -1,0 +1,39 @@
+.questions {
+    &__content {
+        @include breakpoint(md) {
+            margin-top: 30px;
+        }
+        @include breakpoint(lg) {
+            margin-top: 0;
+        }
+    }
+    &-tabs {
+        padding: 6px;
+        &__item {
+            width: max-content;
+            padding: 12px 10px;
+            border-radius: 33px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 600;
+            transition: 0.5s;
+            @include breakpoint(xl) {
+                padding: 12px 27px;
+            }
+        }
+        &__item.active {
+            background-color: $green;
+            color: #FFFFFF;
+        }
+    }
+    &-content {
+        display: none;
+    }
+    &-content.active {
+        display: block;
+        margin: 20px 0;
+        @include breakpoint(md) {
+            margin: 30px 0;
+        }
+    }
+}

@@ -94,6 +94,15 @@ $(document).ready(function() {
         $(`.footer__block[data-show=${$(this).attr('data-active')}]`).addClass('active')
     })
 
+    // QUESTIONS TAB
+    $('.questions-tabs__item').on('click', function() {
+        $('.questions-tabs__item').removeClass('active')
+        $(this).addClass('active')
+
+        $('.questions-content').removeClass('active')
+        $(`.questions-content[data-show=${$(this).attr('data-active')}]`).addClass('active')
+    })
+
     // HIDE SHOW TABLE
 
     function toogleTable() {

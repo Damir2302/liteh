@@ -1,0 +1,142 @@
+---
+title: Литех | Вопрос и ответ
+bodyClass: questions-page
+---
+
+extends includes/_page
+
+block main
+
+    include components/_breadcrumbs
+    +breadcrumbs('О лаборатории', 'Вопрос и ответ')
+
+    .container
+        h1.title Вопрос и ответ
+
+    .sidebar-page
+        .container
+            .sidebar-page-wrapper
+
+                .sidebar-page__nav
+                    ul.sidebar-page__list
+                        li
+                            a(href="") Наша лаборатория
+                        li
+                            a(href="") Документы
+                        li
+                            a(href="") Ваши акции
+                        li
+                            a(href="") Лицензии и сертификаты
+                        li
+                            a(href="") Вакансии
+                        li
+                            a(href="") Франшиза
+                        li
+                            a(href="") Отзывы
+                        li.active
+                            a(href="") Вопрос и ответ
+                
+                .sidebar-page__content.questions__content
+                    .questions-tabs
+                        .swiper
+                            .swiper-wrapper
+                                .questions-tabs__item.swiper-slide.active(data-active=1) Общие вопросы
+                                .questions-tabs__item.swiper-slide(data-active=2) Анализы
+                                .questions-tabs__item.swiper-slide(data-active=3) Результаты
+                                .questions-tabs__item.swiper-slide(data-active=4) Другие вопросы
+                    
+                    .questions-content.active(data-show=1)
+                        .vacancies__item
+                            .vacancies-question
+                                .vacancies-question__title Какие анализы сдают при подозрении на рак прямой кишки?
+                                .vacancies-question__icon
+                                    img.plus(src="assets/images/plus.svg", alt="plus")
+                                    img.minus(src="assets/images/minus.svg", alt="minus")
+                            .vacancies-answer
+                                .vacancies-answer__text Единственный и достоверный метод исследования – биопсия. Поэтому, прежде всего, следует обратиться к проктологу для осмотра и диагностики. Далее, уже в качестве вспомогательного лабораторного метода диагностики, а также в целях мониторинга состояния, могут быть определены онкомаркеры РЭА, СА-19,9, опухолевая М-2 пируваткиназа в кале.
+                        .vacancies__item
+                            .vacancies-question
+                                .vacancies-question__title Какие анализы нужно сдать для исследования состояния поджелудочной железы?
+                                .vacancies-question__icon
+                                    img.plus(src="assets/images/plus.svg", alt="plus")
+                                    img.minus(src="assets/images/minus.svg", alt="minus")
+                            .vacancies-answer
+                                .vacancies-answer__text Для выявления нарушений эндокринной функции поджелудочной железы необходимо: определение уровня с-пептида, инсулина, глюкозы, гликозилированного гемоглобина. Индикаторами воспаления железы может служить увеличение уровня ферментов амилазы и, реже, липазы в крови, а также панкреатической эластазы, определяемой в кале.
+                        .vacancies__item
+                            .vacancies-question
+                                .vacancies-question__title Какие анализы нужно сдать при наличии неприятного запаха из влагалища?
+                                .vacancies-question__icon
+                                    img.plus(src="assets/images/plus.svg", alt="plus")
+                                    img.minus(src="assets/images/minus.svg", alt="minus")
+                            .vacancies-answer
+                                .vacancies-answer__text Для начала следует сдать анализ на бактериальный вагиноз и инфекции передаваемые половым путем. Необходимость дальнейших исследований будет определяться лечащим врачом.
+                        .vacancies__item
+                            .vacancies-question
+                                .vacancies-question__title Какие виды анализов рекомендуется сдавать после лечения уреаплазмы: посев или ПЦР?
+                                .vacancies-question__icon
+                                    img.plus(src="assets/images/plus.svg", alt="plus")
+                                    img.minus(src="assets/images/minus.svg", alt="minus")
+                            .vacancies-answer
+                                .vacancies-answer__text Подойдет любой метод лабораторного исследования. Однако, следует помнить, что ПЦР исследование выявляет ДНК как живых, так и мертвых возбудителей и обладает повышенной чувствительностью. После прохождения курса лечения необходимо выдержать интервал в 1-1,5 месяца до повторн7ого исследования. При применении культурального метода необходимо помнить главное: уреаплазма является условным патогеном и выявление роста менее чем 104 и при отсутствии характерных жалоб - не нуждается в лечении.
+                        .vacancies__item
+                            .vacancies-question
+                                .vacancies-question__title Какие анализы сдают при подозрении на рак прямой кишки?
+                                .vacancies-question__icon
+                                    img.plus(src="assets/images/plus.svg", alt="plus")
+                                    img.minus(src="assets/images/minus.svg", alt="minus")
+                            .vacancies-answer
+                                .vacancies-answer__text Единственный и достоверный метод исследования – биопсия. Поэтому, прежде всего, следует обратиться к проктологу для осмотра и диагностики. Далее, уже в качестве вспомогательного лабораторного метода диагностики, а также в целях мониторинга состояния, могут быть определены онкомаркеры РЭА, СА-19,9, опухолевая М-2 пируваткиназа в кале.
+                        .vacancies__item
+                            .vacancies-question
+                                .vacancies-question__title Какие анализы нужно сдать для исследования состояния поджелудочной железы?
+                                .vacancies-question__icon
+                                    img.plus(src="assets/images/plus.svg", alt="plus")
+                                    img.minus(src="assets/images/minus.svg", alt="minus")
+                            .vacancies-answer
+                                .vacancies-answer__text Для выявления нарушений эндокринной функции поджелудочной железы необходимо: определение уровня с-пептида, инсулина, глюкозы, гликозилированного гемоглобина. Индикаторами воспаления железы может служить увеличение уровня ферментов амилазы и, реже, липазы в крови, а также панкреатической эластазы, определяемой в кале.
+                        .vacancies__item
+                            .vacancies-question
+                                .vacancies-question__title Какие анализы нужно сдать при наличии неприятного запаха из влагалища?
+                                .vacancies-question__icon
+                                    img.plus(src="assets/images/plus.svg", alt="plus")
+                                    img.minus(src="assets/images/minus.svg", alt="minus")
+                            .vacancies-answer
+                                .vacancies-answer__text Для начала следует сдать анализ на бактериальный вагиноз и инфекции передаваемые половым путем. Необходимость дальнейших исследований будет определяться лечащим врачом.
+                        .vacancies__item
+                            .vacancies-question
+                                .vacancies-question__title Какие виды анализов рекомендуется сдавать после лечения уреаплазмы: посев или ПЦР?
+                                .vacancies-question__icon
+                                    img.plus(src="assets/images/plus.svg", alt="plus")
+                                    img.minus(src="assets/images/minus.svg", alt="minus")
+                            .vacancies-answer
+                                .vacancies-answer__text Подойдет любой метод лабораторного исследования. Однако, следует помнить, что ПЦР исследование выявляет ДНК как живых, так и мертвых возбудителей и обладает повышенной чувствительностью. После прохождения курса лечения необходимо выдержать интервал в 1-1,5 месяца до повторн7ого исследования. При применении культурального метода необходимо помнить главное: уреаплазма является условным патогеном и выявление роста менее чем 104 и при отсутствии характерных жалоб - не нуждается в лечении.
+
+                    .questions-content(data-show=2)
+
+                    .questions-content(data-show=3)
+
+                    .questions-content(data-show=4)
+
+                    .reviews-form
+                        form(action="#")
+                            .reviews-form__title Не нашли ответ на свой вопрос?
+                            .reviews-form__subtitle Свяжитесь с нами, и мы предоставим всю необходимую информацию
+                            .reviews-form-inputs
+                                .reviews-form-inputs__item
+                                    label(for="reviews-form-input-1") ФИО*
+                                    input(type="text", id="reviews-form-input-1", placeholder="Новопашина Анна Дмитриевна")
+                                .reviews-form-inputs__item
+                                    label(for="reviews-form-input-2") E-mail*
+                                    input(type="email", id="reviews-form-input-2", placeholder="test@mail.ru")
+                            .reviews-form__textarea
+                                label(for="reviews-form-input-3") Вопрос
+                                textarea(id="reviews-form-input-3")
+                            .reviews-form-footer
+                                .reviews-form__btn
+                                    input(type="submit", value="Оставить заявку")
+                                .reviews-form-accept
+                                    label
+                                        input(type="checkbox", name="acceptance-reviews", checked)
+                                        span.reviews-form-accept__checkbox
+                                        span.reviews-form-accept__text Даю согласие на обработку&nbsp;
+                                            a(href="/policy", target="_blank") персональных данных
