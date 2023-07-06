@@ -154,6 +154,14 @@
     height: calc(100% - var(--top));
     z-index: 1;
     overflow-y: scroll;
+
+    @include breakpoint(md) {
+        --top: 150px;
+    }
+
+    @include breakpoint(lg) {
+        --top: 165px;
+    }
 }
 
 .header__menu-phone {
@@ -163,6 +171,10 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 120%;
+
+    @include breakpoint(lg) {
+        display: none;
+    }
 }
 
 .header__menu-phone::before {
@@ -183,14 +195,26 @@
     border: 1px solid #0CAA70;
     cursor: pointer;
 
+    @include breakpoint(lg) {
+        display: none;
+    }
 }
 
 .nav {
-    margin-top: 30px;
+    
+    @include breakpointMax(lg) {
+        margin-top: 30px;
+    }
 }
 
 .nav__item {
     margin-bottom: 30px;
+}
+
+.nav__item.has-submenu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .nav__item-link {
@@ -198,28 +222,49 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 120%;
+
+    @include breakpoint(lg) {
+        font-size: 18px;
+    }
 }
 
 .nav__item.has-submenu .nav__item-link::after {
-    content: '';
-    margin-left: 12px;
-    background: url('../images/chevron-down.svg') no-repeat;
-    display: block;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    transform: rotate(0deg);
-    transition: transform .4s ease;
+    
+    @include breakpointMax(lg) {
+        content: '';
+        margin-left: 12px;
+        background: url('../images/chevron-down.svg') no-repeat;
+        display: block;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        transform: rotate(0deg);
+        transition: transform .4s ease;
+    }
 }
 
 .nav__item.has-submenu.opened .nav__item-link::after {
-    transform: rotate(-180deg);
+    
+    @include breakpointMax(lg) {
+        transform: rotate(-180deg);
+    }
+}
+
+.nav__submenu {
+    
+    @include breakpointMax(lg) {
+        display: none;
+    }
 }
 
 .nav__submenu-item {
     margin-top: 12px;
     font-size: 15px;
     line-height: 150%;
+
+    @include breakpoint(lg) {
+        font-size: 16px;
+    }
 }
 
 .nav__submenu-item:first-child {
