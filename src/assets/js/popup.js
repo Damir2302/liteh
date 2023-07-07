@@ -4,7 +4,9 @@ $(document).ready(function () {
     $("html").on("click", function (e) {
         if (
             !$(e.target).closest(".cat__tabs").length &&
-            !$(e.target).closest(".select-custom").length
+            !$(e.target).closest(".select-custom").length &&
+            !$(e.target).closest(".popup").length &&
+            !$(e.target).closest(".popup-open").length
         ) {
             $("body").removeClass("overflow-hidden")
             $('#page').removeClass('bg-overlay')
@@ -13,6 +15,21 @@ $(document).ready(function () {
             $('.select-custom').removeClass('active')
         }
     });
+
+    // HEADER MENU
+    $('.header__burger').on('click', function() {
+        $('body').addClass('overflow-hidden')
+
+        $(this).toggleClass('opened')
+        $('.header__menu').slideToggle()
+    })
+
+    $('.nav__item-link').on('click', function(e) {
+        if ($(this).hasClass(e.target.classList) && $(window).width() < 1024) {
+            $(this).parent().toggleClass('opened')
+            $(this).next().slideToggle()
+        }
+    })
 
     // CATALOG INNER TABS
     $('.cat__tabs-select').on('click', function() {
@@ -57,9 +74,20 @@ $(document).ready(function () {
         $('.select-custom').toggleClass('active')
     })
 
-    // SELECT ADDRESS POPUP
-    $('.select-address').on('click', function() {
-        
+    // POPUP CART ADDED
+    $('.popup-open').on('click', function() {
+        $('#popup-cart-added').addClass('opened')
+        $('#page').addClass('bg-overlay')
+
+        setTimeout(() => {
+            $('#popup-cart-added').removeClass('opened')
+            $('#page').removeClass('bg-overlay')
+        }, 3000);
+    })
+
+    $('.popup-close').on('click', function() {
+        $('.popup').removeClass('opened')
+        $('#page').removeClass('bg-overlay')
     })
 
 });

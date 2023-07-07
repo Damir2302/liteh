@@ -13,14 +13,6 @@ $(document).ready(function() {
         })
     }
 
-    // HEADER MENU
-    $('.nav__item-link').on('click', function(e) {
-        if ($(this).hasClass(e.target.classList) && $(window).width() < 1024) {
-            $(this).parent().toggleClass('opened')
-            $(this).next().slideToggle()
-        }
-    })
-
     // INPUT MASK PHONE NUMBER
     $('input[type="tel"]').inputmask({"mask": "+7 (999) 999-99-99"});
 

@@ -1,0 +1,74 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+}
+
+.popup.opened {
+    display: flex;
+}
+
+.popup-inner {
+    padding: 46px 20px;
+    background: #fff;
+    position: relative;
+    border-radius: 20px;
+}
+
+.popup-close-icon {
+    background: url('../images/close-x.svg') no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.popup-icon {
+    margin: 0 auto 14px;
+    width: 60px;
+    height: 60px;
+}
+
+.popup-wrap {
+    width: 290px;
+}
+
+.popup-title {
+    margin: 0 auto 40px;
+    max-width: 188px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+}
+
+.popup-btn-cart {
+    padding: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-btn-cart::before {
+    content: '';
+    margin-right: 4px;
+    background: url('../images/shopping-cart.svg') no-repeat;
+    background-position: center;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.popup-btn-back {
+    margin-top: 10px;
+    padding: 13px;
+}

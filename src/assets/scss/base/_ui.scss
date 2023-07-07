@@ -71,6 +71,9 @@ main {
 
 #page::before {
   content: '';
+  background: rgba(0, 0, 0, 0);
+  display: block;
+  transition: all 0.5s ease;
 }
 
 #page.bg-overlay::before {
@@ -78,11 +81,9 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  display: block;
   width: 100%;
   height: 100%;
-  z-index: 2;
-  transition: all 0.5s ease;
+  z-index: 10;
 }
 
 section {

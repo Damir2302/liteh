@@ -15,7 +15,7 @@ html(lang="ru")
         if yandexMap == true
             script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
 
-    body.overflow-hidden(class= bodyClass ? bodyClass : '')
+    body(class= bodyClass ? bodyClass : '')
 
         #page
 
@@ -33,6 +33,19 @@ html(lang="ru")
             block footer
                 include _footer
             // Footer::End
+
+            // Popup::Start
+            #popup-cart-added.popup.popup-cart-added.animate__animated.animate__fadeIn
+                .popup-inner
+                    .popup-close.popup-close-icon
+                    .popup-wrap
+                        .popup-icon
+                            img(src="assets/images/heart.svg", alt="icon")
+                        .popup-title Анализ добавлен в корзину
+                        .popup-btn-cart.button-style.button-style--fill-green
+                            a(href="#") В корзину
+                        .popup-btn-back.popup-close.button-style.button-style--gray Продолжить покупки
+            // Popup::End
 
         // Scripts::Start
         include _loadScripts
