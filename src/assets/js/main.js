@@ -36,6 +36,12 @@ $(document).ready(function() {
     $('.faq__question').on('click', function() {
         $(this).parent().toggleClass('expanded')
     })
+    $('.vacancies-question').each(function(i) {
+        $(this).on('click', function() {
+            $('.vacancies-answer').eq(i).slideToggle(700);
+            $(this).parent().toggleClass('expanded')
+        });
+    });
 
     // CATALOG ASIDE
     $('.catalog__menu-title').on('click', function() {
@@ -103,6 +109,15 @@ $(document).ready(function() {
 
         $('.footer__block').removeClass('active')
         $(`.footer__block[data-show=${$(this).attr('data-active')}]`).addClass('active')
+    })
+
+    // QUESTIONS TAB
+    $('.questions-tabs__item').on('click', function() {
+        $('.questions-tabs__item').removeClass('active')
+        $(this).addClass('active')
+
+        $('.questions-content').removeClass('active')
+        $(`.questions-content[data-show=${$(this).attr('data-active')}]`).addClass('active')
     })
 
     // HIDE SHOW TABLE

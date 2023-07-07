@@ -1,0 +1,48 @@
+.documents {
+    &__content {
+        margin-top: 30px;
+        @include breakpoint(lg) {
+            margin-top: 0;
+        }
+    }
+    &-items {
+        display: grid;
+        row-gap: 40px;
+        @include breakpoint(xl) {
+            row-gap: 50px;
+        }
+        &__title {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 120%;
+            color: $black;
+            @include breakpoint(lg) {
+                font-size: 22px;
+            }
+            @include breakpoint(xl) {
+                font-size: 24px;
+            }
+        }
+        &-images {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+            @include breakpoint(md) {
+                gap: 16px;
+            }
+            @include breakpoint(lg) {
+                gap: 20px;
+            }
+            @include breakpoint(xl) {
+                gap: 30px;
+            }
+            &__img {
+                display: flex;
+                img {
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

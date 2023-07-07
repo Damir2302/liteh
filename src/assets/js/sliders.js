@@ -124,6 +124,11 @@ $(document).ready(function() {
         }
     })
 
+    // QUESTIONS SLIDER
+    var questionsSlider = new Swiper('.questions-tabs .swiper', {
+        slidesPerView: 'auto'
+    })
+
     // GALLERY SLIDER
     var gallerySlider = new Swiper(`.gallery .swiper`, {
         slidesPerView: 1.2,

@@ -1,0 +1,299 @@
+.reviews {
+    &__content {
+        margin-top: 30px;
+        @include breakpoint(lg) {
+            margin-top: 0;
+        }
+        .pagination {
+            display: none;
+            @include breakpoint(md) {
+                margin: 40px 0;
+                display: flex;
+            }
+            &__item {
+                width: 44px;
+            }
+            &__arrow {
+                width: 44px;
+            }
+            &__items {
+                width: max-content;
+            }
+        }
+    }
+    &-wrapper {
+        display: grid;
+        row-gap: 30px;
+    }
+    &-descr {
+        padding: 20px;
+        border-radius: 12px;
+        background-color: #F8F8F8;
+        display: grid;
+        row-gap: 30px;
+        &__text {
+            line-height: 150%;
+            @include breakpoint(md) {
+                width: 425px;
+            }
+            @include breakpoint(xl) {
+                width: 100%;
+            }
+        }
+        &__btn {
+            padding: 16px 40px;
+            border-radius: 33px;
+            background-color: $green;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 600;
+            color: #FFFFFF;
+            transition: 0.5s;
+            @include breakpoint(lg) {
+                &:hover {
+                    background-color: $dgreen;
+                }
+            }
+        }
+    }
+    &-items {
+        display: grid;
+        row-gap: 10px;
+        &__block {
+            position: relative;
+            padding: 29px 19px;
+            border-radius: 12px;
+            border: 1px solid #E1E1E1;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                width: 18px;
+                height: 14px;
+                background-image: url(../images/quotes-green.svg);
+            }
+        }
+        &__header {
+            @include breakpoint(md) {
+                display: flex;
+                align-items: center;
+            }
+        }
+        &__title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 120%;
+            @include breakpoint(md) {
+                width: max-content;
+            }
+            @include breakpoint(xl) {
+                font-size: 20px;
+            }
+        }
+        &__date {
+            margin-top: 5px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 150%;
+            color: $dgray;
+            @include breakpoint(md) {
+                margin-top: 0;
+                margin-left: 20px;
+                width: max-content;
+            }
+        }
+        &__text {
+            margin-top: 12px;
+            line-height: 150%;
+        }
+    }
+    &__btn {
+        margin: 40px auto;
+    }
+    &-form {
+        form {
+            padding: 30px 20px;
+            background-color: #F8F8F8;
+            @include breakpoint(md) {
+                padding: 40px 30px;
+            }
+            @include breakpoint(xl) {
+                padding: 60px 40px;
+            }
+        }
+        &__title {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 120%;
+            @include breakpoint(lg) {
+                font-size: 28px;
+            }
+            @include breakpoint(xl) {
+                font-size: 32px;
+            }
+        }
+        &__subtitle {
+            margin-top: 16px;
+            line-height: 150%;
+        }
+        &-inputs {
+            margin: 20px 0;
+            display: grid;
+            row-gap: 20px;
+            @include breakpoint(md) {
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 20px;
+            }
+            @include breakpoint(xl) {
+                margin-top: 30px;
+            }
+            &__item {
+                display: grid;
+                row-gap: 8px;
+                label {
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 150%;
+                }
+                input {
+                    border-radius: 8px;
+                    border: 1px solid #E1E1E1;
+                    padding: 17px 23px;
+                    background-color: #FFFFFF;
+                    font-size: 16px;
+                    line-height: 150%;
+                    transition: 0.5s;
+                    &:focus {
+                        border-color: $gray;
+                    }
+                    @include breakpoint(lg) {
+                        &:hover {
+                            border-color: $gray;
+                        }
+                    }
+                }
+            }
+        }
+        &__textarea {
+            display: grid;
+            row-gap: 8px;
+            label {
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 150%;
+            }
+            textarea {
+                resize: none;
+                height: 144px;
+                border-radius: 8px;
+                border: 1px solid #E1E1E1;
+                padding: 17px 23px;
+                background-color: #FFFFFF;
+                font-size: 16px;
+                line-height: 150%;
+                transition: 0.5s;
+                &:focus {
+                    border-color: $gray;
+                }
+                @include breakpoint(lg) {
+                    &:hover {
+                        border-color: $gray;
+                    }
+                }
+            }
+        }
+        &__btn {
+            @include breakpoint(md) {
+                width: max-content;
+            }
+            input {
+                padding: 21px 0;
+                border-radius: 33px;
+                background-color: $orange;
+                border: none;
+                text-align: center;
+                font-size: 15px;
+                font-weight: 600;
+                color: #FFFFFF;
+                transition: 0.5s;
+                cursor: pointer;
+                @include breakpoint(md) {
+                    padding: 21px 50px;
+                    width: max-content;
+                }
+                @include breakpoint(lg) {
+                    &:hover {
+                        background-color: $ltorange;
+                    }
+                }
+            }
+        }
+        &-accept {
+            margin-top: 20px;
+            @include breakpoint(md) {
+                margin-top: 0;
+                margin-left: 20px;
+            }
+            label, label span {
+                display: flex;
+                align-items: flex-start;
+                cursor: pointer;
+            }
+            input[name^="acceptance-reviews"] {
+                display: none;
+                &:checked ~ .reviews-form-accept__checkbox,
+                &:checked ~ span .reviews-form-accept__checkbox {
+                    border-color: #FFFFFF;
+                }
+                &:checked ~ .reviews-form-accept__checkbox::before,
+                &:checked ~ span .reviews-form-accept__checkbox::before {
+                    opacity: 1;
+                }
+            }
+            &__checkbox {
+                display: block !important;
+                margin-top: 4px;
+                border-radius: 2px;
+                width: 14px;
+                height: 14px;
+                border: 1px solid $black;
+                position: relative;
+                transition: 0.5s;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 17px;
+                    height: 17px;
+                    background-image: url(../images/check-square-black.svg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    opacity: 0;
+                    transition: 0.5s;
+                }
+            }
+            &__text {
+                display: block !important;
+                width: calc(100% - 22px);
+                margin-left: 8px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 150%;
+                @include breakpoint(md) {
+                    display: grid !important;
+                }
+            }
+        }
+        &-footer {
+            margin-top: 30px;
+            @include breakpoint(md) {
+                margin-top: 40px;
+                display: flex;
+                align-items: flex-end;
+            }
+        }
+    }
+}

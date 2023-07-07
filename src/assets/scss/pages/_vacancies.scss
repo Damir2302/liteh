@@ -1,0 +1,187 @@
+.vacancies {
+    &__content {
+        margin-top: 40px;
+        display: grid;
+        row-gap: 30px;
+        @include breakpoint(lg) {
+            margin-top: 0;
+            row-gap: 0;
+        }
+    }
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 120%;
+        @include breakpoint(lg) {
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+        @include breakpoint(xl) {
+            font-size: 24px;
+        }
+    }
+    &-wrapper {
+        @include breakpoint(lg) {
+            margin-bottom: 40px;
+        }
+    }
+    &__item {
+        padding: 13px 19px;
+        border: 1px solid #E1E1E1;
+        border-radius: 5px;
+        & + & {
+            margin-top: 10px;
+        }
+    }
+    &__item.expanded {
+        .plus {
+            opacity: 0;
+        }
+        .minus {
+            opacity: 1;
+        }
+    }
+    &-question {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        &__title {
+            width: calc(100% - 20px);
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 120%;
+            @include breakpoint(md) {
+                width: calc(100% - 40px);
+            }
+            @include breakpoint(lg) {
+                font-size: 18px;
+            }
+            @include breakpoint(xl) {
+                font-size: 20px;
+            }
+        }
+        &__icon {
+            position: relative;
+            width: 20px;
+            height: 20px;
+            .plus {
+                transition: 0.5s;
+            }
+            .minus {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 20px;
+                height: 20px;
+                opacity: 0;
+                transition: 0.5s;
+            }
+        }
+    }
+    &-answer {
+        display: none;
+        margin-top: 20px;
+        &__title {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 150%;
+            color: $green;
+        }
+        &__list {
+            li {
+                margin-top: 10px !important;
+                margin-bottom: 0;
+                line-height: 150%;
+            }
+        }
+        &__text {
+            line-height: 150%;
+        }
+        &__btn {
+            width: 100% !important;
+            padding: 16px 0;
+            border-radius: 33px;
+            background-color: $green;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 600;
+            color: #FFFFFF;
+            transition: 0.5s;
+            @include breakpoint(md) {
+                width: max-content !important;
+                padding: 16px 40px;
+            }
+            @include breakpoint(lg) {
+                &:hover {
+                    background-color: $dgreen;
+                }
+            }
+        }
+    }
+    &-contacts {
+        border-radius: 12px;
+        background-color: #EEF8F0;
+        padding: 20px;
+        @include breakpoint(md) {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 30px;
+        }
+        &__title {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 120%;
+            @include breakpoint(lg) {
+                font-size: 22px;
+            }
+            @include breakpoint(xl) {
+                font-size: 24px;
+            }
+        }
+        &__descr {
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 150%;
+        }
+        &-content {
+            margin-top: 30px;
+            @include breakpoint(md) {
+                margin-top: 0;
+            }
+            &__title {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 120%;
+                @include breakpoint(lg) {
+                    font-size: 18px;
+                }
+            }
+            &__subtitle {
+                margin-top: 8px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 150%;
+            }
+            &-items {
+                margin-top: 20px;
+                display: grid;
+                row-gap: 12px;
+                &__link {
+                    width: 100% !important;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                &__icon {
+                    width: 24px;
+                    height: 24px;
+                }
+                &__text {
+                    width: calc(100% - 36px);
+                }
+            }
+        }
+    }
+}
