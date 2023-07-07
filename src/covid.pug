@@ -1,6 +1,7 @@
 ---
 title: Литех | COVID
 bodyClass: covid-page
+yandexMap: true
 ---
 
 extends includes/_page
@@ -106,3 +107,289 @@ block main
                 
                 .covid-page__simptomes-important Симптомы могут проявиться в течение 2-14 дней после контакта с вирусом. Более 80% людей переносят заболевание бессимптомно или в лёгкой форме при стандартном симптоматическом лечении.
 
+    .section-covid-status.section-gray 
+        .container
+            .title Как узнать свой ковид-статус?
+            .section-covid-status__text Как определить, что вы уже переболели COVID-19, или выявить инфекцию, которая протекает бессимптомно? Пройдите тестирование на антитела к коронавирусу.
+            .section-covid-status__items
+
+                .section-covid-status__item
+                    .section-covid-status__item-title Тест на антитела IgM к коронавирусу SARS-CoV-2
+                    .section-covid-status__item-text Иммуноглобулины класса M считаются маркером первичной инфекции. Они обнаруживаются в крови уже через 7-14 дней после контакта с вирусом. Исследование крови на IgM может использоваться как дополнительный метод диагностики коронавирусной инфекции при подозрении на ложноотрицательный результат ПЦР-теста на ковид-19.
+
+                .section-covid-status__item
+                    .section-covid-status__item-title Тест на антитела IgG к коронавирусу SARS-CoV-2
+                    .section-covid-status__item-text Иммуноглобулины класса G свидетельствуют, что человек выздоравливает в настоящее время или перенёс инфекцию ранее и имеет сформировавшийся естественный иммунитет. Антитела IgG обнаруживаются в крови, начиная с 3 недели заболевания. Тест подтверждает факт иммунного ответа на контакт с вирусом и подходит для оценки защитного иммунитета после вакцинации.
+
+    .section-covid__attention 
+        .container 
+            .title.section-covid__attention-title Чем опасен коронавирус?
+            .section-covid__attention-text Реакция организма на контакт с вирусом индивидуальна. Если вы перенесли ковид, будьте внимательны к своему самочувствию, чтобы вовремя получить помощь в случае осложнений
+
+            .section-covid__attention-content 
+                .section-covid__attention-content-left 
+                    p Распространённые долгосрочные последствия ковид-инфекции:
+                    ul 
+                        li Ощущение хронической усталости и слабость мышц
+                        li Нарушение сна, ощущение тревоги, депрессия
+                        li Ухудшение функции лёгких и затруднённое дыхание
+                        li Неврологические нарушения
+                        li Ухудшение функции почек
+                    p Осложнения при тяжёлом течении заболевания:
+                    ul
+                        li Вирусная пневмония с риском развития дыхательной недостаточности
+                        li Длительное отсутствие обоняния
+                        li Отит, гайморит, синусит
+                        li Септические осложнения
+                        li Поражение сердечной мышцы, печени, почек
+                .section-covid__attention-content-img 
+                    img(src="assets/images/cov-img2.png", alt="covid")
+
+            .title.section-covid__attention-title Факторы риска тяжёлого течения COVID-19
+
+            .section-covid__attention-items 
+
+                .section-covid__attention-item
+                    .section-covid__attention-item-icon
+                        img(src="assets/images/cov-at-ic.svg", alt="") 
+                    .section-covid__attention-item-title Возраст старше 60 лет
+
+                .section-covid__attention-item
+                    .section-covid__attention-item-icon
+                        img(src="assets/images/cov-at-ic.svg", alt="") 
+                    .section-covid__attention-item-title Сахарный диабет
+
+                .section-covid__attention-item
+                    .section-covid__attention-item-icon
+                        img(src="assets/images/cov-at-ic.svg", alt="") 
+                    .section-covid__attention-item-title ИМТ >40
+
+                .section-covid__attention-item
+                    .section-covid__attention-item-icon
+                        img(src="assets/images/cov-at-ic.svg", alt="") 
+                    .section-covid__attention-item-title Онкологические заболевания
+
+                .section-covid__attention-item
+                    .section-covid__attention-item-icon
+                        img(src="assets/images/cov-at-ic.svg", alt="") 
+                    .section-covid__attention-item-title Хронические заболевания сердца и лёгких
+
+                .section-covid__attention-item
+                    .section-covid__attention-item-icon
+                        img(src="assets/images/cov-at-ic.svg", alt="") 
+                    .section-covid__attention-item-title Хронические заболевания почек и печени
+
+                .section-covid__attention-item
+                    .section-covid__attention-item-icon
+                        img(src="assets/images/cov-at-ic.svg", alt="") 
+                    .section-covid__attention-item-title Лечение препаратами-иммуносупрессорами
+
+                .section-covid__attention-item
+                    .section-covid__attention-item-icon
+                        img(src="assets/images/cov-at-ic.svg", alt="") 
+                    .section-covid__attention-item-title ВИЧ и иммунодефицитные состояния
+
+                .section-covid__attention-item
+                    .section-covid__attention-item-icon
+                        img(src="assets/images/cov-at-ic.svg", alt="") 
+                    .section-covid__attention-item-title Беременность
+
+    .section-covid__ways.section-gray  
+        .container
+
+            .section-covid__ways-block
+                .section-covid__ways-block-title.title Пути распространения вируса
+                .section-covid__ways-wrapper.section-covid__ways-wrapper-col-3 
+
+                    .section-covid__ways-item 
+                        .section-covid__ways-item-icon 
+                            img(src="assets/images/covid-block-ic1.svg", alt="")
+                        .section-covid__ways-item-title Воздушно-капельный
+                        .section-covid__ways-item-text Контакт с инфицированным человеком: вирус передаётся при кашле, чихании, смехе
+
+                    .section-covid__ways-item 
+                        .section-covid__ways-item-icon 
+                            img(src="assets/images/covid-block-ic2.svg", alt="")
+                        .section-covid__ways-item-title Контактный
+                        .section-covid__ways-item-text Прикосновение к поверхностям, на которых осели мелкие капли, содержащие вирус
+
+                    .section-covid__ways-item 
+                        .section-covid__ways-item-icon 
+                            img(src="assets/images/covid-block-ic3.svg", alt="")
+                        .section-covid__ways-item-title Воздушно-пылевой
+                        .section-covid__ways-item-text Вдыхание воздуха и пылевых частиц, загрязнённых аэрозолем SARS-CoV-2
+
+            .section-covid__ways-block
+                .section-covid__ways-block-title.title Как защитить себя и других от передачи вируса?
+                .section-covid__ways-block-text Меры профилактики, рекомендованные Минздравом
+                .section-covid__ways-wrapper.section-covid__ways-wrapper-col-4 
+
+                    .section-covid__ways-item 
+                        .section-covid__ways-item-icon 
+                            img(src="assets/images/covid-block-ic4.svg", alt="")
+                        .section-covid__ways-item-text Соблюдайте социальную дистанцию ≈ 1,5-2 м
+
+                    .section-covid__ways-item 
+                        .section-covid__ways-item-icon 
+                            img(src="assets/images/covid-block-ic5.svg", alt="")
+                        .section-covid__ways-item-text Носите маску в общественных местах и транспорте
+
+                    .section-covid__ways-item 
+                        .section-covid__ways-item-icon 
+                            img(src="assets/images/covid-block-ic6.svg", alt="")
+                        .section-covid__ways-item-text Чаще мойте руки, дезинфицируйте гаджеты
+
+                    .section-covid__ways-item 
+                        .section-covid__ways-item-icon 
+                            img(src="assets/images/covid-block-ic7.svg", alt="")
+                        .section-covid__ways-item-text Не касайтесь руками лица, особенно глаз и рта
+
+                    .section-covid__ways-item 
+                        .section-covid__ways-item-icon 
+                            img(src="assets/images/covid-block-ic8.svg", alt="")
+                        .section-covid__ways-item-text Не забывайте почаще проветривать помещение
+
+                    .section-covid__ways-item 
+                        .section-covid__ways-item-icon 
+                            img(src="assets/images/covid-block-ic9.svg", alt="")
+                        .section-covid__ways-item-text На время откажитесь от объятий и рукопожатий при встрече
+
+                    .section-covid__ways-item 
+                        .section-covid__ways-item-icon 
+                            img(src="assets/images/covid-block-ic10.svg", alt="")
+                        .section-covid__ways-item-text Избегайте массовых скоплений людей, когда это возможно
+
+                    .section-covid__ways-item 
+                        .section-covid__ways-item-icon 
+                            img(src="assets/images/covid-block-ic11.svg", alt="")
+                        .section-covid__ways-item-text Если захочется чихнуть, сделайте это в сгиб локтя
+
+            .section-covid__ways-block
+                .section-covid__ways-block-title.title Где сдать анализ на антитела к ковид-19?
+                .section-covid__ways-block-text Сеть лабораторий «ЛИТЕХ» выполняет лабораторное тестирование сыворотки крови на иммуноглобулины класса М и класса G к SARS-CoV-2. Исследования выполняются на российских тест-системах (регистрационное удостоверение № РЗН 2020/10 226 от 30.04.2020 г.) по технологии иммуноферментного анализа (ИФА)
+                .section-covid__ways-wrapper.section-covid__ways-wrapper-col-4 
+
+                    .section-covid__ways-item 
+                        .section-covid__ways-item-icon 
+                            img(src="assets/images/covid-block-ic12.svg", alt="")
+                        .section-covid__ways-item-text Безопасные медицинские офисы, качественные СИЗ
+
+                    .section-covid__ways-item 
+                        .section-covid__ways-item-icon 
+                            img(src="assets/images/covid-block-ic13.svg", alt="")
+                        .section-covid__ways-item-text Безболезненный забор крови на антитела к коронавирусу
+                    .section-covid__ways-item 
+                        .section-covid__ways-item-icon 
+                            img(src="assets/images/covid-block-ic14.svg", alt="")
+                        .section-covid__ways-item-text Бесконтактная доставка результатов по email или с курьером
+
+                    .section-covid__ways-item 
+                        .section-covid__ways-item-icon 
+                            img(src="assets/images/covid-block-ic15.svg", alt="")
+                        .section-covid__ways-item-text Официальная справка для работодателей и мед. учреждений
+
+    section.section-useful
+
+        .container
+
+            h2.useful__title.title Публикации о COVID
+
+            .useful
+
+                .swiper
+
+                    .swiper-wrapper
+
+                        .useful__item.swiper-slide
+                            a(href="#")
+                                .useful__item-img
+                                    img(src="assets/images/3d-medical-background-with-measles-virus.jpg", alt="img")
+                                .useful__item-title Способы лечения аутоиммунных заболеваний
+                                .useful__item-date 16.03.2023
+
+                        .useful__item.swiper-slide
+                            a(href="#")
+                                .useful__item-img
+                                    img(src="assets/images/3d-medical-background-with-measles-2.jpg", alt="img")
+                                .useful__item-title Способы лечения аутоиммунных заболеваний
+                                .useful__item-date 16.03.2023
+
+                        .useful__item.swiper-slide
+                            a(href="#")
+                                .useful__item-img
+                                    img(src="assets/images/3d-medical-background-with-measles-3.jpg", alt="img")
+                                .useful__item-title Способы лечения аутоиммунных заболеваний
+                                .useful__item-date 16.03.2023
+
+                        .useful__item.swiper-slide
+                            a(href="#")
+                                .useful__item-img
+                                    img(src="assets/images/3d-medical-background-with-measles-virus.jpg", alt="img")
+                                .useful__item-title Способы лечения аутоиммунных заболеваний
+                                .useful__item-date 16.03.2023
+
+                        .useful__item.swiper-slide
+                            a(href="#")
+                                .useful__item-img
+                                    img(src="assets/images/3d-medical-background-with-measles-virus.jpg", alt="img")
+                                .useful__item-title Способы лечения аутоиммунных заболеваний
+                                .useful__item-date 16.03.2023
+
+                .slider-navigation
+                    .slider-nav.slider-nav-prev
+                        img(src="assets/images/chevron-right-white.svg", alt="icon")
+                        img.disabled(src="assets/images/chevron-left-gray.svg", alt="icon")
+                    .slider-nav.slider-nav-next
+                        img(src="assets/images/chevron-right-white.svg", alt="icon")
+                        img.disabled(src="assets/images/chevron-left-gray.svg", alt="icon")
+
+    section.section-map
+
+        .container
+
+            h2.map__title.title Адреса медицинских офисов
+            .map__dropdown
+                .map__dropdown-select Выбрать медицинский офис
+
+                ul.map__dropdown-list
+                    li.map__dropdown-item Офис «Маяковская»
+                    li.map__dropdown-item Офис «Фрунзенская»
+                    li.map__dropdown-item Офис «Багратионовская»
+                    li.map__dropdown-item Офис «Мичуринский проспект»
+                    li.map__dropdown-item Офис «Электрозаводская»
+                    li.map__dropdown-item Офис «Перово»
+                    li.map__dropdown-item Офис «Первомайская»
+                    li.map__dropdown-item Офис «Коньково»
+                    li.map__dropdown-item Офис «Беломорская»
+                    li.map__dropdown-item Офис «Сходненская»
+                    li.map__dropdown-item Офис «Коммунарка»
+
+        .map__wrapper
+            #map(style="width:100%; height:100%")
+
+    section.section-subscribe
+
+        .container
+
+            .subscribe
+
+                .subscribe-container
+
+                    .subscribe__title.title Подпишитесь на&nbsp;нашу&nbsp;рассылку
+
+                    .subscribe__wrapper
+
+                        form
+
+                            .subscribe__input
+                                input#email(type="email", name="email" placeholder="Ваш e-mail" required)
+                                button.button-style.button-style--fill-orange(type="submit") Подписаться
+
+                        .subscribe__agreement
+                            img(src="assets/images/check-square.svg", alt="icon")
+                            p Даю согласие на обработку персональных данных
+
+                // Успешная подписка
+                .subscribe-success.hide
+                    .subscribe-success__title Спасибо за подписку!
+                    .subscribe-success__text Мы отправили вам письмо для подтверждения почтового ящика
